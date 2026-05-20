@@ -1,0 +1,78 @@
+@use '../utils/utils';
+
+.section-title {
+  max-width: 1180px;
+  margin: 0 auto 2rem;
+
+  &__eyebrow {
+    color: utils.$color-accent;
+    font-weight: 800;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+}
+
+.projects {
+  padding: 5rem utils.$space-page;
+
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1.25rem;
+    max-width: 1180px;
+    margin: 0 auto;
+  }
+
+  &__button {
+    width: max-content;
+    margin: 2rem auto 0;
+  }
+}
+
+.project-card {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  overflow: hidden;
+  border: 1px solid utils.$color-line;
+  border-radius: 18px;
+  background: utils.$color-surface;
+  box-shadow: 0 12px 30px rgba(17, 24, 39, 0.08);
+  transition: transform 220ms ease, box-shadow 220ms ease;
+
+  &:hover,
+  &:focus-within {
+    box-shadow: utils.$shadow-soft;
+    transform: translateY(-6px);
+  }
+
+  &__image {
+    width: 100%;
+    aspect-ratio: 16 / 10;
+    object-fit: cover;
+  }
+
+  &__body {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    gap: 0.75rem;
+    padding: 1.25rem;
+  }
+}
+
+@include utils.respond(900px) {
+  .projects {
+    &__grid {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+}
+
+@include utils.respond(620px) {
+  .projects {
+    &__grid {
+      grid-template-columns: 1fr;
+    }
+  }
+}

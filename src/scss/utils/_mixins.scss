@@ -1,0 +1,10 @@
+@mixin respond($width) {
+  @media (max-width: $width) {
+    @content;
+  }
+}
+
+@mixin focus-ring {
+  outline: 3px solid #fbbf24;
+  outline-offset: 4px;
+}
