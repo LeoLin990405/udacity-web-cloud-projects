@@ -2,7 +2,6 @@ package com.udacity.project4.locationreminders.savereminder
 
 import android.app.Application
 import androidx.arch.core.executor.testing.InstantTaskExecutorRule
-import androidx.test.core.app.ApplicationProvider
 import com.udacity.project4.R
 import com.udacity.project4.locationreminders.data.FakeDataSource
 import com.udacity.project4.locationreminders.reminderslist.ReminderDataItem
@@ -17,6 +16,8 @@ import org.junit.After
 import org.junit.Before
 import org.junit.Rule
 import org.junit.Test
+import org.mockito.Mockito.`when`
+import org.mockito.Mockito.mock
 
 @ExperimentalCoroutinesApi
 class SaveReminderViewModelTest {
@@ -31,8 +32,10 @@ class SaveReminderViewModelTest {
     fun setup() {
         Dispatchers.setMain(testDispatcher)
         dataSource = FakeDataSource()
+        val app = mock(Application::class.java)
+        `when`(app.getString(R.string.reminder_saved)).thenReturn("Reminder Saved !")
         viewModel = SaveReminderViewModel(
-            ApplicationProvider.getApplicationContext<Application>(),
+            app,
             dataSource
         )
     }

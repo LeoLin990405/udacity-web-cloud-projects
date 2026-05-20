@@ -2,7 +2,6 @@ package com.udacity.project4.locationreminders.reminderslist
 
 import android.app.Application
 import androidx.arch.core.executor.testing.InstantTaskExecutorRule
-import androidx.test.core.app.ApplicationProvider
 import com.udacity.project4.locationreminders.data.FakeDataSource
 import com.udacity.project4.locationreminders.data.dto.ReminderDTO
 import kotlinx.coroutines.Dispatchers
@@ -16,6 +15,7 @@ import org.junit.After
 import org.junit.Before
 import org.junit.Rule
 import org.junit.Test
+import org.mockito.Mockito.mock
 
 @ExperimentalCoroutinesApi
 class RemindersListViewModelTest {
@@ -31,7 +31,7 @@ class RemindersListViewModelTest {
         Dispatchers.setMain(testDispatcher)
         dataSource = FakeDataSource()
         viewModel = RemindersListViewModel(
-            ApplicationProvider.getApplicationContext<Application>(),
+            mock(Application::class.java),
             dataSource
         )
     }
