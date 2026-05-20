@@ -1,22 +1,18 @@
-/* TODO: Manually optimize CSS styling. */
-/* Remove unused and unnecessary styling and selectors */
 /* About page Styling */
-body main div .aboutContainer {
+.aboutContainer {
   display: flex;
   flex-direction: row-reverse;
   justify-content: center;
   align-items: center;
 }
 
-body main div .aboutContainer {}
-
-body main div .aboutContainer img {
+.aboutContainer img {
   width: 400px;
   height: 300px;
   border-radius: 10%;
 }
 
-body main div .textContainer {
+.textContainer {
   width: 550px;
   display: flex;
   flex-direction: column;
@@ -26,17 +22,17 @@ body main div .textContainer {
   white-space: pre-wrap;
 }
 
-body main div .textContainer h2 {
+.textContainer h2 {
   font-size: 3rem;
   text-transform: uppercase;
   text-align: center;
 }
 
-body main .textContainer h3 {
+.textContainer h3 {
   font-size: 2rem;
 }
 
-body main .textContainer p {
+.textContainer p {
   font-size: 1.5rem;
 }
 

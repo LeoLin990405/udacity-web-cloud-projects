@@ -1,7 +1,5 @@
-/* TODO: Manually optimize CSS styling. */
-/* Remove unused and unnecessary styling and selectors */
 /* Card Set Styling */
-body main div .cardSets {
+.cardSets {
   width: 85%;
   height: 100%;
   margin: 5%;
@@ -15,12 +13,12 @@ body main div .cardSets {
   align-items: center;
 }
 
-body main div .cardSets:hover {
+.cardSets:hover {
   border-color: black;
 }
 
 /* Flip Card Styling */
-body main div .cardContainer {
+.cardContainer {
   background-color: transparent;
   width: 500px;
   height: 380px;
@@ -30,7 +28,7 @@ body main div .cardContainer {
   align-items: center;
 }
 
-body main div.innerCard {
+.innerCard {
   position: relative;
   width: 100%;
   height: 100%;
@@ -62,14 +60,14 @@ body main div.innerCard {
   font-size: 2rem;
 }
 
-body main div .description {
+.description {
   font-size: 1.5rem;
   background-color: #dce7e8;
   transform: rotateY(180deg);
 }
 
 /* Page and Container Layout */
-body main div .cardPageContainer {
+.cardPageContainer {
   width: 500px;
   display: flex;
   flex-direction: column;
