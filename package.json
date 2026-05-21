@@ -7,10 +7,10 @@
   "scripts": {
     "gulp": "gulp",
     "build": "parcel build index.html",
-    "serve": "parcel index.html --host 127.0.0.1",
+    "serve": "parcel index.html --host 127.0.0.1 --port 1234",
     "test": "mocha \"test/**/*.js\"",
     "test:all": "gulp verify",
-    "cypress:run": "cypress run",
+    "cypress:run": "start-server-and-test serve http://127.0.0.1:1234 \"cypress run\"",
     "lint": "eslint src/utilityRenderFunctions.js src/shuffle.js"
   },
   "devDependencies": {
@@ -21,8 +21,9 @@
     "gulp": "^5.0.0",
     "gulp-cli": "^3.0.0",
     "gulp-shell": "^0.8.0",
-    "mocha": "^10.7.3",
+    "mocha": "^11.7.5",
     "parcel": "^2.12.0",
-    "prettier": "^3.3.3"
+    "prettier": "^3.3.3",
+    "start-server-and-test": "^2.1.5"
   }
 }

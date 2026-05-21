@@ -31,9 +31,9 @@ export const serve = runCommand("npx", [
   "127.0.0.1",
 ]);
 export const unitTest = runCommand("npx", ["mocha", "test/**/*.js"]);
-export const cypress = runCommand("npx", ["cypress", "run"]);
+export const cypress = runCommand("npm", ["run", "cypress:run"]);
 
 export const test = gulp.series(unitTest);
-export const verify = gulp.series(lint, unitTest, build);
+export const verify = gulp.series(lint, unitTest, build, cypress);
 
 export default verify;
