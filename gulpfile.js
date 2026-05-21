@@ -1,9 +1,39 @@
+import { spawn } from "node:child_process";
 import gulp from "gulp";
-import shell from "gulp-shell";
 
-export const build = shell.task(["npx parcel build index.html"]);
-export const serve = shell.task(["npx parcel index.html --host 127.0.0.1"]);
-export const test = shell.task(["npx mocha \"test/**/*.js\""]);
-export const cypress = shell.task(["npx cypress run"]);
+const runCommand = (command, args) => {
+  return (done) => {
+    const child = spawn(command, args, {
+      stdio: "inherit",
+    });
 
-export default gulp.series(build, serve);
+    child.on("close", (code) => {
+      if (code === 0) {
+        done();
+        return;
+      }
+
+      done(new Error(`${command} ${args.join(" ")} exited with code ${code}`));
+    });
+  };
+};
+
+export const lint = runCommand("npx", [
+  "eslint",
+  "src/utilityRenderFunctions.js",
+  "src/shuffle.js",
+]);
+export const build = runCommand("npx", ["parcel", "build", "index.html"]);
+export const serve = runCommand("npx", [
+  "parcel",
+  "index.html",
+  "--host",
+  "127.0.0.1",
+]);
+export const unitTest = runCommand("npx", ["mocha", "test/**/*.js"]);
+export const cypress = runCommand("npx", ["cypress", "run"]);
+
+export const test = gulp.series(unitTest);
+export const verify = gulp.series(lint, unitTest, build);
+
+export default verify;

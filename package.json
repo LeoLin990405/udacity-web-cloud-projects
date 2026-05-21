@@ -9,6 +9,7 @@
     "build": "parcel build index.html",
     "serve": "parcel index.html --host 127.0.0.1",
     "test": "mocha \"test/**/*.js\"",
+    "test:all": "gulp verify",
     "cypress:run": "cypress run",
     "lint": "eslint src/utilityRenderFunctions.js src/shuffle.js"
   },

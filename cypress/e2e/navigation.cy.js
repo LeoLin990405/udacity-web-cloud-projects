@@ -5,7 +5,10 @@ describe("navigation", () => {
 
   it("opens the card sets page from the side menu", () => {
     cy.get("[data-cy='nav-card-sets']").click();
-    cy.get("[data-cy='study-set-header']").should("contain", "Study Set Library");
+    cy.get("[data-cy='study-set-header']").should(
+      "contain",
+      "Study Set Library"
+    );
   });
 
   it("opens the about page from the side menu", () => {

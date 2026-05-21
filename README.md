@@ -8,6 +8,7 @@ This submission prepares the Study Night flashcard application for production re
 - `src/shuffle.js` and `src/utilityRenderFunctions.js` have been corrected and formatted for ESLint/Prettier readability.
 - CSS selectors in `styles/` have been manually simplified from long descendant selectors to maintainable class selectors.
 - `gulpfile.js` defines tasks for Parcel build/serve, Mocha unit tests, and Cypress end-to-end tests.
+- The default `gulp` task completes a production verification pass: lint, Mocha unit tests, and Parcel build.
 - `test/shuffle.js` contains focused Mocha/Chai unit tests for the shuffle function.
 - `cypress/e2e/navigation.cy.js` covers navigation behavior.
 - `cypress/e2e/form.cy.js` covers happy and unhappy paths for the create-set and add-card forms.
@@ -17,8 +18,9 @@ This submission prepares the Study Night flashcard application for production re
 
 ```bash
 npm install
+npm run lint
 npm run test
-npm run gulp test
+npm run build
 npm run gulp
 ```
 
