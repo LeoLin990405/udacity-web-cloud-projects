@@ -1,93 +1,214 @@
-# Motivational Puppy Meme Generator
+# Motivational Meme Generator
 
-## Udacity - Intermediate Python Nanodegree
+## Overview
 
-The goal of this project is to build a "meme generator"—a multimedia application to dynamically generate memes, including an image with an overlaid quote. It’s not that simple though! Your content team spent countless hours writing quotes in a variety of filetypes. You could manually copy and paste these quotes into one standard format – but you’re going to over-engineer a solution to load quotes from each file to show off your fancy new Python skills. 
+A multimedia application that dynamically generates memes — images overlaid with
+quotes — by ingesting quote files in multiple formats (TXT / DOCX / CSV / PDF),
+manipulating images with Pillow, and exposing the pipeline through both a
+command-line tool (`meme.py`) and a Flask web service (`app.py`).
+
+This is the capstone project of Course 3 (Large Python Codebases with Libraries)
+in Udacity's Intermediate Python Nanodegree (nd303).
+
+## Demo
 
 ![demo gif](./demo.gif)
 
-## Starter Code Overview
+---
 
-We've provided some code and data to get you started. Sample quotes and images of Xander the pup in `src/_data/`.
+## Setup
 
-There's also a basic flask server which will consume your modules and make it usable through a web interface. The main code for this flask service is in `app.py`, templates are in `templates/` and generated images should be saved to `static/`. You'll need to install the flask dependency with `pip install flask` and you can run the server with `python3 app.py`.
+### 1. Create and activate a virtual environment
 
-## Your Tasks
-
-Be sure to follow the project rubric to ensure your submission passes review.
-
-### Quote Engine Module
-
-The Quote Engine Module is responsible for ingesting many types of files that contain quotes. A quote contains a body and an author (e.g. "this is a quote body" - Author). This module will be composed of many classes and demonstrate your understanding of complex inheritance, abstract classes, classmethods, strategy objects and other fundamental programming principles.
-
-Review rubric for specific details.
-
-#### Quote Format
-
-Example quotes are provided in a variety of files, take a moment to review the file formats in `./_data/SimpleLines` and `./_data/DogQuotes`. Your task is to design a system to extract each quote line-by-line from these files.
-
-#### Ingestors
-
-An abstract base class, `IngestorInterface` should define two methods with the following class method signatures:
-
-```python3
-def can_ingest(cls, path) -> boolean
-def parse(cls, path: str) -> List[QuoteModel]
+```bash
+python3 -m venv .venv
+source .venv/bin/activate         # macOS / Linux
+# .venv\Scripts\activate.bat       # Windows cmd
 ```
 
-Separate strategy objects should realize `IngestorInterface` for each file type (csv, docx, pdf, txt).
+### 2. Install Python dependencies
 
-> TIP: pdftotext may not be installed on your local machine (Mac or Windows). If this is the case, you can install using the open source [XpdfReader utility](https://www.xpdfreader.com/pdftotext-man.html).
+```bash
+pip install -r requirements.txt
+```
 
-A final `Ingestor` class should realize the `IngestorInterface` abstract base class and encapsulate your helper classes. It should implement logic to select the appropriate helper for a given file based on filetype.
+### 3. Install Xpdf (system binary used by `PDFIngestor` via `subprocess`)
 
-### Meme Engine Module
+The `PDFIngestor` shells out to the Xpdf `pdftotext` binary — the PyPI
+`pdftotext` library is intentionally **not** used (see the rubric note in
+[Lesson 7.3](https://learn.udacity.com/nd303?partKey=cd0011)). Install per OS:
 
-The Meme Engine Module is responsible for manipulating and drawing text onto images. It will reinforce your understanding of object-oriented thinking while demonstrating your skill using a more advanced third party library for image manipulation.
+| OS | Command |
+|---|---|
+| macOS | `brew install xpdf` |
+| Ubuntu / Debian | `sudo apt-get install -y xpdf` |
+| Windows | Download from [xpdfreader.com](https://www.xpdfreader.com/), unzip, add the `bin32` or `bin64` directory to your `PATH`. |
 
-Review rubric for specific details.
+Verify: `pdftotext -v` should print the Xpdf version.
 
+---
 
-#### The MemeEngine class
-The class is responsible for:
-1. loading an image using Pillow (PIL)
-2. resizing the image so the width is at most 500px and the height is scaled proportionally
-3. add a quote body and a quote author to the image
-4. saving the manipulated image
-5. the class must implement this instance method signature which returns the path to the manipulated image `make_meme(self, img_path, text, author, width=500) -> str`
+## Usage
 
+All commands assume you have activated the virtualenv and `cd`d into `src/`.
 
-### Package your Application
+### CLI (`meme.py`)
 
-Larger, complex systems need an interface for users to interact with. We'll package the project as a command line tool and as a simple web service.
+```bash
+cd src
+python3 meme.py                                          # random image + random quote
+python3 meme.py --body "Such wow" --author "Xander"      # quote provided, random image
+python3 meme.py --path _data/photos/dog/xander_1.jpg     # image provided, random quote
+python3 meme.py --body "Yes" --author "Borker" --path _data/photos/dog/xander_2.jpg
+```
 
-#### Create a Command Line Interface tool
+The script prints the path to the generated meme (saved under `src/tmp/`). All
+three arguments (`--body`, `--author`, `--path`) are optional; omitted arguments
+are filled in by random selection from `src/_data/`.
 
-The project contains a simple cli app starter code in `meme.py`. This file contains `@TODO` tasks for you to complete. The utility can be which can be run from the terminal by invoking `python3 meme.py`
+### Flask web service (`app.py`)
 
-The script must take three _optional_ CLI arguments:
+```bash
+cd src
+python3 app.py
+```
 
-- `--body` a string quote body
-- `--author` a string quote author
-- `--path` an image path
+Then open <http://127.0.0.1:5000> in a browser.
 
-The script returns a path to a generated image.
-If any argument is not defined, a random selection is used.
+| Route | Method | Behavior |
+|---|---|---|
+| `/` | GET | Generates a random meme (random image + random quote) and renders it. |
+| `/create` | GET | Shows the user form for a custom meme (image URL + body + author). |
+| `/create` | POST | Downloads the submitted image URL with `requests`, generates the meme, cleans the temp download. |
 
-#### Complete the Flask app
+---
 
-The project contains a flask app starter code in `app.py`. This file contains `@TODO` tasks for you to complete.
+## Module Documentation
 
-The app uses the Quote Engine Module and Meme Generator Modules to generate a random captioned image.
+### `src/QuoteEngine/`
 
-It uses the `requests` package to fetch an image from a user submitted URL.
+Loads and parses quotes from multiple file formats. Demonstrates abstract base
+classes (`ABC`), the strategy pattern, and `classmethod` dispatch.
 
-The flask server must run with no errors
+**Dependencies**: `python-docx` (DOCX), `pandas` (CSV), Xpdf `pdftotext`
+binary (PDF, via `subprocess`). TXT uses the Python standard library only.
 
-## Before You Submit
+**Public API**:
 
-Take a moment to ensure your submission is ready for review:
+| Symbol | Purpose |
+|---|---|
+| `QuoteModel(body, author)` | Value object. `str(q)` → `'"body" - author'`. |
+| `IngestorInterface` | ABC. Concrete subclasses set `allowed_extensions = [...]` and implement `parse(cls, path) -> List[QuoteModel]`. The `can_ingest(cls, path)` classmethod is shared. |
+| `TextIngestor` / `DocxIngestor` / `CSVIngestor` / `PDFIngestor` | One strategy per file extension. |
+| `Ingestor` | Dispatcher. `Ingestor.parse(path)` selects the first matching strategy by extension; raises `ValueError` if none match. |
 
-1. You have reviewed each item in the rubric and verified you have completed it successfully.
-2. The requirements.txt file contains all required dependencies. (TIP: delete your virtual environment and re-instantiate to verify it is complete)
-3. You have pushed all changes to your github repo on the master branch.
+**Usage**:
+
+```python
+from QuoteEngine import Ingestor
+
+quotes = Ingestor.parse('./_data/DogQuotes/DogQuotesTXT.txt')
+for q in quotes:
+    print(q)        # → "To bork or not to bork" - Bork
+```
+
+### `src/MemeEngine/`
+
+Image manipulation: loads an image with Pillow, resizes it (max width 500 px,
+height scaled proportionally), draws the quote body + author overlay, saves to
+disk, and returns the output path.
+
+**Dependencies**: `Pillow`.
+
+**Public API**:
+
+```python
+class MemeEngine:
+    def __init__(self, output_dir: str): ...
+    def make_meme(self, img_path: str, text: str, author: str,
+                  width: int = 500) -> str: ...
+```
+
+**Usage**:
+
+```python
+from MemeEngine import MemeEngine
+
+meme = MemeEngine('./tmp')
+out_path = meme.make_meme('_data/photos/dog/xander_1.jpg',
+                          'Such wisdom', 'Xander')
+print(out_path)     # → ./tmp/meme_487329841.jpg
+```
+
+The class falls back to `ImageFont.load_default()` if a TrueType font is
+unavailable, so it works in minimal environments.
+
+### `src/meme.py`
+
+CLI entry point. Uses `argparse` for three optional arguments
+(`--body`, `--author`, `--path`); fills in random selections for any missing
+argument. The `generate_meme(path, body, author)` function is the orchestrator
+that calls `Ingestor.parse(...)` for random quotes, walks
+`./_data/photos/dog/` for random images, and delegates rendering to
+`MemeEngine`.
+
+### `src/app.py`
+
+Flask web service. The module-level `setup()` function pre-loads quotes (by
+calling `Ingestor.parse(...)` over every file in `quote_files`) and images
+(via `os.walk` over `./_data/photos/dog/`). Three routes are wired:
+
+- `GET /` — random meme via `random.choice`.
+- `GET /create` — render the user input form.
+- `POST /create` — fetch the user-submitted image URL with `requests.get`,
+  persist to a temp file, hand off to `MemeEngine.make_meme`, then clean up
+  the temp file.
+
+---
+
+## Project Layout
+
+```
+nd303-meme/
+├── README.md             # this file
+├── requirements.txt
+├── .gitignore
+├── demo.gif
+├── .vscode/settings.json # editor config from starter
+└── src/
+    ├── meme.py           # CLI entry
+    ├── app.py            # Flask entry
+    ├── QuoteEngine/      # quote ingestion package
+    │   ├── __init__.py
+    │   ├── QuoteModel.py
+    │   ├── IngestorInterface.py
+    │   ├── TextIngestor.py
+    │   ├── DocxIngestor.py
+    │   ├── CSVIngestor.py
+    │   ├── PDFIngestor.py
+    │   └── Ingestor.py
+    ├── MemeEngine/       # image rendering package
+    │   ├── __init__.py
+    │   └── MemeEngine.py
+    ├── templates/        # Flask Jinja templates
+    │   ├── base.html
+    │   ├── meme.html
+    │   └── meme_form.html
+    └── _data/            # sample quotes & images
+        ├── DogQuotes/{TXT,DOCX,CSV,PDF}
+        ├── SimpleLines/{txt,docx,csv,pdf}
+        └── photos/dog/xander_{1..4}.jpg
+```
+
+---
+
+## License / Credits
+
+Starter code (the `src/` skeleton, `_data/` sample assets, `demo.gif`, and the
+HTML templates) is from Udacity's
+[PYND/02_meme_gen_starter](https://github.com/udacity/PYND/tree/master/02_meme_gen_starter)
+under the original Udacity Nanodegree license.
+
+The Quote Engine, Meme Engine, README, dependency manifest, and integration
+work in this repository are this project's own implementation, completed for
+the Udacity nd303 Intermediate Python Nanodegree Course 3 capstone.
