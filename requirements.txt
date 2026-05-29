@@ -1,5 +1,11 @@
-babel==2.9.0
-python-dateutil==2.6.0
-flask-moment==0.11.0
-flask-wtf==0.14.3
-flask_sqlalchemy==2.4.4
+Flask
+SQLAlchemy
+Flask-SQLAlchemy
+psycopg2-binary
+Flask-Migrate
+Flask-WTF
+Flask-Moment
+WTForms
+email_validator
+python-dateutil
+babel
