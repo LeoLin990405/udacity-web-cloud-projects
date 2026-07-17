@@ -1,7 +1,7 @@
 from datetime import datetime
 from flask_wtf import Form
 from wtforms import StringField, SelectField, SelectMultipleField, DateTimeField, BooleanField, ValidationError
-from wtforms.validators import DataRequired, AnyOf, URL
+from wtforms.validators import DataRequired, AnyOf, Optional, URL
 
 genre_choices = [
     ('Alternative', 'Alternative'),
@@ -87,14 +87,15 @@ def validate_genres(form, field):
 
 class ShowForm(Form):
     artist_id = StringField(
-        'artist_id'
+        'artist_id', validators=[DataRequired()]
     )
     venue_id = StringField(
-        'venue_id'
+        'venue_id', validators=[DataRequired()]
     )
     start_time = DateTimeField(
         'start_time',
         validators=[DataRequired()],
+        format='%Y-%m-%d %H:%M',
         default= datetime.today()
     )
 
@@ -123,7 +124,7 @@ class VenueForm(Form):
         choices=genre_choices
     )
     facebook_link = StringField(
-        'facebook_link', validators=[URL()]
+        'facebook_link', validators=[Optional(), URL()]
     )
     website_link = StringField(
         'website_link'
@@ -157,7 +158,7 @@ class ArtistForm(Form):
         choices=genre_choices
     )
     facebook_link = StringField(
-        'facebook_link', validators=[URL()]
+        'facebook_link', validators=[Optional(), URL()]
     )
 
     website_link = StringField(
@@ -169,4 +170,3 @@ class ArtistForm(Form):
     seeking_description = StringField(
         'seeking_description'
     )
-

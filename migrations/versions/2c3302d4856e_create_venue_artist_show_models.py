@@ -30,7 +30,8 @@ def upgrade():
     sa.Column('website_link', sa.String(length=500), nullable=True),
     sa.Column('seeking_venue', sa.Boolean(), nullable=True),
     sa.Column('seeking_description', sa.String(length=500), nullable=True),
-    sa.PrimaryKeyConstraint('id')
+    sa.PrimaryKeyConstraint('id'),
+    sa.UniqueConstraint('name', 'city', 'state', name='uq_artist_identity')
     )
     op.create_table('Venue',
     sa.Column('id', sa.Integer(), nullable=False),
@@ -45,7 +46,8 @@ def upgrade():
     sa.Column('website_link', sa.String(length=500), nullable=True),
     sa.Column('seeking_talent', sa.Boolean(), nullable=True),
     sa.Column('seeking_description', sa.String(length=500), nullable=True),
-    sa.PrimaryKeyConstraint('id')
+    sa.PrimaryKeyConstraint('id'),
+    sa.UniqueConstraint('name', 'address', 'city', 'state', name='uq_venue_identity')
     )
     op.create_table('Show',
     sa.Column('id', sa.Integer(), nullable=False),
@@ -54,7 +56,8 @@ def upgrade():
     sa.Column('artist_id', sa.Integer(), nullable=False),
     sa.ForeignKeyConstraint(['artist_id'], ['Artist.id'], ),
     sa.ForeignKeyConstraint(['venue_id'], ['Venue.id'], ),
-    sa.PrimaryKeyConstraint('id')
+    sa.PrimaryKeyConstraint('id'),
+    sa.UniqueConstraint('venue_id', 'artist_id', 'start_time', name='uq_show_identity')
     )
     # ### end Alembic commands ###
 
