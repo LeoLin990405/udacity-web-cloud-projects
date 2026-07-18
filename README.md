@@ -116,7 +116,9 @@ for q in quotes:
 
 Image manipulation: loads an image with Pillow, resizes it (max width 500 px,
 height scaled proportionally), draws the quote body + author overlay, saves to
-disk, and returns the output path.
+disk, and returns the output path. `make_meme` composes focused helpers for
+loading, proportional resizing, caption drawing, and saving. JPEG and PNG
+inputs are normalized to RGB so both formats produce valid JPEG output.
 
 **Dependencies**: `Pillow`.
 
@@ -175,7 +177,7 @@ nd303-meme/
 ├── .gitignore
 ├── demo.gif
 ├── .vscode/settings.json # editor config from starter
-└── src/
+├── src/
     ├── meme.py           # CLI entry
     ├── app.py            # Flask entry
     ├── QuoteEngine/      # quote ingestion package
@@ -196,8 +198,14 @@ nd303-meme/
     │   └── meme_form.html
     └── _data/            # sample quotes & images
         ├── DogQuotes/{TXT,DOCX,CSV,PDF}
-        ├── SimpleLines/{txt,docx,csv,pdf}
+        ├── SimpleLines/
+        │   ├── SimpleLines.txt
+        │   ├── SimpleLines.docx
+        │   ├── SimpleLines.csv
+        │   └── SimpleLines.pdf
         └── photos/dog/xander_{1..4}.jpg
+└── tests/
+    └── test_meme_engine.py # image-pipeline regression tests
 ```
 
 ---
