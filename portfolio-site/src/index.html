@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Portfolio homepage for Leo Zhang, front end web developer.">
+    <title>Leo Zhang Portfolio</title>
+    <link rel="stylesheet" href="../dist/main.css">
+  </head>
+  <body>
+    <header class="header" id="top">
+      <nav class="header__nav" aria-label="portfolio navigation">
+        <a class="header__logo" href="#top">Leo Zhang</a>
+        <ul class="header__list">
+          <li class="header__item"><a class="header__link" href="#projects">Projects</a></li>
+          <li class="header__item"><a class="header__link" href="#skills">Skills</a></li>
+          <li class="header__item"><a class="header__link" href="#resume">Resume</a></li>
+          <li class="header__item"><a class="header__link" href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="intro" aria-labelledby="intro-title">
+        <div class="intro__panel">
+          <img class="intro__image" src="img/profile.jpg" alt="A bright studio desk used as a professional portfolio portrait placeholder">
+          <div class="intro__content">
+            <p class="intro__eyebrow">Front end developer</p>
+            <h1 class="intro__title" id="intro-title">Leo Zhang's Web Development Portfolio</h1>
+            <p class="intro__text">
+              I build accessible, responsive web interfaces with clear structure,
+              maintainable styles, and thoughtful user flows.
+            </p>
+            <div class="intro__actions" aria-label="portfolio actions">
+              <a class="button button--primary" href="#projects">View projects</a>
+              <a class="button button--secondary" href="#contact">Contact me</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="projects" id="projects" aria-labelledby="projects-title">
+        <div class="section-title">
+          <p class="section-title__eyebrow">Recent work</p>
+          <h2 class="section-title__heading" id="projects-title">Latest Projects</h2>
+        </div>
+
+        <div class="projects__grid">
+          <article class="project-card">
+            <img class="project-card__image" src="img/project-dashboard.jpg" alt="Analytics dashboard displayed on a laptop screen">
+            <div class="project-card__body">
+              <h3 class="project-card__title">Operations Dashboard</h3>
+              <p class="project-card__text">
+                A responsive dashboard layout with reusable cards, accessible
+                filters, and clear status summaries for daily operations.
+              </p>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <img class="project-card__image" src="img/project-mobile.jpg" alt="Mobile application interface shown on a phone">
+            <div class="project-card__body">
+              <h3 class="project-card__title">Mobile Booking Flow</h3>
+              <p class="project-card__text">
+                A mobile-first booking prototype focused on readable forms,
+                visible focus states, and frictionless task completion.
+              </p>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <img class="project-card__image" src="img/project-learning.jpg" alt="Laptop showing an online learning interface">
+            <div class="project-card__body">
+              <h3 class="project-card__title">Learning Resource Hub</h3>
+              <p class="project-card__text">
+                A content-heavy homepage using semantic sections, card groups,
+                and responsive spacing for easy scanning.
+              </p>
+            </div>
+          </article>
+        </div>
+
+        <a class="button button--primary projects__button" href="#top">See full archive</a>
+      </section>
+
+      <section class="skills" id="skills" aria-labelledby="skills-title">
+        <h2 class="skills__title" id="skills-title">Skills</h2>
+        <ul class="skills__list">
+          <li class="skills__item">Semantic HTML</li>
+          <li class="skills__item">Responsive CSS</li>
+          <li class="skills__item">BEM Architecture</li>
+          <li class="skills__item">Accessibility Testing</li>
+        </ul>
+      </section>
+
+      <section class="contact" id="resume" aria-labelledby="resume-title">
+        <h2 class="contact__title" id="resume-title">Resume</h2>
+        <p class="contact__text">
+          My resume highlights front end projects, technical documentation work,
+          and experience turning product requirements into usable interfaces.
+        </p>
+      </section>
+
+      <section class="contact" id="contact" aria-labelledby="contact-title">
+        <h2 class="contact__title" id="contact-title">Contact</h2>
+        <p class="contact__text">
+          Email <a class="contact__link" href="mailto:leo.zhang@example.com">leo.zhang@example.com</a>
+          to discuss accessible web interfaces and front end implementation.
+        </p>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p class="footer__text">&copy; Leo Zhang 2026</p>
+    </footer>
+    <script>
+      const header = document.querySelector('.header');
+
+      window.addEventListener('scroll', () => {
+        header.classList.toggle('header--compact', window.scrollY > 48);
+      });
+    </script>
+  </body>
+</html>

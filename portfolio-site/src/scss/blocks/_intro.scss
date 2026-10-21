@@ -1,0 +1,63 @@
+@use '../utils/utils';
+
+.intro {
+  min-height: calc(100vh - 84px);
+  padding: 4rem utils.$space-page;
+  background:
+    radial-gradient(circle at 18% 18%, rgba(245, 158, 11, 0.2), transparent 30%),
+    linear-gradient(135deg, #eef8ff, #f8fafc 52%, #fff7ed);
+
+  &__panel {
+    display: grid;
+    grid-template-columns: 0.85fr 1.15fr;
+    align-items: center;
+    gap: clamp(2rem, 5vw, 5rem);
+    max-width: 1180px;
+    margin: 0 auto;
+  }
+
+  &__image {
+    width: min(100%, 420px);
+    aspect-ratio: 1;
+    border: 8px solid utils.$color-surface;
+    border-radius: 32px;
+    box-shadow: utils.$shadow-soft;
+    object-fit: cover;
+  }
+
+  &__eyebrow {
+    color: utils.$color-primary;
+    font-weight: 800;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+
+  &__title {
+    margin-top: 0.75rem;
+  }
+
+  &__text {
+    max-width: 640px;
+    margin-top: 1.1rem;
+    font-size: 1.18rem;
+  }
+
+  &__actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.9rem;
+    margin-top: 1.5rem;
+  }
+}
+
+@include utils.respond(760px) {
+  .intro {
+    &__panel {
+      grid-template-columns: 1fr;
+    }
+
+    &__image {
+      width: min(100%, 320px);
+    }
+  }
+}

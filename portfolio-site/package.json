@@ -1,0 +1,12 @@
+{
+  "name": "portfolio-site",
+  "version": "1.0.0",
+  "description": "Responsive accessible portfolio homepage for the Udacity Portfolio Site project.",
+  "scripts": {
+    "build": "sass src/scss/main.scss dist/main.css",
+    "watch": "sass --watch src/scss/main.scss dist/main.css"
+  },
+  "devDependencies": {
+    "sass": "^1.77.8"
+  }
+}

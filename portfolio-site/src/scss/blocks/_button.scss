@@ -1,0 +1,35 @@
+@use '../utils/utils';
+
+.button {
+  border-radius: 999px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 46px;
+  padding: 0.72rem 1.15rem;
+  font-weight: 800;
+  text-decoration: none;
+  transition: background-color 180ms ease, color 180ms ease, transform 180ms ease;
+
+  &:hover {
+    transform: translateY(-2px);
+  }
+
+  &--primary {
+    background: utils.$color-primary;
+    color: #ffffff;
+
+    &:hover {
+      background: utils.$color-primary-dark;
+    }
+  }
+
+  &--secondary {
+    background: #e0f2fe;
+    color: utils.$color-primary-dark;
+
+    &:hover {
+      background: #bae6fd;
+    }
+  }
+}

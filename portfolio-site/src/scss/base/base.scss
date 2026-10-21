@@ -1,0 +1,44 @@
+@use '../utils/utils';
+@use 'resets';
+
+body {
+  background: utils.$color-paper;
+  color: utils.$color-ink;
+  font-family: utils.$font-main;
+  line-height: 1.6;
+}
+
+main {
+  min-height: 100vh;
+}
+
+a {
+  color: inherit;
+}
+
+a:focus-visible,
+button:focus-visible {
+  @include utils.focus-ring;
+}
+
+h1 {
+  color: utils.$color-ink;
+  font-size: clamp(2.4rem, 6vw, 5rem);
+  line-height: 1;
+}
+
+h2 {
+  color: utils.$color-ink;
+  font-size: clamp(2rem, 4vw, 3rem);
+  line-height: 1.1;
+}
+
+h3 {
+  color: utils.$color-ink;
+  font-size: 1.25rem;
+  line-height: 1.25;
+}
+
+p {
+  color: utils.$color-muted;
+}
