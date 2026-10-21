@@ -1,0 +1,18 @@
+{
+    "imageDetails": [
+        {
+            "registryId": "224429379372",
+            "repositoryName": "coworking-analytics",
+            "imageDigest": "sha256:8b476f62a7ae455f41fa8de3eee327b7c063108bbc2dc8e2d8ffd736769e91f6",
+            "imageTags": [
+                "1.0.0",
+                "latest"
+            ],
+            "imageSizeInBytes": 136516519,
+            "imagePushedAt": "2026-05-20T19:18:15.042000+08:00",
+            "imageManifestMediaType": "application/vnd.docker.distribution.manifest.v2+json",
+            "artifactMediaType": "application/vnd.docker.container.image.v1+json",
+            "imageStatus": "ACTIVE"
+        }
+    ]
+}
