@@ -1,0 +1,11 @@
+Flask
+SQLAlchemy
+Flask-SQLAlchemy
+psycopg2-binary
+Flask-Migrate
+Flask-WTF
+Flask-Moment
+WTForms
+email_validator
+python-dateutil
+babel
