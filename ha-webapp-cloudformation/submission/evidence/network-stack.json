@@ -1,0 +1,75 @@
+{
+    "Stacks": [
+        {
+            "StackId": "arn:aws:cloudformation:us-west-2:224429379372:stack/udagram-network/6281c6d0-5438-11f1-92b0-0a2a535ef5b7",
+            "StackName": "udagram-network",
+            "Description": "High availability network infrastructure for the Udacity CloudFormation project.",
+            "Parameters": [
+                {
+                    "ParameterKey": "PrivateSubnet1CIDR",
+                    "ParameterValue": "10.0.2.0/24"
+                },
+                {
+                    "ParameterKey": "PublicSubnet2CIDR",
+                    "ParameterValue": "10.0.1.0/24"
+                },
+                {
+                    "ParameterKey": "VpcCIDR",
+                    "ParameterValue": "10.0.0.0/16"
+                },
+                {
+                    "ParameterKey": "ProjectName",
+                    "ParameterValue": "udagram-ha"
+                },
+                {
+                    "ParameterKey": "EnvironmentName",
+                    "ParameterValue": "prod"
+                },
+                {
+                    "ParameterKey": "PrivateSubnet2CIDR",
+                    "ParameterValue": "10.0.3.0/24"
+                },
+                {
+                    "ParameterKey": "PublicSubnet1CIDR",
+                    "ParameterValue": "10.0.0.0/24"
+                }
+            ],
+            "CreationTime": "2026-05-20T10:40:57.332000+00:00",
+            "RollbackConfiguration": {},
+            "StackStatus": "CREATE_COMPLETE",
+            "DisableRollback": false,
+            "NotificationARNs": [],
+            "Capabilities": [
+                "CAPABILITY_NAMED_IAM"
+            ],
+            "Outputs": [
+                {
+                    "OutputKey": "PrivateSubnets",
+                    "OutputValue": "subnet-09c7ada537bcaa8ca,subnet-0eabfdf09f5ac854a",
+                    "ExportName": "udagram-ha-PrivateSubnets"
+                },
+                {
+                    "OutputKey": "VpcId",
+                    "OutputValue": "vpc-075a0a704accfbac9",
+                    "ExportName": "udagram-ha-VpcId"
+                },
+                {
+                    "OutputKey": "PublicSubnets",
+                    "OutputValue": "subnet-071437e82cc44c479,subnet-0ca4647a3eb10f00a",
+                    "ExportName": "udagram-ha-PublicSubnets"
+                }
+            ],
+            "Tags": [],
+            "EnableTerminationProtection": false,
+            "DriftInformation": {
+                "StackDriftStatus": "NOT_CHECKED"
+            },
+            "LastOperations": [
+                {
+                    "OperationType": "CREATE_STACK",
+                    "OperationId": "62834d70-5438-11f1-92b0-0a2a535ef5b7"
+                }
+            ]
+        }
+    ]
+}

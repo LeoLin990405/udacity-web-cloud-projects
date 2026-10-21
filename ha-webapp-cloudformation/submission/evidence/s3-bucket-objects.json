@@ -1,0 +1,17 @@
+{
+    "Contents": [
+        {
+            "Key": "index.htm",
+            "LastModified": "2026-05-20T10:46:47+00:00",
+            "ETag": "\"e95557c6fa9bba3a993bf5868024794d\"",
+            "ChecksumAlgorithm": [
+                "CRC64NVME"
+            ],
+            "ChecksumType": "FULL_OBJECT",
+            "Size": 1104,
+            "StorageClass": "STANDARD"
+        }
+    ],
+    "RequestCharged": null,
+    "Prefix": ""
+}

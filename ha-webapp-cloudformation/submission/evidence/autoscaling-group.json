@@ -1,0 +1,159 @@
+{
+    "AutoScalingGroups": [
+        {
+            "AutoScalingGroupName": "udagram-servers-WebAppGroup-AWcmcLwVKd7C",
+            "AutoScalingGroupARN": "arn:aws:autoscaling:us-west-2:224429379372:autoScalingGroup:a1c43b4e-da1b-4351-9315-81202cf87166:autoScalingGroupName/udagram-servers-WebAppGroup-AWcmcLwVKd7C",
+            "LaunchTemplate": {
+                "LaunchTemplateId": "lt-080f588edabfbe117",
+                "LaunchTemplateName": "udagram-ha-prod-web-template",
+                "Version": "1"
+            },
+            "MinSize": 4,
+            "MaxSize": 4,
+            "DesiredCapacity": 4,
+            "DefaultCooldown": 300,
+            "AvailabilityZones": [
+                "us-west-2a",
+                "us-west-2b"
+            ],
+            "AvailabilityZoneIds": [
+                "usw2-az1",
+                "usw2-az2"
+            ],
+            "LoadBalancerNames": [],
+            "TargetGroupARNs": [
+                "arn:aws:elasticloadbalancing:us-west-2:224429379372:targetgroup/udagra-Targe-LPDLY9JBI4LM/c9dbb8763a7dd45b"
+            ],
+            "HealthCheckType": "EC2",
+            "HealthCheckGracePeriod": 0,
+            "Instances": [
+                {
+                    "InstanceId": "i-023923572108e48a3",
+                    "InstanceType": "t3.medium",
+                    "AvailabilityZone": "us-west-2a",
+                    "AvailabilityZoneId": "usw2-az1",
+                    "LifecycleState": "InService",
+                    "HealthStatus": "Healthy",
+                    "LaunchTemplate": {
+                        "LaunchTemplateId": "lt-080f588edabfbe117",
+                        "LaunchTemplateName": "udagram-ha-prod-web-template",
+                        "Version": "1"
+                    },
+                    "ProtectedFromScaleIn": false
+                },
+                {
+                    "InstanceId": "i-08530df774eff2bf1",
+                    "InstanceType": "t3.medium",
+                    "AvailabilityZone": "us-west-2b",
+                    "AvailabilityZoneId": "usw2-az2",
+                    "LifecycleState": "InService",
+                    "HealthStatus": "Healthy",
+                    "LaunchTemplate": {
+                        "LaunchTemplateId": "lt-080f588edabfbe117",
+                        "LaunchTemplateName": "udagram-ha-prod-web-template",
+                        "Version": "1"
+                    },
+                    "ProtectedFromScaleIn": false
+                },
+                {
+                    "InstanceId": "i-0971c4c0736ec7f87",
+                    "InstanceType": "t3.medium",
+                    "AvailabilityZone": "us-west-2b",
+                    "AvailabilityZoneId": "usw2-az2",
+                    "LifecycleState": "InService",
+                    "HealthStatus": "Healthy",
+                    "LaunchTemplate": {
+                        "LaunchTemplateId": "lt-080f588edabfbe117",
+                        "LaunchTemplateName": "udagram-ha-prod-web-template",
+                        "Version": "1"
+                    },
+                    "ProtectedFromScaleIn": false
+                },
+                {
+                    "InstanceId": "i-0b2510289eee9b094",
+                    "InstanceType": "t3.medium",
+                    "AvailabilityZone": "us-west-2a",
+                    "AvailabilityZoneId": "usw2-az1",
+                    "LifecycleState": "InService",
+                    "HealthStatus": "Healthy",
+                    "LaunchTemplate": {
+                        "LaunchTemplateId": "lt-080f588edabfbe117",
+                        "LaunchTemplateName": "udagram-ha-prod-web-template",
+                        "Version": "1"
+                    },
+                    "ProtectedFromScaleIn": false
+                },
+                {
+                    "InstanceId": "i-0ec91125d4bebdeed",
+                    "InstanceType": "t3.medium",
+                    "AvailabilityZone": "us-west-2a",
+                    "AvailabilityZoneId": "usw2-az1",
+                    "LifecycleState": "Terminating",
+                    "HealthStatus": "Healthy",
+                    "LaunchTemplate": {
+                        "LaunchTemplateId": "lt-080f588edabfbe117",
+                        "LaunchTemplateName": "udagram-ha-prod-web-template",
+                        "Version": "1"
+                    },
+                    "ProtectedFromScaleIn": false
+                }
+            ],
+            "CreatedTime": "2026-05-20T10:46:00.514000+00:00",
+            "SuspendedProcesses": [],
+            "VPCZoneIdentifier": "subnet-09c7ada537bcaa8ca,subnet-0eabfdf09f5ac854a",
+            "EnabledMetrics": [],
+            "Tags": [
+                {
+                    "ResourceId": "udagram-servers-WebAppGroup-AWcmcLwVKd7C",
+                    "ResourceType": "auto-scaling-group",
+                    "Key": "Name",
+                    "Value": "udagram-ha-prod-web",
+                    "PropagateAtLaunch": true
+                },
+                {
+                    "ResourceId": "udagram-servers-WebAppGroup-AWcmcLwVKd7C",
+                    "ResourceType": "auto-scaling-group",
+                    "Key": "aws:cloudformation:logical-id",
+                    "Value": "WebAppGroup",
+                    "PropagateAtLaunch": true
+                },
+                {
+                    "ResourceId": "udagram-servers-WebAppGroup-AWcmcLwVKd7C",
+                    "ResourceType": "auto-scaling-group",
+                    "Key": "aws:cloudformation:stack-id",
+                    "Value": "arn:aws:cloudformation:us-west-2:224429379372:stack/udagram-servers/aeffd6a0-5438-11f1-8752-06610e8e418f",
+                    "PropagateAtLaunch": true
+                },
+                {
+                    "ResourceId": "udagram-servers-WebAppGroup-AWcmcLwVKd7C",
+                    "ResourceType": "auto-scaling-group",
+                    "Key": "aws:cloudformation:stack-name",
+                    "Value": "udagram-servers",
+                    "PropagateAtLaunch": true
+                }
+            ],
+            "TerminationPolicies": [
+                "Default"
+            ],
+            "NewInstancesProtectedFromScaleIn": false,
+            "ServiceLinkedRoleARN": "arn:aws:iam::224429379372:role/aws-service-role/autoscaling.amazonaws.com/AWSServiceRoleForAutoScaling",
+            "TrafficSources": [
+                {
+                    "Identifier": "arn:aws:elasticloadbalancing:us-west-2:224429379372:targetgroup/udagra-Targe-LPDLY9JBI4LM/c9dbb8763a7dd45b",
+                    "Type": "elbv2"
+                }
+            ],
+            "AvailabilityZoneDistribution": {
+                "CapacityDistributionStrategy": "balanced-best-effort"
+            },
+            "CapacityReservationSpecification": {
+                "CapacityReservationPreference": "default"
+            },
+            "InstanceLifecyclePolicy": {
+                "RetentionTriggers": {
+                    "TerminateHookAbandon": "terminate"
+                }
+            }
+        }
+    ]
+}

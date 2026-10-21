@@ -1,0 +1,21 @@
+{
+    "InstanceRefreshes": [
+        {
+            "InstanceRefreshId": "20b6faef-3b73-4f55-ad12-ba00e4ca694a",
+            "AutoScalingGroupName": "udagram-servers-WebAppGroup-AWcmcLwVKd7C",
+            "Status": "Successful",
+            "StartTime": "2026-05-20T10:47:00+00:00",
+            "EndTime": "2026-05-20T10:56:14+00:00",
+            "PercentageComplete": 100,
+            "InstancesToUpdate": 0,
+            "Preferences": {
+                "MinHealthyPercentage": 50,
+                "InstanceWarmup": 120,
+                "SkipMatching": false,
+                "AutoRollback": false,
+                "AlarmSpecification": {}
+            },
+            "Strategy": "Rolling"
+        }
+    ]
+}

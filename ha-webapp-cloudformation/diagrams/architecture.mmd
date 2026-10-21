@@ -1,0 +1,45 @@
+flowchart TB
+    user["Users / Browser"] --> alb["Internet-facing Application Load Balancer"]
+
+    subgraph aws["AWS Region: us-west-2"]
+      igw["Internet Gateway"]
+
+      subgraph vpc["VPC 10.0.0.0/16"]
+        subgraph az1["Availability Zone A"]
+          pub1["Public Subnet A\n10.0.0.0/24"]
+          nat1["NAT Gateway A"]
+          priv1["Private Subnet A\n10.0.2.0/24"]
+          ec2a["EC2 Web Server\nNGINX"]
+          ec2b["EC2 Web Server\nNGINX"]
+        end
+
+        subgraph az2["Availability Zone B"]
+          pub2["Public Subnet B\n10.0.1.0/24"]
+          nat2["NAT Gateway B"]
+          priv2["Private Subnet B\n10.0.3.0/24"]
+          ec2c["EC2 Web Server\nNGINX"]
+          ec2d["EC2 Web Server\nNGINX"]
+        end
+
+        alb --> pub1
+        alb --> pub2
+        pub1 --> igw
+        pub2 --> igw
+        pub1 --> nat1
+        pub2 --> nat2
+        priv1 --> nat1
+        priv2 --> nat2
+        priv1 --> ec2a
+        priv1 --> ec2b
+        priv2 --> ec2c
+        priv2 --> ec2d
+      end
+
+      asg["Auto Scaling Group\nDesired/Min/Max: 4"] --> ec2a
+      asg --> ec2b
+      asg --> ec2c
+      asg --> ec2d
+      s3["Private S3 Bucket\nApplication Artifacts"]
+      iam["IAM Instance Profile\nLeast-Privilege S3 Read Access"] --> asg
+      asg --> s3
+    end
