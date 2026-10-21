@@ -1,0 +1,12 @@
+.DS_Store
+__MACOSX/
+
+# Local deploy state - contains bucket name, distribution ID, etc.
+# Safe to commit but ignored by default in case you want to keep it private
+.deploy-state
+
+# Local AWS credentials (should never be committed)
+.aws-credentials
+
+# Submission zip (regenerated on demand)
+submission.zip
