@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Contact Cedar and Bloom to request a workplace design consultation.">
+    <title>Contact Cedar &amp; Bloom</title>
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/contact.css">
+  </head>
+  <body>
+    <header class="site-header compact-header">
+      <nav class="nav" aria-label="primary navigation">
+        <a class="brand" href="../index.html">Cedar &amp; Bloom</a>
+        <ul class="nav-list">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../index.html#services">Services</a></li>
+          <li><a href="../index.html#about">About</a></li>
+          <li><a href="contact.html" aria-current="page">Contact</a></li>
+        </ul>
+      </nav>
+      <section class="page-banner" aria-labelledby="contact-title">
+        <p class="eyebrow">Start a project</p>
+        <h1 id="contact-title">Tell us about your workspace.</h1>
+        <p>
+          Share a few details and we will recommend a clear next step for your
+          team, timeline, and budget.
+        </p>
+      </section>
+    </header>
+
+    <main class="contact-layout">
+      <section class="contact-details" aria-labelledby="details-title">
+        <h2 id="details-title">Contact details</h2>
+        <address>
+          1840 Alder Street<br>
+          Portland, OR 97205<br>
+          <a href="tel:+15035550184">(503) 555-0184</a><br>
+          <a href="mailto:hello@cedarandbloom.example">hello@cedarandbloom.example</a>
+        </address>
+        <p>
+          Consultations are available Monday through Friday. Most teams receive a
+          written proposal within three business days.
+        </p>
+      </section>
+
+      <section class="form-panel" aria-labelledby="form-title">
+        <h2 id="form-title">Request a consultation</h2>
+        <form action="#" method="post">
+          <div class="form-row">
+            <label for="name">Full name</label>
+            <input id="name" name="name" type="text" autocomplete="name" required>
+          </div>
+          <div class="form-row">
+            <label for="email">Email address</label>
+            <input id="email" name="email" type="email" autocomplete="email" required>
+          </div>
+          <div class="form-row">
+            <label for="company">Company name</label>
+            <input id="company" name="company" type="text" autocomplete="organization">
+          </div>
+          <div class="form-row">
+            <label for="space-type">Workspace type</label>
+            <select id="space-type" name="space-type" required>
+              <option value="">Select one</option>
+              <option value="office">Office</option>
+              <option value="studio">Studio</option>
+              <option value="clinic">Clinic</option>
+              <option value="retail">Retail</option>
+            </select>
+          </div>
+          <div class="form-row">
+            <label for="message">Project goals</label>
+            <textarea id="message" name="message" rows="6" placeholder="Describe the space, team size, and what you want to improve." required></textarea>
+          </div>
+          <div class="form-actions">
+            <button type="submit">Send request</button>
+            <button type="reset">Reset form</button>
+          </div>
+        </form>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>&copy; 2026 Cedar &amp; Bloom Workspace Design.</p>
+      <p>Thoughtful spaces for focused teams.</p>
+    </footer>
+  </body>
+</html>
