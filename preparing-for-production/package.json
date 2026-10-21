@@ -1,0 +1,29 @@
+{
+  "name": "study-night-production",
+  "version": "1.0.0",
+  "description": "Optimized and tested Study Night flashcard application.",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "gulp": "gulp",
+    "build": "parcel build index.html",
+    "serve": "parcel index.html --host 127.0.0.1 --port 1234",
+    "test": "mocha \"test/**/*.js\"",
+    "test:all": "gulp verify",
+    "cypress:run": "start-server-and-test serve http://127.0.0.1:1234 \"cypress run\"",
+    "lint": "eslint src/utilityRenderFunctions.js src/shuffle.js"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.8.0",
+    "chai": "^5.1.1",
+    "cypress": "^13.13.2",
+    "eslint": "^9.8.0",
+    "gulp": "^5.0.0",
+    "gulp-cli": "^3.0.0",
+    "gulp-shell": "^0.8.0",
+    "mocha": "^11.7.5",
+    "parcel": "^2.12.0",
+    "prettier": "^3.3.3",
+    "start-server-and-test": "^2.1.5"
+  }
+}
