@@ -1,0 +1,39 @@
+{
+    "Id": "E3PIQ7JANY115Y",
+    "Status": "Deployed",
+    "DomainName": "d1i5pbmzhtp53l.cloudfront.net",
+    "Enabled": true,
+    "Origins": {
+        "Quantity": 1,
+        "Items": [
+            {
+                "Id": "S3WebsiteOrigin",
+                "DomainName": "leolin-udacity-static-website-835207447818-20260516.s3-website-us-west-2.amazonaws.com",
+                "OriginPath": "",
+                "CustomHeaders": {
+                    "Quantity": 0
+                },
+                "CustomOriginConfig": {
+                    "HTTPPort": 80,
+                    "HTTPSPort": 443,
+                    "OriginProtocolPolicy": "http-only",
+                    "OriginSslProtocols": {
+                        "Quantity": 2,
+                        "Items": [
+                            "SSLv3",
+                            "TLSv1"
+                        ]
+                    },
+                    "OriginReadTimeout": 30,
+                    "OriginKeepaliveTimeout": 5
+                },
+                "ConnectionAttempts": 3,
+                "ConnectionTimeout": 10,
+                "OriginShield": {
+                    "Enabled": false
+                },
+                "OriginAccessControlId": ""
+            }
+        ]
+    }
+}

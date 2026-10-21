@@ -1,0 +1,22 @@
+[
+    {
+        "OutputKey": "BucketName",
+        "OutputValue": "leolin-udacity-static-website-835207447818-20260516",
+        "Description": "S3 bucket name."
+    },
+    {
+        "OutputKey": "CloudFrontURL",
+        "OutputValue": "https://d1i5pbmzhtp53l.cloudfront.net",
+        "Description": "Public CloudFront website URL."
+    },
+    {
+        "OutputKey": "WebsiteEndpoint",
+        "OutputValue": "http://leolin-udacity-static-website-835207447818-20260516.s3-website-us-west-2.amazonaws.com",
+        "Description": "S3 static website endpoint."
+    },
+    {
+        "OutputKey": "CloudFrontDomainName",
+        "OutputValue": "d1i5pbmzhtp53l.cloudfront.net",
+        "Description": "CloudFront distribution domain name."
+    }
+]

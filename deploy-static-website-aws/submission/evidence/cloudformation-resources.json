@@ -1,0 +1,40 @@
+{
+    "StackResources": [
+        {
+            "StackName": "udacity-static-website",
+            "StackId": "arn:aws:cloudformation:us-west-2:835207447818:stack/udacity-static-website/ced30750-50c2-11f1-967c-02ddc8fe0807",
+            "LogicalResourceId": "CloudFrontDistribution",
+            "PhysicalResourceId": "E3PIQ7JANY115Y",
+            "ResourceType": "AWS::CloudFront::Distribution",
+            "Timestamp": "2026-05-16T01:05:15.353000+00:00",
+            "ResourceStatus": "CREATE_COMPLETE",
+            "DriftInformation": {
+                "StackResourceDriftStatus": "NOT_CHECKED"
+            }
+        },
+        {
+            "StackName": "udacity-static-website",
+            "StackId": "arn:aws:cloudformation:us-west-2:835207447818:stack/udacity-static-website/ced30750-50c2-11f1-967c-02ddc8fe0807",
+            "LogicalResourceId": "WebsiteBucket",
+            "PhysicalResourceId": "leolin-udacity-static-website-835207447818-20260516",
+            "ResourceType": "AWS::S3::Bucket",
+            "Timestamp": "2026-05-16T01:02:07.762000+00:00",
+            "ResourceStatus": "CREATE_COMPLETE",
+            "DriftInformation": {
+                "StackResourceDriftStatus": "NOT_CHECKED"
+            }
+        },
+        {
+            "StackName": "udacity-static-website",
+            "StackId": "arn:aws:cloudformation:us-west-2:835207447818:stack/udacity-static-website/ced30750-50c2-11f1-967c-02ddc8fe0807",
+            "LogicalResourceId": "WebsiteBucketPolicy",
+            "PhysicalResourceId": "leolin-udacity-static-website-835207447818-20260516",
+            "ResourceType": "AWS::S3::BucketPolicy",
+            "Timestamp": "2026-05-16T01:02:10.453000+00:00",
+            "ResourceStatus": "CREATE_COMPLETE",
+            "DriftInformation": {
+                "StackResourceDriftStatus": "NOT_CHECKED"
+            }
+        }
+    ]
+}
