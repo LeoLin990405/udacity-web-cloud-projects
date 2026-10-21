@@ -1,0 +1,1067 @@
+Lint frontend	Set up job	﻿2026-05-21T03:40:11.4138003Z Current runner version: '2.334.0'
+Lint frontend	Set up job	2026-05-21T03:40:11.4164704Z ##[group]Runner Image Provisioner
+Lint frontend	Set up job	2026-05-21T03:40:11.4166431Z Hosted Compute Agent
+Lint frontend	Set up job	2026-05-21T03:40:11.4167383Z Version: 20260213.493
+Lint frontend	Set up job	2026-05-21T03:40:11.4168450Z Commit: 5c115507f6dd24b8de37d8bbe0bb4509d0cc0fa3
+Lint frontend	Set up job	2026-05-21T03:40:11.4169607Z Build Date: 2026-02-13T00:28:41Z
+Lint frontend	Set up job	2026-05-21T03:40:11.4170511Z Worker ID: {13843da6-309a-44f9-884f-fa46514c090f}
+Lint frontend	Set up job	2026-05-21T03:40:11.4171679Z Azure Region: eastus2
+Lint frontend	Set up job	2026-05-21T03:40:11.4172525Z ##[endgroup]
+Lint frontend	Set up job	2026-05-21T03:40:11.4174648Z ##[group]Operating System
+Lint frontend	Set up job	2026-05-21T03:40:11.4175688Z Ubuntu
+Lint frontend	Set up job	2026-05-21T03:40:11.4176439Z 24.04.4
+Lint frontend	Set up job	2026-05-21T03:40:11.4177125Z LTS
+Lint frontend	Set up job	2026-05-21T03:40:11.4177974Z ##[endgroup]
+Lint frontend	Set up job	2026-05-21T03:40:11.4178790Z ##[group]Runner Image
+Lint frontend	Set up job	2026-05-21T03:40:11.4179644Z Image: ubuntu-24.04
+Lint frontend	Set up job	2026-05-21T03:40:11.4180568Z Version: 20260518.149.1
+Lint frontend	Set up job	2026-05-21T03:40:11.4182109Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20260518.149/images/ubuntu/Ubuntu2404-Readme.md
+Lint frontend	Set up job	2026-05-21T03:40:11.4185124Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20260518.149
+Lint frontend	Set up job	2026-05-21T03:40:11.4186704Z ##[endgroup]
+Lint frontend	Set up job	2026-05-21T03:40:11.4188525Z ##[group]GITHUB_TOKEN Permissions
+Lint frontend	Set up job	2026-05-21T03:40:11.4191430Z Contents: read
+Lint frontend	Set up job	2026-05-21T03:40:11.4192411Z Metadata: read
+Lint frontend	Set up job	2026-05-21T03:40:11.4193524Z Packages: read
+Lint frontend	Set up job	2026-05-21T03:40:11.4194311Z ##[endgroup]
+Lint frontend	Set up job	2026-05-21T03:40:11.4197639Z Secret source: Actions
+Lint frontend	Set up job	2026-05-21T03:40:11.4198737Z Prepare workflow directory
+Lint frontend	Set up job	2026-05-21T03:40:11.4921625Z Prepare all required actions
+Lint frontend	Set up job	2026-05-21T03:40:11.4974419Z Getting action download info
+Lint frontend	Set up job	2026-05-21T03:40:11.8005562Z Download action repository 'actions/checkout@v4' (SHA:34e114876b0b11c390a56381ad16ebd13914f8d5)
+Lint frontend	Set up job	2026-05-21T03:40:11.9757990Z Download action repository 'actions/setup-node@v4' (SHA:49933ea5288caeca8642d1e84afbd3f7d6820020)
+Lint frontend	Set up job	2026-05-21T03:40:12.0684281Z Download action repository 'actions/cache@v4' (SHA:0057852bfaa89a56745cba8c7296529d2fc39830)
+Lint frontend	Set up job	2026-05-21T03:40:12.2630612Z Complete job name: Lint ***
+Lint frontend	Checkout code	﻿2026-05-21T03:40:12.3264633Z ##[group]Run actions/checkout@v4
+Lint frontend	Checkout code	2026-05-21T03:40:12.3265443Z with:
+Lint frontend	Checkout code	2026-05-21T03:40:12.3265936Z   repository: LeoLin990405/movie-picture-pipeline
+Lint frontend	Checkout code	2026-05-21T03:40:12.3266706Z   token: ***
+Lint frontend	Checkout code	2026-05-21T03:40:12.3267130Z   ssh-strict: true
+Lint frontend	Checkout code	2026-05-21T03:40:12.3267557Z   ssh-user: git
+Lint frontend	Checkout code	2026-05-21T03:40:12.3267990Z   persist-credentials: true
+Lint frontend	Checkout code	2026-05-21T03:40:12.3268461Z   clean: true
+Lint frontend	Checkout code	2026-05-21T03:40:12.3268894Z   sparse-checkout-cone-mode: true
+Lint frontend	Checkout code	2026-05-21T03:40:12.3269409Z   fetch-depth: 1
+Lint frontend	Checkout code	2026-05-21T03:40:12.3269823Z   fetch-tags: false
+Lint frontend	Checkout code	2026-05-21T03:40:12.3270255Z   show-progress: true
+Lint frontend	Checkout code	2026-05-21T03:40:12.3270686Z   lfs: false
+Lint frontend	Checkout code	2026-05-21T03:40:12.3271092Z   submodules: false
+Lint frontend	Checkout code	2026-05-21T03:40:12.3271530Z   set-safe-directory: true
+Lint frontend	Checkout code	2026-05-21T03:40:12.3272130Z env:
+Lint frontend	Checkout code	2026-05-21T03:40:12.3272544Z   AWS_REGION: ***
+Lint frontend	Checkout code	2026-05-21T03:40:12.3273160Z   EKS_CLUSTER_NAME: ***
+Lint frontend	Checkout code	2026-05-21T03:40:12.3273635Z   FRONTEND_ECR_REPOSITORY: ***
+Lint frontend	Checkout code	2026-05-21T03:40:12.3274525Z   REACT_APP_MOVIE_API_URL: ***
+Lint frontend	Checkout code	2026-05-21T03:40:12.3275033Z ##[endgroup]
+Lint frontend	Checkout code	2026-05-21T03:40:12.4504083Z Syncing repository: LeoLin990405/movie-picture-pipeline
+Lint frontend	Checkout code	2026-05-21T03:40:12.4506287Z ##[group]Getting Git version info
+Lint frontend	Checkout code	2026-05-21T03:40:12.4507185Z Working directory is '/home/runner/work/movie-picture-pipeline/movie-picture-pipeline'
+Lint frontend	Checkout code	2026-05-21T03:40:12.4508303Z [command]/usr/bin/git version
+Lint frontend	Checkout code	2026-05-21T03:40:12.4594666Z git version 2.54.0
+Lint frontend	Checkout code	2026-05-21T03:40:12.4621510Z ##[endgroup]
+Lint frontend	Checkout code	2026-05-21T03:40:12.4636637Z Temporarily overriding HOME='/home/runner/work/_temp/c616bcde-7cab-4dd8-a62c-6562b93522d8' before making global git config changes
+Lint frontend	Checkout code	2026-05-21T03:40:12.4638893Z Adding repository directory to the temporary git global config as a safe directory
+Lint frontend	Checkout code	2026-05-21T03:40:12.4651761Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/movie-picture-pipeline/movie-picture-pipeline
+Lint frontend	Checkout code	2026-05-21T03:40:12.4698215Z Deleting the contents of '/home/runner/work/movie-picture-pipeline/movie-picture-pipeline'
+Lint frontend	Checkout code	2026-05-21T03:40:12.4701617Z ##[group]Initializing the repository
+Lint frontend	Checkout code	2026-05-21T03:40:12.4707230Z [command]/usr/bin/git init /home/runner/work/movie-picture-pipeline/movie-picture-pipeline
+Lint frontend	Checkout code	2026-05-21T03:40:12.4802014Z hint: Using 'master' as the name for the initial branch. This default branch name
+Lint frontend	Checkout code	2026-05-21T03:40:12.4803474Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+Lint frontend	Checkout code	2026-05-21T03:40:12.4804410Z hint: to use in all of your new repositories, which will suppress this warning,
+Lint frontend	Checkout code	2026-05-21T03:40:12.4805114Z hint: call:
+Lint frontend	Checkout code	2026-05-21T03:40:12.4805493Z hint:
+Lint frontend	Checkout code	2026-05-21T03:40:12.4805990Z hint: 	git config --global init.defaultBranch <name>
+Lint frontend	Checkout code	2026-05-21T03:40:12.4806687Z hint:
+Lint frontend	Checkout code	2026-05-21T03:40:12.4807253Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+Lint frontend	Checkout code	2026-05-21T03:40:12.4808142Z hint: 'development'. The just-created branch can be renamed via this command:
+Lint frontend	Checkout code	2026-05-21T03:40:12.4808840Z hint:
+Lint frontend	Checkout code	2026-05-21T03:40:12.4809239Z hint: 	git branch -m <name>
+Lint frontend	Checkout code	2026-05-21T03:40:12.4809803Z hint:
+Lint frontend	Checkout code	2026-05-21T03:40:12.4810408Z hint: Disable this message with "git config set advice.defaultBranchName false"
+Lint frontend	Checkout code	2026-05-21T03:40:12.4812803Z Initialized empty Git repository in /home/runner/work/movie-picture-pipeline/movie-picture-pipeline/.git/
+Lint frontend	Checkout code	2026-05-21T03:40:12.4823628Z [command]/usr/bin/git remote add origin https://github.com/LeoLin990405/movie-picture-pipeline
+Lint frontend	Checkout code	2026-05-21T03:40:12.4871076Z ##[endgroup]
+Lint frontend	Checkout code	2026-05-21T03:40:12.4873357Z ##[group]Disabling automatic garbage collection
+Lint frontend	Checkout code	2026-05-21T03:40:12.4875066Z [command]/usr/bin/git config --local gc.auto 0
+Lint frontend	Checkout code	2026-05-21T03:40:12.4907439Z ##[endgroup]
+Lint frontend	Checkout code	2026-05-21T03:40:12.4908508Z ##[group]Setting up auth
+Lint frontend	Checkout code	2026-05-21T03:40:12.4914018Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+Lint frontend	Checkout code	2026-05-21T03:40:12.4948982Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+Lint frontend	Checkout code	2026-05-21T03:40:12.5286549Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+Lint frontend	Checkout code	2026-05-21T03:40:12.5316431Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+Lint frontend	Checkout code	2026-05-21T03:40:12.5545076Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+Lint frontend	Checkout code	2026-05-21T03:40:12.5577067Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+Lint frontend	Checkout code	2026-05-21T03:40:12.5809085Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+Lint frontend	Checkout code	2026-05-21T03:40:12.5843974Z ##[endgroup]
+Lint frontend	Checkout code	2026-05-21T03:40:12.5845110Z ##[group]Fetching the repository
+Lint frontend	Checkout code	2026-05-21T03:40:12.5853483Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +4fb21951e7aa35b33f4e32c2a1eee921ba76a29d:refs/remotes/origin/main
+Lint frontend	Checkout code	2026-05-21T03:40:12.8228965Z From https://github.com/LeoLin990405/movie-picture-pipeline
+Lint frontend	Checkout code	2026-05-21T03:40:12.8230973Z  * [new ref]         4fb21951e7aa35b33f4e32c2a1eee921ba76a29d -> origin/main
+Lint frontend	Checkout code	2026-05-21T03:40:12.8266062Z ##[endgroup]
+Lint frontend	Checkout code	2026-05-21T03:40:12.8267160Z ##[group]Determining the checkout info
+Lint frontend	Checkout code	2026-05-21T03:40:12.8268544Z ##[endgroup]
+Lint frontend	Checkout code	2026-05-21T03:40:12.8274982Z [command]/usr/bin/git sparse-checkout disable
+Lint frontend	Checkout code	2026-05-21T03:40:12.8319693Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+Lint frontend	Checkout code	2026-05-21T03:40:12.8348479Z ##[group]Checking out the ref
+Lint frontend	Checkout code	2026-05-21T03:40:12.8353445Z [command]/usr/bin/git checkout --progress --force -B main refs/remotes/origin/main
+Lint frontend	Checkout code	2026-05-21T03:40:12.8464752Z Switched to a new branch 'main'
+Lint frontend	Checkout code	2026-05-21T03:40:12.8466435Z branch 'main' set up to track 'origin/main'.
+Lint frontend	Checkout code	2026-05-21T03:40:12.8474234Z ##[endgroup]
+Lint frontend	Checkout code	2026-05-21T03:40:12.8511612Z [command]/usr/bin/git log -1 --format=%H
+Lint frontend	Checkout code	2026-05-21T03:40:12.8534737Z 4fb21951e7aa35b33f4e32c2a1eee921ba76a29d
+Lint frontend	Setup NodeJS	﻿2026-05-21T03:40:12.8840700Z ##[group]Run actions/setup-node@v4
+Lint frontend	Setup NodeJS	2026-05-21T03:40:12.8841825Z with:
+Lint frontend	Setup NodeJS	2026-05-21T03:40:12.8842790Z   node-version-file: starter/***/.nvmrc
+Lint frontend	Setup NodeJS	2026-05-21T03:40:12.8844227Z   always-auth: false
+Lint frontend	Setup NodeJS	2026-05-21T03:40:12.8845135Z   check-latest: false
+Lint frontend	Setup NodeJS	2026-05-21T03:40:12.8846266Z   token: ***
+Lint frontend	Setup NodeJS	2026-05-21T03:40:12.8847047Z env:
+Lint frontend	Setup NodeJS	2026-05-21T03:40:12.8847809Z   AWS_REGION: ***
+Lint frontend	Setup NodeJS	2026-05-21T03:40:12.8848694Z   EKS_CLUSTER_NAME: ***
+Lint frontend	Setup NodeJS	2026-05-21T03:40:12.8849684Z   FRONTEND_ECR_REPOSITORY: ***
+Lint frontend	Setup NodeJS	2026-05-21T03:40:12.8851796Z   REACT_APP_MOVIE_API_URL: ***
+Lint frontend	Setup NodeJS	2026-05-21T03:40:12.8852814Z ##[endgroup]
+Lint frontend	Setup NodeJS	2026-05-21T03:40:13.0583212Z Resolved starter/***/.nvmrc as 18.14
+Lint frontend	Setup NodeJS	2026-05-21T03:40:13.0640552Z Attempting to download 18.14...
+Lint frontend	Setup NodeJS	2026-05-21T03:40:13.4704423Z Acquiring 18.14.2 - x64 from https://github.com/actions/node-versions/releases/download/18.14.2-4240168272/node-18.14.2-linux-x64.tar.gz
+Lint frontend	Setup NodeJS	2026-05-21T03:40:13.8937811Z Extracting ...
+Lint frontend	Setup NodeJS	2026-05-21T03:40:13.9067261Z [command]/usr/bin/tar xz --strip 1 --warning=no-unknown-keyword --overwrite -C /home/runner/work/_temp/f4435bec-7c47-4722-b5da-3a3c3bb444fe -f /home/runner/work/_temp/25446756-9ebd-45a9-96b2-c4c810fa07b7
+Lint frontend	Setup NodeJS	2026-05-21T03:40:14.9341512Z Adding to the cache ...
+Lint frontend	Setup NodeJS	2026-05-21T03:40:16.4550458Z ##[group]Environment details
+Lint frontend	Setup NodeJS	2026-05-21T03:40:16.8043666Z node: v18.14.2
+Lint frontend	Setup NodeJS	2026-05-21T03:40:16.8044661Z npm: 9.5.0
+Lint frontend	Setup NodeJS	2026-05-21T03:40:16.8044953Z yarn: 1.22.22
+Lint frontend	Setup NodeJS	2026-05-21T03:40:16.8045856Z ##[endgroup]
+Lint frontend	Restore npm cache	﻿2026-05-21T03:40:16.8842767Z ##[group]Run actions/cache@v4
+Lint frontend	Restore npm cache	2026-05-21T03:40:16.8843308Z with:
+Lint frontend	Restore npm cache	2026-05-21T03:40:16.8843499Z   path: ~/.npm
+Lint frontend	Restore npm cache	2026-05-21T03:40:16.8844078Z   key: ***-npm-Linux-5c6b41f37f8f75c81c9665cacb83559a747c36eb2b4150ccf00b44daabe4bae2
+Lint frontend	Restore npm cache	2026-05-21T03:40:16.8844627Z   restore-keys: ***-npm-Linux-
+Lint frontend	Restore npm cache	
+Lint frontend	Restore npm cache	2026-05-21T03:40:16.8844903Z   enableCrossOsArchive: false
+Lint frontend	Restore npm cache	2026-05-21T03:40:16.8845187Z   fail-on-cache-miss: false
+Lint frontend	Restore npm cache	2026-05-21T03:40:16.8845425Z   lookup-only: false
+Lint frontend	Restore npm cache	2026-05-21T03:40:16.8845636Z   save-always: false
+Lint frontend	Restore npm cache	2026-05-21T03:40:16.8845831Z env:
+Lint frontend	Restore npm cache	2026-05-21T03:40:16.8846074Z   AWS_REGION: ***
+Lint frontend	Restore npm cache	2026-05-21T03:40:16.8846302Z   EKS_CLUSTER_NAME: ***
+Lint frontend	Restore npm cache	2026-05-21T03:40:16.8846547Z   FRONTEND_ECR_REPOSITORY: ***
+Lint frontend	Restore npm cache	2026-05-21T03:40:16.8847070Z   REACT_APP_MOVIE_API_URL: ***
+Lint frontend	Restore npm cache	2026-05-21T03:40:16.8847311Z ##[endgroup]
+Lint frontend	Restore npm cache	2026-05-21T03:40:17.1046789Z Cache hit for: ***-npm-Linux-5c6b41f37f8f75c81c9665cacb83559a747c36eb2b4150ccf00b44daabe4bae2
+Lint frontend	Restore npm cache	2026-05-21T03:40:17.5607729Z Received 65470324 of 65470324 (100.0%), 154.9 MBs/sec
+Lint frontend	Restore npm cache	2026-05-21T03:40:17.5608615Z Cache Size: ~62 MB (65470324 B)
+Lint frontend	Restore npm cache	2026-05-21T03:40:17.5640481Z [command]/usr/bin/tar -xf /home/runner/work/_temp/d1a3193c-c2ef-442b-9125-e2aecc60808e/cache.tzst -P -C /home/runner/work/movie-picture-pipeline/movie-picture-pipeline --use-compress-program unzstd
+Lint frontend	Restore npm cache	2026-05-21T03:40:17.9761268Z Cache restored successfully
+Lint frontend	Restore npm cache	2026-05-21T03:40:17.9873745Z Cache restored from key: ***-npm-Linux-5c6b41f37f8f75c81c9665cacb83559a747c36eb2b4150ccf00b44daabe4bae2
+Lint frontend	Install dependencies	﻿2026-05-21T03:40:17.9996766Z ##[group]Run npm ci
+Lint frontend	Install dependencies	2026-05-21T03:40:17.9997105Z ^[[36;1mnpm ci^[[0m
+Lint frontend	Install dependencies	2026-05-21T03:40:18.0038555Z shell: /usr/bin/bash -e {0}
+Lint frontend	Install dependencies	2026-05-21T03:40:18.0038867Z env:
+Lint frontend	Install dependencies	2026-05-21T03:40:18.0039177Z   AWS_REGION: ***
+Lint frontend	Install dependencies	2026-05-21T03:40:18.0039421Z   EKS_CLUSTER_NAME: ***
+Lint frontend	Install dependencies	2026-05-21T03:40:18.0039671Z   FRONTEND_ECR_REPOSITORY: ***
+Lint frontend	Install dependencies	2026-05-21T03:40:18.0040202Z   REACT_APP_MOVIE_API_URL: ***
+Lint frontend	Install dependencies	2026-05-21T03:40:18.0040450Z ##[endgroup]
+Lint frontend	Install dependencies	2026-05-21T03:40:22.5559160Z npm WARN deprecated stable@0.1.8: Modern JS already guarantees Array#sort() is a stable sort, so this library is deprecated. See the compatibility table on MDN: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort#browser_compatibility
+Lint frontend	Install dependencies	2026-05-21T03:40:22.7532813Z npm WARN deprecated rollup-plugin-terser@7.0.2: This package has been deprecated and is no longer maintained. Please use @rollup/plugin-terser
+Lint frontend	Install dependencies	2026-05-21T03:40:23.1987041Z npm WARN deprecated w3c-hr-time@1.0.2: Use your platform's native performance.now() and performance.timeOrigin.
+Lint frontend	Install dependencies	2026-05-21T03:40:23.2915449Z npm WARN deprecated sourcemap-codec@1.4.8: Please use @jridgewell/sourcemap-codec instead
+Lint frontend	Install dependencies	2026-05-21T03:40:25.8448997Z npm WARN deprecated svgo@1.3.2: This SVGO version is no longer supported. Upgrade to v2.x.x.
+Lint frontend	Install dependencies	2026-05-21T03:40:30.9606871Z 
+Lint frontend	Install dependencies	2026-05-21T03:40:30.9607808Z added 1506 packages, and audited 1507 packages in 13s
+Lint frontend	Install dependencies	2026-05-21T03:40:30.9608277Z 
+Lint frontend	Install dependencies	2026-05-21T03:40:30.9608613Z 263 packages are looking for funding
+Lint frontend	Install dependencies	2026-05-21T03:40:30.9609063Z   run `npm fund` for details
+Lint frontend	Install dependencies	2026-05-21T03:40:31.0384511Z 
+Lint frontend	Install dependencies	2026-05-21T03:40:31.0385558Z 66 vulnerabilities (14 low, 18 moderate, 31 high, 3 critical)
+Lint frontend	Install dependencies	2026-05-21T03:40:31.0385999Z 
+Lint frontend	Install dependencies	2026-05-21T03:40:31.0386305Z To address issues that do not require attention, run:
+Lint frontend	Install dependencies	2026-05-21T03:40:31.0386775Z   npm audit fix
+Lint frontend	Install dependencies	2026-05-21T03:40:31.0386949Z 
+Lint frontend	Install dependencies	2026-05-21T03:40:31.0387262Z To address all issues (including breaking changes), run:
+Lint frontend	Install dependencies	2026-05-21T03:40:31.0387727Z   npm audit fix --force
+Lint frontend	Install dependencies	2026-05-21T03:40:31.0387964Z 
+Lint frontend	Install dependencies	2026-05-21T03:40:31.0388187Z Run `npm audit` for details.
+Lint frontend	Run lint	﻿2026-05-21T03:40:31.1007803Z ##[group]Run npm run lint
+Lint frontend	Run lint	2026-05-21T03:40:31.1008100Z ^[[36;1mnpm run lint^[[0m
+Lint frontend	Run lint	2026-05-21T03:40:31.1047724Z shell: /usr/bin/bash -e {0}
+Lint frontend	Run lint	2026-05-21T03:40:31.1047990Z env:
+Lint frontend	Run lint	2026-05-21T03:40:31.1048319Z   AWS_REGION: ***
+Lint frontend	Run lint	2026-05-21T03:40:31.1048567Z   EKS_CLUSTER_NAME: ***
+Lint frontend	Run lint	2026-05-21T03:40:31.1048814Z   FRONTEND_ECR_REPOSITORY: ***
+Lint frontend	Run lint	2026-05-21T03:40:31.1049332Z   REACT_APP_MOVIE_API_URL: ***
+Lint frontend	Run lint	2026-05-21T03:40:31.1049579Z ##[endgroup]
+Lint frontend	Run lint	2026-05-21T03:40:31.4305105Z 
+Lint frontend	Run lint	2026-05-21T03:40:31.4306154Z > ***@1.0.0 lint
+Lint frontend	Run lint	2026-05-21T03:40:31.4306578Z > eslint .
+Lint frontend	Run lint	2026-05-21T03:40:31.4306749Z 
+Lint frontend	Post Restore npm cache	﻿2026-05-21T03:40:32.2075612Z Post job cleanup.
+Lint frontend	Post Restore npm cache	2026-05-21T03:40:32.3396877Z Cache hit occurred on the primary key ***-npm-Linux-5c6b41f37f8f75c81c9665cacb83559a747c36eb2b4150ccf00b44daabe4bae2, not saving cache.
+Lint frontend	Post Setup NodeJS	﻿2026-05-21T03:40:32.3495851Z Post job cleanup.
+Lint frontend	Post Checkout code	﻿2026-05-21T03:40:32.5196860Z Post job cleanup.
+Lint frontend	Post Checkout code	2026-05-21T03:40:32.6200004Z [command]/usr/bin/git version
+Lint frontend	Post Checkout code	2026-05-21T03:40:32.6236620Z git version 2.54.0
+Lint frontend	Post Checkout code	2026-05-21T03:40:32.6277918Z Temporarily overriding HOME='/home/runner/work/_temp/71be175c-c70f-42f9-abba-317f152fd226' before making global git config changes
+Lint frontend	Post Checkout code	2026-05-21T03:40:32.6278791Z Adding repository directory to the temporary git global config as a safe directory
+Lint frontend	Post Checkout code	2026-05-21T03:40:32.6283403Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/movie-picture-pipeline/movie-picture-pipeline
+Lint frontend	Post Checkout code	2026-05-21T03:40:32.6319131Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+Lint frontend	Post Checkout code	2026-05-21T03:40:32.6352473Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+Lint frontend	Post Checkout code	2026-05-21T03:40:32.6590427Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+Lint frontend	Post Checkout code	2026-05-21T03:40:32.6613594Z http.https://github.com/.extraheader
+Lint frontend	Post Checkout code	2026-05-21T03:40:32.6625577Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+Lint frontend	Post Checkout code	2026-05-21T03:40:32.6657021Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+Lint frontend	Post Checkout code	2026-05-21T03:40:32.6886902Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+Lint frontend	Post Checkout code	2026-05-21T03:40:32.6918741Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+Lint frontend	Complete job	﻿2026-05-21T03:40:32.7266796Z Cleaning up orphan processes
+Lint frontend	Complete job	2026-05-21T03:40:32.7552379Z ##[warning]Node.js 20 actions are deprecated. The following actions are running on Node.js 20 and may not work as expected: actions/cache@v4, actions/checkout@v4, actions/setup-node@v4. Actions will be forced to run with Node.js 24 by default starting June 2nd, 2026. Node.js 20 will be removed from the runner on September 16th, 2026. Please check if updated versions of these actions are available that support Node.js 24. To opt into Node.js 24 now, set the FORCE_JAVASCRIPT_ACTIONS_TO_NODE24=true environment variable on the runner or in your workflow file. Once Node.js 24 becomes the default, you can temporarily opt out by setting ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION=true. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
+Test frontend	Set up job	﻿2026-05-21T03:40:12.2384420Z Current runner version: '2.334.0'
+Test frontend	Set up job	2026-05-21T03:40:12.2410328Z ##[group]Runner Image Provisioner
+Test frontend	Set up job	2026-05-21T03:40:12.2411220Z Hosted Compute Agent
+Test frontend	Set up job	2026-05-21T03:40:12.2411902Z Version: 20260213.493
+Test frontend	Set up job	2026-05-21T03:40:12.2412524Z Commit: 5c115507f6dd24b8de37d8bbe0bb4509d0cc0fa3
+Test frontend	Set up job	2026-05-21T03:40:12.2413206Z Build Date: 2026-02-13T00:28:41Z
+Test frontend	Set up job	2026-05-21T03:40:12.2413960Z Worker ID: {18dfe4e6-5d6a-4081-89ad-bc64ca69f8b3}
+Test frontend	Set up job	2026-05-21T03:40:12.2415042Z Azure Region: westus
+Test frontend	Set up job	2026-05-21T03:40:12.2415582Z ##[endgroup]
+Test frontend	Set up job	2026-05-21T03:40:12.2417177Z ##[group]Operating System
+Test frontend	Set up job	2026-05-21T03:40:12.2417819Z Ubuntu
+Test frontend	Set up job	2026-05-21T03:40:12.2418413Z 24.04.4
+Test frontend	Set up job	2026-05-21T03:40:12.2418923Z LTS
+Test frontend	Set up job	2026-05-21T03:40:12.2419374Z ##[endgroup]
+Test frontend	Set up job	2026-05-21T03:40:12.2419932Z ##[group]Runner Image
+Test frontend	Set up job	2026-05-21T03:40:12.2420527Z Image: ubuntu-24.04
+Test frontend	Set up job	2026-05-21T03:40:12.2421111Z Version: 20260513.135.3
+Test frontend	Set up job	2026-05-21T03:40:12.2422203Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20260513.135/images/ubuntu/Ubuntu2404-Readme.md
+Test frontend	Set up job	2026-05-21T03:40:12.2423828Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20260513.135
+Test frontend	Set up job	2026-05-21T03:40:12.2425121Z ##[endgroup]
+Test frontend	Set up job	2026-05-21T03:40:12.2426285Z ##[group]GITHUB_TOKEN Permissions
+Test frontend	Set up job	2026-05-21T03:40:12.2428483Z Contents: read
+Test frontend	Set up job	2026-05-21T03:40:12.2429126Z Metadata: read
+Test frontend	Set up job	2026-05-21T03:40:12.2429658Z Packages: read
+Test frontend	Set up job	2026-05-21T03:40:12.2430281Z ##[endgroup]
+Test frontend	Set up job	2026-05-21T03:40:12.2432751Z Secret source: Actions
+Test frontend	Set up job	2026-05-21T03:40:12.2433589Z Prepare workflow directory
+Test frontend	Set up job	2026-05-21T03:40:12.3047061Z Prepare all required actions
+Test frontend	Set up job	2026-05-21T03:40:12.3085145Z Getting action download info
+Test frontend	Set up job	2026-05-21T03:40:12.7531456Z Download action repository 'actions/checkout@v4' (SHA:34e114876b0b11c390a56381ad16ebd13914f8d5)
+Test frontend	Set up job	2026-05-21T03:40:12.8869112Z Download action repository 'actions/setup-node@v4' (SHA:49933ea5288caeca8642d1e84afbd3f7d6820020)
+Test frontend	Set up job	2026-05-21T03:40:12.9750177Z Download action repository 'actions/cache@v4' (SHA:0057852bfaa89a56745cba8c7296529d2fc39830)
+Test frontend	Set up job	2026-05-21T03:40:13.1745414Z Complete job name: Test ***
+Test frontend	Checkout code	﻿2026-05-21T03:40:13.2438355Z ##[group]Run actions/checkout@v4
+Test frontend	Checkout code	2026-05-21T03:40:13.2439236Z with:
+Test frontend	Checkout code	2026-05-21T03:40:13.2439735Z   repository: LeoLin990405/movie-picture-pipeline
+Test frontend	Checkout code	2026-05-21T03:40:13.2440496Z   token: ***
+Test frontend	Checkout code	2026-05-21T03:40:13.2440896Z   ssh-strict: true
+Test frontend	Checkout code	2026-05-21T03:40:13.2441312Z   ssh-user: git
+Test frontend	Checkout code	2026-05-21T03:40:13.2441736Z   persist-credentials: true
+Test frontend	Checkout code	2026-05-21T03:40:13.2442247Z   clean: true
+Test frontend	Checkout code	2026-05-21T03:40:13.2442719Z   sparse-checkout-cone-mode: true
+Test frontend	Checkout code	2026-05-21T03:40:13.2443274Z   fetch-depth: 1
+Test frontend	Checkout code	2026-05-21T03:40:13.2443729Z   fetch-tags: false
+Test frontend	Checkout code	2026-05-21T03:40:13.2444181Z   show-progress: true
+Test frontend	Checkout code	2026-05-21T03:40:13.2444818Z   lfs: false
+Test frontend	Checkout code	2026-05-21T03:40:13.2445217Z   submodules: false
+Test frontend	Checkout code	2026-05-21T03:40:13.2445698Z   set-safe-directory: true
+Test frontend	Checkout code	2026-05-21T03:40:13.2446408Z env:
+Test frontend	Checkout code	2026-05-21T03:40:13.2446845Z   AWS_REGION: ***
+Test frontend	Checkout code	2026-05-21T03:40:13.2447328Z   EKS_CLUSTER_NAME: ***
+Test frontend	Checkout code	2026-05-21T03:40:13.2447806Z   FRONTEND_ECR_REPOSITORY: ***
+Test frontend	Checkout code	2026-05-21T03:40:13.2448705Z   REACT_APP_MOVIE_API_URL: ***
+Test frontend	Checkout code	2026-05-21T03:40:13.2449205Z ##[endgroup]
+Test frontend	Checkout code	2026-05-21T03:40:13.3599430Z Syncing repository: LeoLin990405/movie-picture-pipeline
+Test frontend	Checkout code	2026-05-21T03:40:13.3601621Z ##[group]Getting Git version info
+Test frontend	Checkout code	2026-05-21T03:40:13.3602694Z Working directory is '/home/runner/work/movie-picture-pipeline/movie-picture-pipeline'
+Test frontend	Checkout code	2026-05-21T03:40:13.3603841Z [command]/usr/bin/git version
+Test frontend	Checkout code	2026-05-21T03:40:13.3676637Z git version 2.54.0
+Test frontend	Checkout code	2026-05-21T03:40:13.3703678Z ##[endgroup]
+Test frontend	Checkout code	2026-05-21T03:40:13.3719377Z Temporarily overriding HOME='/home/runner/work/_temp/364b7101-ddbb-4b4c-a226-ad37ee1b4096' before making global git config changes
+Test frontend	Checkout code	2026-05-21T03:40:13.3721204Z Adding repository directory to the temporary git global config as a safe directory
+Test frontend	Checkout code	2026-05-21T03:40:13.3734204Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/movie-picture-pipeline/movie-picture-pipeline
+Test frontend	Checkout code	2026-05-21T03:40:13.3788344Z Deleting the contents of '/home/runner/work/movie-picture-pipeline/movie-picture-pipeline'
+Test frontend	Checkout code	2026-05-21T03:40:13.3791998Z ##[group]Initializing the repository
+Test frontend	Checkout code	2026-05-21T03:40:13.3796598Z [command]/usr/bin/git init /home/runner/work/movie-picture-pipeline/movie-picture-pipeline
+Test frontend	Checkout code	2026-05-21T03:40:13.3919006Z hint: Using 'master' as the name for the initial branch. This default branch name
+Test frontend	Checkout code	2026-05-21T03:40:13.3920557Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+Test frontend	Checkout code	2026-05-21T03:40:13.3921829Z hint: to use in all of your new repositories, which will suppress this warning,
+Test frontend	Checkout code	2026-05-21T03:40:13.3922570Z hint: call:
+Test frontend	Checkout code	2026-05-21T03:40:13.3922970Z hint:
+Test frontend	Checkout code	2026-05-21T03:40:13.3923482Z hint: 	git config --global init.defaultBranch <name>
+Test frontend	Checkout code	2026-05-21T03:40:13.3924188Z hint:
+Test frontend	Checkout code	2026-05-21T03:40:13.3925527Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+Test frontend	Checkout code	2026-05-21T03:40:13.3927148Z hint: 'development'. The just-created branch can be renamed via this command:
+Test frontend	Checkout code	2026-05-21T03:40:13.3928397Z hint:
+Test frontend	Checkout code	2026-05-21T03:40:13.3929124Z hint: 	git branch -m <name>
+Test frontend	Checkout code	2026-05-21T03:40:13.3929800Z hint:
+Test frontend	Checkout code	2026-05-21T03:40:13.3930443Z hint: Disable this message with "git config set advice.defaultBranchName false"
+Test frontend	Checkout code	2026-05-21T03:40:13.3931635Z Initialized empty Git repository in /home/runner/work/movie-picture-pipeline/movie-picture-pipeline/.git/
+Test frontend	Checkout code	2026-05-21T03:40:13.3940368Z [command]/usr/bin/git remote add origin https://github.com/LeoLin990405/movie-picture-pipeline
+Test frontend	Checkout code	2026-05-21T03:40:13.3982701Z ##[endgroup]
+Test frontend	Checkout code	2026-05-21T03:40:13.3983454Z ##[group]Disabling automatic garbage collection
+Test frontend	Checkout code	2026-05-21T03:40:13.3987109Z [command]/usr/bin/git config --local gc.auto 0
+Test frontend	Checkout code	2026-05-21T03:40:13.4015430Z ##[endgroup]
+Test frontend	Checkout code	2026-05-21T03:40:13.4016115Z ##[group]Setting up auth
+Test frontend	Checkout code	2026-05-21T03:40:13.4022164Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+Test frontend	Checkout code	2026-05-21T03:40:13.4055035Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+Test frontend	Checkout code	2026-05-21T03:40:13.4408380Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+Test frontend	Checkout code	2026-05-21T03:40:13.4438095Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+Test frontend	Checkout code	2026-05-21T03:40:13.4657359Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+Test frontend	Checkout code	2026-05-21T03:40:13.4688911Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+Test frontend	Checkout code	2026-05-21T03:40:13.4910288Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+Test frontend	Checkout code	2026-05-21T03:40:13.4944144Z ##[endgroup]
+Test frontend	Checkout code	2026-05-21T03:40:13.4945504Z ##[group]Fetching the repository
+Test frontend	Checkout code	2026-05-21T03:40:13.4952787Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +4fb21951e7aa35b33f4e32c2a1eee921ba76a29d:refs/remotes/origin/main
+Test frontend	Checkout code	2026-05-21T03:40:13.9478503Z From https://github.com/LeoLin990405/movie-picture-pipeline
+Test frontend	Checkout code	2026-05-21T03:40:13.9480643Z  * [new ref]         4fb21951e7aa35b33f4e32c2a1eee921ba76a29d -> origin/main
+Test frontend	Checkout code	2026-05-21T03:40:13.9520492Z ##[endgroup]
+Test frontend	Checkout code	2026-05-21T03:40:13.9521792Z ##[group]Determining the checkout info
+Test frontend	Checkout code	2026-05-21T03:40:13.9523309Z ##[endgroup]
+Test frontend	Checkout code	2026-05-21T03:40:13.9530473Z [command]/usr/bin/git sparse-checkout disable
+Test frontend	Checkout code	2026-05-21T03:40:13.9577651Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+Test frontend	Checkout code	2026-05-21T03:40:13.9607513Z ##[group]Checking out the ref
+Test frontend	Checkout code	2026-05-21T03:40:13.9613349Z [command]/usr/bin/git checkout --progress --force -B main refs/remotes/origin/main
+Test frontend	Checkout code	2026-05-21T03:40:13.9727604Z Switched to a new branch 'main'
+Test frontend	Checkout code	2026-05-21T03:40:13.9732092Z branch 'main' set up to track 'origin/main'.
+Test frontend	Checkout code	2026-05-21T03:40:13.9737874Z ##[endgroup]
+Test frontend	Checkout code	2026-05-21T03:40:13.9779144Z [command]/usr/bin/git log -1 --format=%H
+Test frontend	Checkout code	2026-05-21T03:40:13.9800794Z 4fb21951e7aa35b33f4e32c2a1eee921ba76a29d
+Test frontend	Setup NodeJS	﻿2026-05-21T03:40:14.0115989Z ##[group]Run actions/setup-node@v4
+Test frontend	Setup NodeJS	2026-05-21T03:40:14.0117195Z with:
+Test frontend	Setup NodeJS	2026-05-21T03:40:14.0118152Z   node-version-file: starter/***/.nvmrc
+Test frontend	Setup NodeJS	2026-05-21T03:40:14.0119306Z   always-auth: false
+Test frontend	Setup NodeJS	2026-05-21T03:40:14.0120201Z   check-latest: false
+Test frontend	Setup NodeJS	2026-05-21T03:40:14.0121346Z   token: ***
+Test frontend	Setup NodeJS	2026-05-21T03:40:14.0122120Z env:
+Test frontend	Setup NodeJS	2026-05-21T03:40:14.0122888Z   AWS_REGION: ***
+Test frontend	Setup NodeJS	2026-05-21T03:40:14.0123772Z   EKS_CLUSTER_NAME: ***
+Test frontend	Setup NodeJS	2026-05-21T03:40:14.0125034Z   FRONTEND_ECR_REPOSITORY: ***
+Test frontend	Setup NodeJS	2026-05-21T03:40:14.0127239Z   REACT_APP_MOVIE_API_URL: ***
+Test frontend	Setup NodeJS	2026-05-21T03:40:14.0128274Z ##[endgroup]
+Test frontend	Setup NodeJS	2026-05-21T03:40:14.1908476Z Resolved starter/***/.nvmrc as 18.14
+Test frontend	Setup NodeJS	2026-05-21T03:40:14.1979438Z Attempting to download 18.14...
+Test frontend	Setup NodeJS	2026-05-21T03:40:14.9569614Z Acquiring 18.14.2 - x64 from https://github.com/actions/node-versions/releases/download/18.14.2-4240168272/node-18.14.2-linux-x64.tar.gz
+Test frontend	Setup NodeJS	2026-05-21T03:40:15.4272953Z Extracting ...
+Test frontend	Setup NodeJS	2026-05-21T03:40:15.4379013Z [command]/usr/bin/tar xz --strip 1 --warning=no-unknown-keyword --overwrite -C /home/runner/work/_temp/0e710457-e98e-45c6-ac91-ce8927ba52f5 -f /home/runner/work/_temp/b62da21e-3eed-4e5b-8c86-2faddcea07e8
+Test frontend	Setup NodeJS	2026-05-21T03:40:16.4314966Z Adding to the cache ...
+Test frontend	Setup NodeJS	2026-05-21T03:40:18.3526839Z ##[group]Environment details
+Test frontend	Setup NodeJS	2026-05-21T03:40:18.6992324Z node: v18.14.2
+Test frontend	Setup NodeJS	2026-05-21T03:40:18.6993007Z npm: 9.5.0
+Test frontend	Setup NodeJS	2026-05-21T03:40:18.6993370Z yarn: 1.22.22
+Test frontend	Setup NodeJS	2026-05-21T03:40:18.6994112Z ##[endgroup]
+Test frontend	Restore npm cache	﻿2026-05-21T03:40:18.7776349Z ##[group]Run actions/cache@v4
+Test frontend	Restore npm cache	2026-05-21T03:40:18.7776679Z with:
+Test frontend	Restore npm cache	2026-05-21T03:40:18.7776879Z   path: ~/.npm
+Test frontend	Restore npm cache	2026-05-21T03:40:18.7777445Z   key: ***-npm-Linux-5c6b41f37f8f75c81c9665cacb83559a747c36eb2b4150ccf00b44daabe4bae2
+Test frontend	Restore npm cache	2026-05-21T03:40:18.7777949Z   restore-keys: ***-npm-Linux-
+Test frontend	Restore npm cache	
+Test frontend	Restore npm cache	2026-05-21T03:40:18.7778208Z   enableCrossOsArchive: false
+Test frontend	Restore npm cache	2026-05-21T03:40:18.7778474Z   fail-on-cache-miss: false
+Test frontend	Restore npm cache	2026-05-21T03:40:18.7778704Z   lookup-only: false
+Test frontend	Restore npm cache	2026-05-21T03:40:18.7778908Z   save-always: false
+Test frontend	Restore npm cache	2026-05-21T03:40:18.7779109Z env:
+Test frontend	Restore npm cache	2026-05-21T03:40:18.7779339Z   AWS_REGION: ***
+Test frontend	Restore npm cache	2026-05-21T03:40:18.7779566Z   EKS_CLUSTER_NAME: ***
+Test frontend	Restore npm cache	2026-05-21T03:40:18.7779798Z   FRONTEND_ECR_REPOSITORY: ***
+Test frontend	Restore npm cache	2026-05-21T03:40:18.7780308Z   REACT_APP_MOVIE_API_URL: ***
+Test frontend	Restore npm cache	2026-05-21T03:40:18.7780538Z ##[endgroup]
+Test frontend	Restore npm cache	2026-05-21T03:40:19.1980743Z Cache hit for: ***-npm-Linux-5c6b41f37f8f75c81c9665cacb83559a747c36eb2b4150ccf00b44daabe4bae2
+Test frontend	Restore npm cache	2026-05-21T03:40:20.4836404Z Received 0 of 65470324 (0.0%), 0.0 MBs/sec
+Test frontend	Restore npm cache	2026-05-21T03:40:21.1756592Z Received 65470324 of 65470324 (100.0%), 36.9 MBs/sec
+Test frontend	Restore npm cache	2026-05-21T03:40:21.1758593Z Cache Size: ~62 MB (65470324 B)
+Test frontend	Restore npm cache	2026-05-21T03:40:21.1866828Z [command]/usr/bin/tar -xf /home/runner/work/_temp/2ece779c-721e-4d43-8a70-0c659a1c2d44/cache.tzst -P -C /home/runner/work/movie-picture-pipeline/movie-picture-pipeline --use-compress-program unzstd
+Test frontend	Restore npm cache	2026-05-21T03:40:21.6361819Z Cache restored successfully
+Test frontend	Restore npm cache	2026-05-21T03:40:21.6476830Z Cache restored from key: ***-npm-Linux-5c6b41f37f8f75c81c9665cacb83559a747c36eb2b4150ccf00b44daabe4bae2
+Test frontend	Install dependencies	﻿2026-05-21T03:40:21.6590132Z ##[group]Run npm ci
+Test frontend	Install dependencies	2026-05-21T03:40:21.6590483Z ^[[36;1mnpm ci^[[0m
+Test frontend	Install dependencies	2026-05-21T03:40:21.6627868Z shell: /usr/bin/bash -e {0}
+Test frontend	Install dependencies	2026-05-21T03:40:21.6628134Z env:
+Test frontend	Install dependencies	2026-05-21T03:40:21.6628419Z   AWS_REGION: ***
+Test frontend	Install dependencies	2026-05-21T03:40:21.6628707Z   EKS_CLUSTER_NAME: ***
+Test frontend	Install dependencies	2026-05-21T03:40:21.6628950Z   FRONTEND_ECR_REPOSITORY: ***
+Test frontend	Install dependencies	2026-05-21T03:40:21.6629479Z   REACT_APP_MOVIE_API_URL: ***
+Test frontend	Install dependencies	2026-05-21T03:40:21.6629712Z ##[endgroup]
+Test frontend	Install dependencies	2026-05-21T03:40:26.5587882Z npm WARN deprecated stable@0.1.8: Modern JS already guarantees Array#sort() is a stable sort, so this library is deprecated. See the compatibility table on MDN: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort#browser_compatibility
+Test frontend	Install dependencies	2026-05-21T03:40:26.7762171Z npm WARN deprecated rollup-plugin-terser@7.0.2: This package has been deprecated and is no longer maintained. Please use @rollup/plugin-terser
+Test frontend	Install dependencies	2026-05-21T03:40:27.3143810Z npm WARN deprecated w3c-hr-time@1.0.2: Use your platform's native performance.now() and performance.timeOrigin.
+Test frontend	Install dependencies	2026-05-21T03:40:27.4393610Z npm WARN deprecated sourcemap-codec@1.4.8: Please use @jridgewell/sourcemap-codec instead
+Test frontend	Install dependencies	2026-05-21T03:40:30.3535769Z npm WARN deprecated svgo@1.3.2: This SVGO version is no longer supported. Upgrade to v2.x.x.
+Test frontend	Install dependencies	2026-05-21T03:40:35.9625512Z 
+Test frontend	Install dependencies	2026-05-21T03:40:35.9626949Z added 1506 packages, and audited 1507 packages in 14s
+Test frontend	Install dependencies	2026-05-21T03:40:35.9627972Z 
+Test frontend	Install dependencies	2026-05-21T03:40:35.9628369Z 263 packages are looking for funding
+Test frontend	Install dependencies	2026-05-21T03:40:35.9628912Z   run `npm fund` for details
+Test frontend	Install dependencies	2026-05-21T03:40:36.0423015Z 
+Test frontend	Install dependencies	2026-05-21T03:40:36.0424037Z 66 vulnerabilities (14 low, 18 moderate, 31 high, 3 critical)
+Test frontend	Install dependencies	2026-05-21T03:40:36.0424997Z 
+Test frontend	Install dependencies	2026-05-21T03:40:36.0425416Z To address issues that do not require attention, run:
+Test frontend	Install dependencies	2026-05-21T03:40:36.0426008Z   npm audit fix
+Test frontend	Install dependencies	2026-05-21T03:40:36.0426231Z 
+Test frontend	Install dependencies	2026-05-21T03:40:36.0426623Z To address all issues (including breaking changes), run:
+Test frontend	Install dependencies	2026-05-21T03:40:36.0427225Z   npm audit fix --force
+Test frontend	Install dependencies	2026-05-21T03:40:36.0427481Z 
+Test frontend	Install dependencies	2026-05-21T03:40:36.0427732Z Run `npm audit` for details.
+Test frontend	Run tests	﻿2026-05-21T03:40:36.1009127Z ##[group]Run CI=true npm run test -- --watchAll=false
+Test frontend	Run tests	2026-05-21T03:40:36.1009574Z ^[[36;1mCI=true npm run test -- --watchAll=false^[[0m
+Test frontend	Run tests	2026-05-21T03:40:36.1044328Z shell: /usr/bin/bash -e {0}
+Test frontend	Run tests	2026-05-21T03:40:36.1044863Z env:
+Test frontend	Run tests	2026-05-21T03:40:36.1045184Z   AWS_REGION: ***
+Test frontend	Run tests	2026-05-21T03:40:36.1045425Z   EKS_CLUSTER_NAME: ***
+Test frontend	Run tests	2026-05-21T03:40:36.1045680Z   FRONTEND_ECR_REPOSITORY: ***
+Test frontend	Run tests	2026-05-21T03:40:36.1046207Z   REACT_APP_MOVIE_API_URL: ***
+Test frontend	Run tests	2026-05-21T03:40:36.1046453Z ##[endgroup]
+Test frontend	Run tests	2026-05-21T03:40:36.4352687Z 
+Test frontend	Run tests	2026-05-21T03:40:36.4353597Z > ***@1.0.0 test
+Test frontend	Run tests	2026-05-21T03:40:36.4354226Z > react-scripts test --transformIgnorePatterns --watchAll=false
+Test frontend	Run tests	2026-05-21T03:40:36.4354954Z 
+Test frontend	Run tests	2026-05-21T03:40:46.1036191Z PASS src/components/__tests__/App.test.js (7.134 s)
+Test frontend	Run tests	2026-05-21T03:40:46.1135841Z PASS src/components/__tests__/MovieList.test.js (7.161 s)
+Test frontend	Run tests	2026-05-21T03:40:46.1656999Z 
+Test frontend	Run tests	2026-05-21T03:40:46.1661200Z Test Suites: 2 passed, 2 total
+Test frontend	Run tests	2026-05-21T03:40:46.1661943Z Tests:       3 passed, 3 total
+Test frontend	Run tests	2026-05-21T03:40:46.1662512Z Snapshots:   0 total
+Test frontend	Run tests	2026-05-21T03:40:46.1662963Z Time:        9.13 s
+Test frontend	Run tests	2026-05-21T03:40:46.1663426Z Ran all test suites.
+Test frontend	Post Restore npm cache	﻿2026-05-21T03:40:46.2457499Z Post job cleanup.
+Test frontend	Post Restore npm cache	2026-05-21T03:40:46.3760867Z Cache hit occurred on the primary key ***-npm-Linux-5c6b41f37f8f75c81c9665cacb83559a747c36eb2b4150ccf00b44daabe4bae2, not saving cache.
+Test frontend	Post Setup NodeJS	﻿2026-05-21T03:40:46.3851173Z Post job cleanup.
+Test frontend	Post Checkout code	﻿2026-05-21T03:40:46.5581131Z Post job cleanup.
+Test frontend	Post Checkout code	2026-05-21T03:40:46.6568599Z [command]/usr/bin/git version
+Test frontend	Post Checkout code	2026-05-21T03:40:46.6604920Z git version 2.54.0
+Test frontend	Post Checkout code	2026-05-21T03:40:46.6650506Z Temporarily overriding HOME='/home/runner/work/_temp/96faa9b2-dc33-4e6e-bb1d-240c29ead5c3' before making global git config changes
+Test frontend	Post Checkout code	2026-05-21T03:40:46.6652103Z Adding repository directory to the temporary git global config as a safe directory
+Test frontend	Post Checkout code	2026-05-21T03:40:46.6664407Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/movie-picture-pipeline/movie-picture-pipeline
+Test frontend	Post Checkout code	2026-05-21T03:40:46.6698335Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+Test frontend	Post Checkout code	2026-05-21T03:40:46.6731849Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+Test frontend	Post Checkout code	2026-05-21T03:40:46.6953225Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+Test frontend	Post Checkout code	2026-05-21T03:40:46.6977031Z http.https://github.com/.extraheader
+Test frontend	Post Checkout code	2026-05-21T03:40:46.6990117Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+Test frontend	Post Checkout code	2026-05-21T03:40:46.7021244Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+Test frontend	Post Checkout code	2026-05-21T03:40:46.7240914Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+Test frontend	Post Checkout code	2026-05-21T03:40:46.7271610Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+Test frontend	Complete job	﻿2026-05-21T03:40:46.7602882Z Cleaning up orphan processes
+Test frontend	Complete job	2026-05-21T03:40:46.7895450Z ##[warning]Node.js 20 actions are deprecated. The following actions are running on Node.js 20 and may not work as expected: actions/cache@v4, actions/checkout@v4, actions/setup-node@v4. Actions will be forced to run with Node.js 24 by default starting June 2nd, 2026. Node.js 20 will be removed from the runner on September 16th, 2026. Please check if updated versions of these actions are available that support Node.js 24. To opt into Node.js 24 now, set the FORCE_JAVASCRIPT_ACTIONS_TO_NODE24=true environment variable on the runner or in your workflow file. Once Node.js 24 becomes the default, you can temporarily opt out by setting ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION=true. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
+Build and push frontend image	Set up job	﻿2026-05-21T03:40:52.4915522Z Current runner version: '2.334.0'
+Build and push frontend image	Set up job	2026-05-21T03:40:52.4941020Z ##[group]Runner Image Provisioner
+Build and push frontend image	Set up job	2026-05-21T03:40:52.4941914Z Hosted Compute Agent
+Build and push frontend image	Set up job	2026-05-21T03:40:52.4942602Z Version: 20260213.493
+Build and push frontend image	Set up job	2026-05-21T03:40:52.4943247Z Commit: 5c115507f6dd24b8de37d8bbe0bb4509d0cc0fa3
+Build and push frontend image	Set up job	2026-05-21T03:40:52.4944046Z Build Date: 2026-02-13T00:28:41Z
+Build and push frontend image	Set up job	2026-05-21T03:40:52.4945004Z Worker ID: {0c59edbf-a692-41cb-bace-79d53501fb2d}
+Build and push frontend image	Set up job	2026-05-21T03:40:52.4945755Z Azure Region: westus
+Build and push frontend image	Set up job	2026-05-21T03:40:52.4946374Z ##[endgroup]
+Build and push frontend image	Set up job	2026-05-21T03:40:52.4947838Z ##[group]Operating System
+Build and push frontend image	Set up job	2026-05-21T03:40:52.4948474Z Ubuntu
+Build and push frontend image	Set up job	2026-05-21T03:40:52.4949101Z 24.04.4
+Build and push frontend image	Set up job	2026-05-21T03:40:52.4949643Z LTS
+Build and push frontend image	Set up job	2026-05-21T03:40:52.4950184Z ##[endgroup]
+Build and push frontend image	Set up job	2026-05-21T03:40:52.4950756Z ##[group]Runner Image
+Build and push frontend image	Set up job	2026-05-21T03:40:52.4951359Z Image: ubuntu-24.04
+Build and push frontend image	Set up job	2026-05-21T03:40:52.4951981Z Version: 20260513.135.3
+Build and push frontend image	Set up job	2026-05-21T03:40:52.4953104Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20260513.135/images/ubuntu/Ubuntu2404-Readme.md
+Build and push frontend image	Set up job	2026-05-21T03:40:52.4955080Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20260513.135
+Build and push frontend image	Set up job	2026-05-21T03:40:52.4956045Z ##[endgroup]
+Build and push frontend image	Set up job	2026-05-21T03:40:52.4957296Z ##[group]GITHUB_TOKEN Permissions
+Build and push frontend image	Set up job	2026-05-21T03:40:52.4959443Z Contents: read
+Build and push frontend image	Set up job	2026-05-21T03:40:52.4960142Z Metadata: read
+Build and push frontend image	Set up job	2026-05-21T03:40:52.4960709Z Packages: read
+Build and push frontend image	Set up job	2026-05-21T03:40:52.4961252Z ##[endgroup]
+Build and push frontend image	Set up job	2026-05-21T03:40:52.4963547Z Secret source: Actions
+Build and push frontend image	Set up job	2026-05-21T03:40:52.4964739Z Prepare workflow directory
+Build and push frontend image	Set up job	2026-05-21T03:40:52.5541541Z Prepare all required actions
+Build and push frontend image	Set up job	2026-05-21T03:40:52.5580162Z Getting action download info
+Build and push frontend image	Set up job	2026-05-21T03:40:53.0603819Z Download action repository 'actions/checkout@v4' (SHA:34e114876b0b11c390a56381ad16ebd13914f8d5)
+Build and push frontend image	Set up job	2026-05-21T03:40:53.2017659Z Download action repository 'aws-actions/configure-aws-credentials@v4' (SHA:7474bc4690e29a8392af63c5b98e7449536d5c3a)
+Build and push frontend image	Set up job	2026-05-21T03:40:53.6160473Z Download action repository 'aws-actions/amazon-ecr-login@v2' (SHA:fa648b43de3d4d023bcb3f89ed6940096949c419)
+Build and push frontend image	Set up job	2026-05-21T03:40:54.0822294Z Complete job name: Build and push *** image
+Build and push frontend image	Checkout code	﻿2026-05-21T03:40:54.1520612Z ##[group]Run actions/checkout@v4
+Build and push frontend image	Checkout code	2026-05-21T03:40:54.1521542Z with:
+Build and push frontend image	Checkout code	2026-05-21T03:40:54.1522048Z   repository: LeoLin990405/movie-picture-pipeline
+Build and push frontend image	Checkout code	2026-05-21T03:40:54.1522863Z   token: ***
+Build and push frontend image	Checkout code	2026-05-21T03:40:54.1523286Z   ssh-strict: true
+Build and push frontend image	Checkout code	2026-05-21T03:40:54.1523728Z   ssh-user: git
+Build and push frontend image	Checkout code	2026-05-21T03:40:54.1524575Z   persist-credentials: true
+Build and push frontend image	Checkout code	2026-05-21T03:40:54.1525168Z   clean: true
+Build and push frontend image	Checkout code	2026-05-21T03:40:54.1525612Z   sparse-checkout-cone-mode: true
+Build and push frontend image	Checkout code	2026-05-21T03:40:54.1526133Z   fetch-depth: 1
+Build and push frontend image	Checkout code	2026-05-21T03:40:54.1526559Z   fetch-tags: false
+Build and push frontend image	Checkout code	2026-05-21T03:40:54.1527014Z   show-progress: true
+Build and push frontend image	Checkout code	2026-05-21T03:40:54.1527467Z   lfs: false
+Build and push frontend image	Checkout code	2026-05-21T03:40:54.1527893Z   submodules: false
+Build and push frontend image	Checkout code	2026-05-21T03:40:54.1528363Z   set-safe-directory: true
+Build and push frontend image	Checkout code	2026-05-21T03:40:54.1529163Z env:
+Build and push frontend image	Checkout code	2026-05-21T03:40:54.1529658Z   AWS_REGION: ***
+Build and push frontend image	Checkout code	2026-05-21T03:40:54.1530128Z   EKS_CLUSTER_NAME: ***
+Build and push frontend image	Checkout code	2026-05-21T03:40:54.1530629Z   FRONTEND_ECR_REPOSITORY: ***
+Build and push frontend image	Checkout code	2026-05-21T03:40:54.1531575Z   REACT_APP_MOVIE_API_URL: ***
+Build and push frontend image	Checkout code	2026-05-21T03:40:54.1532184Z ##[endgroup]
+Build and push frontend image	Checkout code	2026-05-21T03:40:54.2862836Z Syncing repository: LeoLin990405/movie-picture-pipeline
+Build and push frontend image	Checkout code	2026-05-21T03:40:54.2866265Z ##[group]Getting Git version info
+Build and push frontend image	Checkout code	2026-05-21T03:40:54.2867896Z Working directory is '/home/runner/work/movie-picture-pipeline/movie-picture-pipeline'
+Build and push frontend image	Checkout code	2026-05-21T03:40:54.2870126Z [command]/usr/bin/git version
+Build and push frontend image	Checkout code	2026-05-21T03:40:54.2961479Z git version 2.54.0
+Build and push frontend image	Checkout code	2026-05-21T03:40:54.2991169Z ##[endgroup]
+Build and push frontend image	Checkout code	2026-05-21T03:40:54.3009205Z Temporarily overriding HOME='/home/runner/work/_temp/f35e3c13-fa70-4213-8ab0-e0e92fc31489' before making global git config changes
+Build and push frontend image	Checkout code	2026-05-21T03:40:54.3011743Z Adding repository directory to the temporary git global config as a safe directory
+Build and push frontend image	Checkout code	2026-05-21T03:40:54.3026216Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/movie-picture-pipeline/movie-picture-pipeline
+Build and push frontend image	Checkout code	2026-05-21T03:40:54.3085275Z Deleting the contents of '/home/runner/work/movie-picture-pipeline/movie-picture-pipeline'
+Build and push frontend image	Checkout code	2026-05-21T03:40:54.3089307Z ##[group]Initializing the repository
+Build and push frontend image	Checkout code	2026-05-21T03:40:54.3095096Z [command]/usr/bin/git init /home/runner/work/movie-picture-pipeline/movie-picture-pipeline
+Build and push frontend image	Checkout code	2026-05-21T03:40:54.3228082Z hint: Using 'master' as the name for the initial branch. This default branch name
+Build and push frontend image	Checkout code	2026-05-21T03:40:54.3230030Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+Build and push frontend image	Checkout code	2026-05-21T03:40:54.3231142Z hint: to use in all of your new repositories, which will suppress this warning,
+Build and push frontend image	Checkout code	2026-05-21T03:40:54.3231948Z hint: call:
+Build and push frontend image	Checkout code	2026-05-21T03:40:54.3232592Z hint:
+Build and push frontend image	Checkout code	2026-05-21T03:40:54.3233492Z hint: 	git config --global init.defaultBranch <name>
+Build and push frontend image	Checkout code	2026-05-21T03:40:54.3234900Z hint:
+Build and push frontend image	Checkout code	2026-05-21T03:40:54.3235954Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+Build and push frontend image	Checkout code	2026-05-21T03:40:54.3237647Z hint: 'development'. The just-created branch can be renamed via this command:
+Build and push frontend image	Checkout code	2026-05-21T03:40:54.3239033Z hint:
+Build and push frontend image	Checkout code	2026-05-21T03:40:54.3239536Z hint: 	git branch -m <name>
+Build and push frontend image	Checkout code	2026-05-21T03:40:54.3240049Z hint:
+Build and push frontend image	Checkout code	2026-05-21T03:40:54.3240662Z hint: Disable this message with "git config set advice.defaultBranchName false"
+Build and push frontend image	Checkout code	2026-05-21T03:40:54.3241882Z Initialized empty Git repository in /home/runner/work/movie-picture-pipeline/movie-picture-pipeline/.git/
+Build and push frontend image	Checkout code	2026-05-21T03:40:54.3250869Z [command]/usr/bin/git remote add origin https://github.com/LeoLin990405/movie-picture-pipeline
+Build and push frontend image	Checkout code	2026-05-21T03:40:54.3299992Z ##[endgroup]
+Build and push frontend image	Checkout code	2026-05-21T03:40:54.3300811Z ##[group]Disabling automatic garbage collection
+Build and push frontend image	Checkout code	2026-05-21T03:40:54.3305453Z [command]/usr/bin/git config --local gc.auto 0
+Build and push frontend image	Checkout code	2026-05-21T03:40:54.3337923Z ##[endgroup]
+Build and push frontend image	Checkout code	2026-05-21T03:40:54.3339078Z ##[group]Setting up auth
+Build and push frontend image	Checkout code	2026-05-21T03:40:54.3346777Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+Build and push frontend image	Checkout code	2026-05-21T03:40:54.3382886Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+Build and push frontend image	Checkout code	2026-05-21T03:40:54.3766548Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+Build and push frontend image	Checkout code	2026-05-21T03:40:54.3797948Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+Build and push frontend image	Checkout code	2026-05-21T03:40:54.4031203Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+Build and push frontend image	Checkout code	2026-05-21T03:40:54.4068628Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+Build and push frontend image	Checkout code	2026-05-21T03:40:54.4305982Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+Build and push frontend image	Checkout code	2026-05-21T03:40:54.4343117Z ##[endgroup]
+Build and push frontend image	Checkout code	2026-05-21T03:40:54.4344722Z ##[group]Fetching the repository
+Build and push frontend image	Checkout code	2026-05-21T03:40:54.4354555Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +4fb21951e7aa35b33f4e32c2a1eee921ba76a29d:refs/remotes/origin/main
+Build and push frontend image	Checkout code	2026-05-21T03:40:54.9925423Z From https://github.com/LeoLin990405/movie-picture-pipeline
+Build and push frontend image	Checkout code	2026-05-21T03:40:54.9928038Z  * [new ref]         4fb21951e7aa35b33f4e32c2a1eee921ba76a29d -> origin/main
+Build and push frontend image	Checkout code	2026-05-21T03:40:54.9967428Z ##[endgroup]
+Build and push frontend image	Checkout code	2026-05-21T03:40:54.9968580Z ##[group]Determining the checkout info
+Build and push frontend image	Checkout code	2026-05-21T03:40:54.9970304Z ##[endgroup]
+Build and push frontend image	Checkout code	2026-05-21T03:40:54.9974959Z [command]/usr/bin/git sparse-checkout disable
+Build and push frontend image	Checkout code	2026-05-21T03:40:55.0021736Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+Build and push frontend image	Checkout code	2026-05-21T03:40:55.0048630Z ##[group]Checking out the ref
+Build and push frontend image	Checkout code	2026-05-21T03:40:55.0052214Z [command]/usr/bin/git checkout --progress --force -B main refs/remotes/origin/main
+Build and push frontend image	Checkout code	2026-05-21T03:40:55.0160574Z Switched to a new branch 'main'
+Build and push frontend image	Checkout code	2026-05-21T03:40:55.0163527Z branch 'main' set up to track 'origin/main'.
+Build and push frontend image	Checkout code	2026-05-21T03:40:55.0171497Z ##[endgroup]
+Build and push frontend image	Checkout code	2026-05-21T03:40:55.0209005Z [command]/usr/bin/git log -1 --format=%H
+Build and push frontend image	Checkout code	2026-05-21T03:40:55.0230813Z 4fb21951e7aa35b33f4e32c2a1eee921ba76a29d
+Build and push frontend image	Verify deployment configuration	﻿2026-05-21T03:40:55.0461507Z ##[group]Run test -n "***"
+Build and push frontend image	Verify deployment configuration	2026-05-21T03:40:55.0462487Z ^[[36;1mtest -n "***"^[[0m
+Build and push frontend image	Verify deployment configuration	2026-05-21T03:40:55.0463471Z ^[[36;1mtest -n "***"^[[0m
+Build and push frontend image	Verify deployment configuration	2026-05-21T03:40:55.0479381Z ^[[36;1mtest -n "***"^[[0m
+Build and push frontend image	Verify deployment configuration	2026-05-21T03:40:55.0480112Z ^[[36;1mtest -n "***"^[[0m
+Build and push frontend image	Verify deployment configuration	2026-05-21T03:40:55.0480802Z ^[[36;1mtest -n "***"^[[0m
+Build and push frontend image	Verify deployment configuration	2026-05-21T03:40:55.0481488Z ^[[36;1mtest -n "***"^[[0m
+Build and push frontend image	Verify deployment configuration	2026-05-21T03:40:55.0482984Z ^[[36;1mtest -n "***"^[[0m
+Build and push frontend image	Verify deployment configuration	2026-05-21T03:40:55.0520477Z shell: /usr/bin/bash -e {0}
+Build and push frontend image	Verify deployment configuration	2026-05-21T03:40:55.0521220Z env:
+Build and push frontend image	Verify deployment configuration	2026-05-21T03:40:55.0521806Z   AWS_REGION: ***
+Build and push frontend image	Verify deployment configuration	2026-05-21T03:40:55.0522466Z   EKS_CLUSTER_NAME: ***
+Build and push frontend image	Verify deployment configuration	2026-05-21T03:40:55.0523180Z   FRONTEND_ECR_REPOSITORY: ***
+Build and push frontend image	Verify deployment configuration	2026-05-21T03:40:55.0525080Z   REACT_APP_MOVIE_API_URL: ***
+Build and push frontend image	Verify deployment configuration	2026-05-21T03:40:55.0525826Z ##[endgroup]
+Build and push frontend image	Configure AWS credentials	﻿2026-05-21T03:40:55.0856595Z ##[group]Run aws-actions/configure-aws-credentials@v4
+Build and push frontend image	Configure AWS credentials	2026-05-21T03:40:55.0857627Z with:
+Build and push frontend image	Configure AWS credentials	2026-05-21T03:40:55.0858320Z   aws-access-key-id: ***
+Build and push frontend image	Configure AWS credentials	2026-05-21T03:40:55.0859370Z   aws-secret-access-key: ***
+Build and push frontend image	Configure AWS credentials	2026-05-21T03:40:55.0873784Z   aws-session-token: ***
+Build and push frontend image	Configure AWS credentials	2026-05-21T03:40:55.0874670Z   aws-region: ***
+Build and push frontend image	Configure AWS credentials	2026-05-21T03:40:55.0875266Z   audience: sts.amazonaws.com
+Build and push frontend image	Configure AWS credentials	2026-05-21T03:40:55.0876019Z   output-env-credentials: true
+Build and push frontend image	Configure AWS credentials	2026-05-21T03:40:55.0876696Z env:
+Build and push frontend image	Configure AWS credentials	2026-05-21T03:40:55.0877202Z   AWS_REGION: ***
+Build and push frontend image	Configure AWS credentials	2026-05-21T03:40:55.0877795Z   EKS_CLUSTER_NAME: ***
+Build and push frontend image	Configure AWS credentials	2026-05-21T03:40:55.0878538Z   FRONTEND_ECR_REPOSITORY: ***
+Build and push frontend image	Configure AWS credentials	2026-05-21T03:40:55.0880107Z   REACT_APP_MOVIE_API_URL: ***
+Build and push frontend image	Configure AWS credentials	2026-05-21T03:40:55.0880798Z ##[endgroup]
+Build and push frontend image	Configure AWS credentials	2026-05-21T03:40:55.5829448Z Proceeding with IAM user credentials
+Build and push frontend image	Login to Amazon ECR	﻿2026-05-21T03:40:55.6018984Z ##[group]Run aws-actions/amazon-ecr-login@v2
+Build and push frontend image	Login to Amazon ECR	2026-05-21T03:40:55.6020306Z with:
+Build and push frontend image	Login to Amazon ECR	2026-05-21T03:40:55.6021203Z   mask-password: true
+Build and push frontend image	Login to Amazon ECR	2026-05-21T03:40:55.6022248Z   registry-type: private
+Build and push frontend image	Login to Amazon ECR	2026-05-21T03:40:55.6023322Z   skip-logout: false
+Build and push frontend image	Login to Amazon ECR	2026-05-21T03:40:55.6024553Z env:
+Build and push frontend image	Login to Amazon ECR	2026-05-21T03:40:55.6025756Z   AWS_REGION: ***
+Build and push frontend image	Login to Amazon ECR	2026-05-21T03:40:55.6026780Z   EKS_CLUSTER_NAME: ***
+Build and push frontend image	Login to Amazon ECR	2026-05-21T03:40:55.6027862Z   FRONTEND_ECR_REPOSITORY: ***
+Build and push frontend image	Login to Amazon ECR	2026-05-21T03:40:55.6029954Z   REACT_APP_MOVIE_API_URL: ***
+Build and push frontend image	Login to Amazon ECR	2026-05-21T03:40:55.6031117Z   AWS_DEFAULT_REGION: ***
+Build and push frontend image	Login to Amazon ECR	2026-05-21T03:40:55.6032266Z   AWS_ACCESS_KEY_ID: ***
+Build and push frontend image	Login to Amazon ECR	2026-05-21T03:40:55.6033674Z   AWS_SECRET_ACCESS_KEY: ***
+Build and push frontend image	Login to Amazon ECR	2026-05-21T03:40:55.6049169Z   AWS_SESSION_TOKEN: ***
+Build and push frontend image	Login to Amazon ECR	2026-05-21T03:40:55.6050226Z ##[endgroup]
+Build and push frontend image	Login to Amazon ECR	2026-05-21T03:40:55.7199810Z Using environment variable credentials.
+Build and push frontend image	Login to Amazon ECR	2026-05-21T03:40:56.0633807Z Logging into registry 963904228567.dkr.ecr.***.amazonaws.com
+Build and push frontend image	Build Docker image	﻿2026-05-21T03:40:56.7506169Z ##[group]Run docker build \
+Build and push frontend image	Build Docker image	2026-05-21T03:40:56.7507197Z ^[[36;1mdocker build \^[[0m
+Build and push frontend image	Build Docker image	2026-05-21T03:40:56.7508782Z ^[[36;1m  --build-arg=REACT_APP_MOVIE_API_URL=${REACT_APP_MOVIE_API_URL:-http://localhost:5000} \^[[0m
+Build and push frontend image	Build Docker image	2026-05-21T03:40:56.7510991Z ^[[36;1m  --tag=mp-***:4fb21951e7aa35b33f4e32c2a1eee921ba76a29d \^[[0m
+Build and push frontend image	Build Docker image	2026-05-21T03:40:56.7512282Z ^[[36;1m  .^[[0m
+Build and push frontend image	Build Docker image	2026-05-21T03:40:56.7549871Z shell: /usr/bin/bash -e {0}
+Build and push frontend image	Build Docker image	2026-05-21T03:40:56.7550812Z env:
+Build and push frontend image	Build Docker image	2026-05-21T03:40:56.7551616Z   AWS_REGION: ***
+Build and push frontend image	Build Docker image	2026-05-21T03:40:56.7552454Z   EKS_CLUSTER_NAME: ***
+Build and push frontend image	Build Docker image	2026-05-21T03:40:56.7553377Z   FRONTEND_ECR_REPOSITORY: ***
+Build and push frontend image	Build Docker image	2026-05-21T03:40:56.7555542Z   REACT_APP_MOVIE_API_URL: ***
+Build and push frontend image	Build Docker image	2026-05-21T03:40:56.7556559Z   AWS_DEFAULT_REGION: ***
+Build and push frontend image	Build Docker image	2026-05-21T03:40:56.7557545Z   AWS_ACCESS_KEY_ID: ***
+Build and push frontend image	Build Docker image	2026-05-21T03:40:56.7558755Z   AWS_SECRET_ACCESS_KEY: ***
+Build and push frontend image	Build Docker image	2026-05-21T03:40:56.7573210Z   AWS_SESSION_TOKEN: ***
+Build and push frontend image	Build Docker image	2026-05-21T03:40:56.7574356Z ##[endgroup]
+Build and push frontend image	Build Docker image	2026-05-21T03:40:57.3542768Z #0 building with "default" instance using docker driver
+Build and push frontend image	Build Docker image	2026-05-21T03:40:57.3548683Z 
+Build and push frontend image	Build Docker image	2026-05-21T03:40:57.3549278Z #1 [internal] load build definition from Dockerfile
+Build and push frontend image	Build Docker image	2026-05-21T03:40:57.3550081Z #1 transferring dockerfile: 462B done
+Build and push frontend image	Build Docker image	2026-05-21T03:40:57.3550697Z #1 DONE 0.0s
+Build and push frontend image	Build Docker image	2026-05-21T03:40:57.3551025Z 
+Build and push frontend image	Build Docker image	2026-05-21T03:40:57.3551515Z #2 [internal] load metadata for public.ecr.aws/docker/library/node:18.14.2-alpine3.17
+Build and push frontend image	Build Docker image	2026-05-21T03:40:57.9120884Z #2 DONE 0.7s
+Build and push frontend image	Build Docker image	2026-05-21T03:40:58.0307291Z 
+Build and push frontend image	Build Docker image	2026-05-21T03:40:58.0308415Z #3 [internal] load .dockerignore
+Build and push frontend image	Build Docker image	2026-05-21T03:40:58.0309011Z #3 transferring context: 2B done
+Build and push frontend image	Build Docker image	2026-05-21T03:40:58.0309324Z #3 DONE 0.0s
+Build and push frontend image	Build Docker image	2026-05-21T03:40:58.0309480Z 
+Build and push frontend image	Build Docker image	2026-05-21T03:40:58.0309613Z #4 [internal] load build context
+Build and push frontend image	Build Docker image	2026-05-21T03:40:58.0309957Z #4 transferring context: 708.88kB 0.0s done
+Build and push frontend image	Build Docker image	2026-05-21T03:40:58.0310284Z #4 DONE 0.0s
+Build and push frontend image	Build Docker image	2026-05-21T03:40:58.0310428Z 
+Build and push frontend image	Build Docker image	2026-05-21T03:40:58.0311008Z #5 [1/6] FROM public.ecr.aws/docker/library/node:18.14.2-alpine3.17@sha256:f8a51c36b0be7434bbf867d4a08decf0100e656203d893b9b0f8b1fe9e40daea
+Build and push frontend image	Build Docker image	2026-05-21T03:40:58.0312230Z #5 resolve public.ecr.aws/docker/library/node:18.14.2-alpine3.17@sha256:f8a51c36b0be7434bbf867d4a08decf0100e656203d893b9b0f8b1fe9e40daea done
+Build and push frontend image	Build Docker image	2026-05-21T03:40:58.0313237Z #5 sha256:f8a51c36b0be7434bbf867d4a08decf0100e656203d893b9b0f8b1fe9e40daea 1.43kB / 1.43kB done
+Build and push frontend image	Build Docker image	2026-05-21T03:40:58.0314264Z #5 sha256:fdbd2737cb94e25cae3db9fc5d7dc073c9675dad34239bfb3948c499a6908c19 1.16kB / 1.16kB done
+Build and push frontend image	Build Docker image	2026-05-21T03:40:58.0315073Z #5 sha256:9423415aa47ab401c3f202dd56fdf379f6161a620cc51caa048887d9bdddd246 6.44kB / 6.44kB done
+Build and push frontend image	Build Docker image	2026-05-21T03:40:58.0315852Z #5 sha256:63b65145d645c1250c391b2d16ebe53b3747c295ca8ba2fcb6b0cf064a4dc21c 0B / 3.37MB 0.1s
+Build and push frontend image	Build Docker image	2026-05-21T03:40:58.0316573Z #5 sha256:061765f30124ad9dd30397cf60c64741d3fb3b34c36f9566796687b1299183f5 0B / 47.51MB 0.1s
+Build and push frontend image	Build Docker image	2026-05-21T03:40:58.0317199Z #5 sha256:478140d591162fa9113c5ba76c16afafe2aa04bccd8ec45c232ffeb4f31e9c23 0B / 2.35MB 0.1s
+Build and push frontend image	Build Docker image	2026-05-21T03:40:58.2304004Z #5 sha256:061765f30124ad9dd30397cf60c64741d3fb3b34c36f9566796687b1299183f5 47.51MB / 47.51MB 0.3s
+Build and push frontend image	Build Docker image	2026-05-21T03:40:58.2305300Z #5 sha256:478140d591162fa9113c5ba76c16afafe2aa04bccd8ec45c232ffeb4f31e9c23 2.35MB / 2.35MB 0.2s done
+Build and push frontend image	Build Docker image	2026-05-21T03:40:58.2306239Z #5 sha256:00ca3aba45c3a9811387d943d26291284ca6f938036760fcf85dbb2ab78e496a 450B / 450B 0.2s done
+Build and push frontend image	Build Docker image	2026-05-21T03:40:58.3409647Z #5 sha256:63b65145d645c1250c391b2d16ebe53b3747c295ca8ba2fcb6b0cf064a4dc21c 3.37MB / 3.37MB 0.3s done
+Build and push frontend image	Build Docker image	2026-05-21T03:40:58.3411032Z #5 sha256:061765f30124ad9dd30397cf60c64741d3fb3b34c36f9566796687b1299183f5 47.51MB / 47.51MB 0.3s done
+Build and push frontend image	Build Docker image	2026-05-21T03:40:58.3412310Z #5 extracting sha256:63b65145d645c1250c391b2d16ebe53b3747c295ca8ba2fcb6b0cf064a4dc21c 0.1s done
+Build and push frontend image	Build Docker image	2026-05-21T03:40:58.5066984Z #5 extracting sha256:061765f30124ad9dd30397cf60c64741d3fb3b34c36f9566796687b1299183f5 0.1s
+Build and push frontend image	Build Docker image	2026-05-21T03:41:00.2000544Z #5 extracting sha256:061765f30124ad9dd30397cf60c64741d3fb3b34c36f9566796687b1299183f5 1.8s done
+Build and push frontend image	Build Docker image	2026-05-21T03:41:01.6645686Z #5 extracting sha256:478140d591162fa9113c5ba76c16afafe2aa04bccd8ec45c232ffeb4f31e9c23
+Build and push frontend image	Build Docker image	2026-05-21T03:41:01.7725674Z #5 extracting sha256:478140d591162fa9113c5ba76c16afafe2aa04bccd8ec45c232ffeb4f31e9c23 0.0s done
+Build and push frontend image	Build Docker image	2026-05-21T03:41:01.7727585Z #5 extracting sha256:00ca3aba45c3a9811387d943d26291284ca6f938036760fcf85dbb2ab78e496a done
+Build and push frontend image	Build Docker image	2026-05-21T03:41:01.7728366Z #5 DONE 3.8s
+Build and push frontend image	Build Docker image	2026-05-21T03:41:01.7728559Z 
+Build and push frontend image	Build Docker image	2026-05-21T03:41:01.7728707Z #6 [2/6] WORKDIR /app
+Build and push frontend image	Build Docker image	2026-05-21T03:41:01.7729076Z #6 DONE 0.0s
+Build and push frontend image	Build Docker image	2026-05-21T03:41:01.7729287Z 
+Build and push frontend image	Build Docker image	2026-05-21T03:41:01.7729534Z #7 [3/6] COPY package*.json ./
+Build and push frontend image	Build Docker image	2026-05-21T03:41:01.7729842Z #7 DONE 0.0s
+Build and push frontend image	Build Docker image	2026-05-21T03:41:01.9239740Z 
+Build and push frontend image	Build Docker image	2026-05-21T03:41:01.9240978Z #8 [4/6] RUN npm ci
+Build and push frontend image	Build Docker image	2026-05-21T03:41:07.9131742Z #8 6.139 npm WARN deprecated w3c-hr-time@1.0.2: Use your platform's native performance.now() and performance.timeOrigin.
+Build and push frontend image	Build Docker image	2026-05-21T03:41:08.1388956Z #8 6.365 npm WARN deprecated stable@0.1.8: Modern JS already guarantees Array#sort() is a stable sort, so this library is deprecated. See the compatibility table on MDN: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort#browser_compatibility
+Build and push frontend image	Build Docker image	2026-05-21T03:41:08.4483601Z #8 6.675 npm WARN deprecated rollup-plugin-terser@7.0.2: This package has been deprecated and is no longer maintained. Please use @rollup/plugin-terser
+Build and push frontend image	Build Docker image	2026-05-21T03:41:08.6197200Z #8 6.696 npm WARN deprecated sourcemap-codec@1.4.8: Please use @jridgewell/sourcemap-codec instead
+Build and push frontend image	Build Docker image	2026-05-21T03:41:12.2417460Z #8 10.47 npm WARN deprecated svgo@1.3.2: This SVGO version is no longer supported. Upgrade to v2.x.x.
+Build and push frontend image	Build Docker image	2026-05-21T03:41:24.6894112Z #8 22.92 
+Build and push frontend image	Build Docker image	2026-05-21T03:41:24.6895652Z #8 22.92 added 1506 packages, and audited 1507 packages in 22s
+Build and push frontend image	Build Docker image	2026-05-21T03:41:24.9270768Z #8 22.92 
+Build and push frontend image	Build Docker image	2026-05-21T03:41:24.9271462Z #8 22.92 263 packages are looking for funding
+Build and push frontend image	Build Docker image	2026-05-21T03:41:24.9272031Z #8 22.92   run `npm fund` for details
+Build and push frontend image	Build Docker image	2026-05-21T03:41:24.9272638Z #8 23.00 
+Build and push frontend image	Build Docker image	2026-05-21T03:41:24.9273141Z #8 23.00 66 vulnerabilities (14 low, 18 moderate, 31 high, 3 critical)
+Build and push frontend image	Build Docker image	2026-05-21T03:41:24.9273951Z #8 23.00 
+Build and push frontend image	Build Docker image	2026-05-21T03:41:24.9274862Z #8 23.00 To address issues that do not require attention, run:
+Build and push frontend image	Build Docker image	2026-05-21T03:41:24.9275737Z #8 23.00   npm audit fix
+Build and push frontend image	Build Docker image	2026-05-21T03:41:24.9276324Z #8 23.00 
+Build and push frontend image	Build Docker image	2026-05-21T03:41:24.9276859Z #8 23.00 To address all issues (including breaking changes), run:
+Build and push frontend image	Build Docker image	2026-05-21T03:41:24.9277676Z #8 23.00   npm audit fix --force
+Build and push frontend image	Build Docker image	2026-05-21T03:41:24.9278257Z #8 23.00 
+Build and push frontend image	Build Docker image	2026-05-21T03:41:24.9278811Z #8 23.00 Run `npm audit` for details.
+Build and push frontend image	Build Docker image	2026-05-21T03:41:24.9279508Z #8 23.00 npm notice 
+Build and push frontend image	Build Docker image	2026-05-21T03:41:24.9280302Z #8 23.00 npm notice New major version of npm available! 9.5.0 -> 11.15.0
+Build and push frontend image	Build Docker image	2026-05-21T03:41:25.2160920Z #8 23.00 npm notice Changelog: <https://github.com/npm/cli/releases/tag/v11.15.0>
+Build and push frontend image	Build Docker image	2026-05-21T03:41:25.2161878Z #8 23.00 npm notice Run `npm install -g npm@11.15.0` to update!
+Build and push frontend image	Build Docker image	2026-05-21T03:41:25.2162433Z #8 23.00 npm notice 
+Build and push frontend image	Build Docker image	2026-05-21T03:41:25.2162788Z #8 DONE 23.4s
+Build and push frontend image	Build Docker image	2026-05-21T03:41:25.3838139Z 
+Build and push frontend image	Build Docker image	2026-05-21T03:41:25.3839035Z #9 [5/6] COPY . .
+Build and push frontend image	Build Docker image	2026-05-21T03:41:25.3839507Z #9 DONE 0.0s
+Build and push frontend image	Build Docker image	2026-05-21T03:41:25.3839757Z 
+Build and push frontend image	Build Docker image	2026-05-21T03:41:25.3839925Z #10 [6/6] RUN npm run build
+Build and push frontend image	Build Docker image	2026-05-21T03:41:25.8176655Z #10 0.584 
+Build and push frontend image	Build Docker image	2026-05-21T03:41:25.8178257Z #10 0.584 > ***@1.0.0 build
+Build and push frontend image	Build Docker image	2026-05-21T03:41:25.8179051Z #10 0.584 > react-scripts build
+Build and push frontend image	Build Docker image	2026-05-21T03:41:25.8179777Z #10 0.584 
+Build and push frontend image	Build Docker image	2026-05-21T03:41:27.4128340Z #10 2.179 Creating an optimized production build...
+Build and push frontend image	Build Docker image	2026-05-21T03:41:27.5825257Z #10 2.349 Browserslist: caniuse-lite is outdated. Please run:
+Build and push frontend image	Build Docker image	2026-05-21T03:41:27.5829726Z #10 2.349   npx update-browserslist-db@latest
+Build and push frontend image	Build Docker image	2026-05-21T03:41:27.5830887Z #10 2.349   Why you should do it regularly: https://github.com/browserslist/update-db#readme
+Build and push frontend image	Build Docker image	2026-05-21T03:41:33.9218840Z #10 8.688 Browserslist: caniuse-lite is outdated. Please run:
+Build and push frontend image	Build Docker image	2026-05-21T03:41:33.9219811Z #10 8.688   npx update-browserslist-db@latest
+Build and push frontend image	Build Docker image	2026-05-21T03:41:33.9220615Z #10 8.688   Why you should do it regularly: https://github.com/browserslist/update-db#readme
+Build and push frontend image	Build Docker image	2026-05-21T03:41:34.5092324Z #10 9.275 Compiled successfully.
+Build and push frontend image	Build Docker image	2026-05-21T03:41:34.5092916Z #10 9.275 
+Build and push frontend image	Build Docker image	2026-05-21T03:41:34.5093247Z #10 9.275 File sizes after gzip:
+Build and push frontend image	Build Docker image	2026-05-21T03:41:34.5094429Z #10 9.275 
+Build and push frontend image	Build Docker image	2026-05-21T03:41:34.6097498Z #10 9.291   57.15 kB  build/static/js/main.d6016153.js
+Build and push frontend image	Build Docker image	2026-05-21T03:41:34.6098465Z #10 9.291   556 B     build/static/css/main.86fcb180.css
+Build and push frontend image	Build Docker image	2026-05-21T03:41:34.6099320Z #10 9.291 
+Build and push frontend image	Build Docker image	2026-05-21T03:41:34.6099758Z #10 9.291 The project was built assuming it is hosted at /.
+Build and push frontend image	Build Docker image	2026-05-21T03:41:34.6100767Z #10 9.291 You can control this with the homepage field in your package.json.
+Build and push frontend image	Build Docker image	2026-05-21T03:41:34.6101693Z #10 9.291 
+Build and push frontend image	Build Docker image	2026-05-21T03:41:34.6102068Z #10 9.291 The build folder is ready to be deployed.
+Build and push frontend image	Build Docker image	2026-05-21T03:41:34.6102852Z #10 9.292 You may serve it with a static server:
+Build and push frontend image	Build Docker image	2026-05-21T03:41:34.6103314Z #10 9.292 
+Build and push frontend image	Build Docker image	2026-05-21T03:41:34.6103847Z #10 9.292   npm install -g serve
+Build and push frontend image	Build Docker image	2026-05-21T03:41:34.6104314Z #10 9.292   serve -s build
+Build and push frontend image	Build Docker image	2026-05-21T03:41:34.6104999Z #10 9.292 
+Build and push frontend image	Build Docker image	2026-05-21T03:41:34.6105373Z #10 9.292 Find out more about deployment here:
+Build and push frontend image	Build Docker image	2026-05-21T03:41:34.6115125Z #10 9.292 
+Build and push frontend image	Build Docker image	2026-05-21T03:41:34.6115713Z #10 9.292   https://cra.link/deployment
+Build and push frontend image	Build Docker image	2026-05-21T03:41:34.6116355Z #10 9.292 
+Build and push frontend image	Build Docker image	2026-05-21T03:41:34.6116688Z #10 DONE 9.4s
+Build and push frontend image	Build Docker image	2026-05-21T03:41:34.7621141Z 
+Build and push frontend image	Build Docker image	2026-05-21T03:41:34.7635388Z #11 exporting to image
+Build and push frontend image	Build Docker image	2026-05-21T03:41:34.7636092Z #11 exporting layers
+Build and push frontend image	Build Docker image	2026-05-21T03:41:41.2834825Z #11 exporting layers 6.7s done
+Build and push frontend image	Build Docker image	2026-05-21T03:41:41.3017955Z #11 writing image sha256:dd8e452ca1429c830157d3ac2e462dc900c272d107620a0ea9b9cdcc17582c9c done
+Build and push frontend image	Build Docker image	2026-05-21T03:41:41.3019723Z #11 naming to docker.io/library/mp-***:4fb21951e7aa35b33f4e32c2a1eee921ba76a29d done
+Build and push frontend image	Build Docker image	2026-05-21T03:41:41.3020524Z #11 DONE 6.7s
+Build and push frontend image	Tag image for ECR	﻿2026-05-21T03:41:41.3104826Z ##[group]Run IMAGE_URI="963904228567.dkr.ecr.***.amazonaws.com/${FRONTEND_ECR_REPOSITORY}:4fb21951e7aa35b33f4e32c2a1eee921ba76a29d"
+Build and push frontend image	Tag image for ECR	2026-05-21T03:41:41.3105866Z ^[[36;1mIMAGE_URI="963904228567.dkr.ecr.***.amazonaws.com/${FRONTEND_ECR_REPOSITORY}:4fb21951e7aa35b33f4e32c2a1eee921ba76a29d"^[[0m
+Build and push frontend image	Tag image for ECR	2026-05-21T03:41:41.3106595Z ^[[36;1mdocker tag mp-***:4fb21951e7aa35b33f4e32c2a1eee921ba76a29d "$IMAGE_URI"^[[0m
+Build and push frontend image	Tag image for ECR	2026-05-21T03:41:41.3140281Z shell: /usr/bin/bash -e {0}
+Build and push frontend image	Tag image for ECR	2026-05-21T03:41:41.3140531Z env:
+Build and push frontend image	Tag image for ECR	2026-05-21T03:41:41.3140761Z   AWS_REGION: ***
+Build and push frontend image	Tag image for ECR	2026-05-21T03:41:41.3140986Z   EKS_CLUSTER_NAME: ***
+Build and push frontend image	Tag image for ECR	2026-05-21T03:41:41.3141231Z   FRONTEND_ECR_REPOSITORY: ***
+Build and push frontend image	Tag image for ECR	2026-05-21T03:41:41.3141754Z   REACT_APP_MOVIE_API_URL: ***
+Build and push frontend image	Tag image for ECR	2026-05-21T03:41:41.3142013Z   AWS_DEFAULT_REGION: ***
+Build and push frontend image	Tag image for ECR	2026-05-21T03:41:41.3142280Z   AWS_ACCESS_KEY_ID: ***
+Build and push frontend image	Tag image for ECR	2026-05-21T03:41:41.3142608Z   AWS_SECRET_ACCESS_KEY: ***
+Build and push frontend image	Tag image for ECR	2026-05-21T03:41:41.3146967Z   AWS_SESSION_TOKEN: ***
+Build and push frontend image	Tag image for ECR	2026-05-21T03:41:41.3147231Z ##[endgroup]
+Build and push frontend image	Push image to ECR	﻿2026-05-21T03:41:41.3370159Z ##[group]Run IMAGE_URI="963904228567.dkr.ecr.***.amazonaws.com/${FRONTEND_ECR_REPOSITORY}:4fb21951e7aa35b33f4e32c2a1eee921ba76a29d"
+Build and push frontend image	Push image to ECR	2026-05-21T03:41:41.3371149Z ^[[36;1mIMAGE_URI="963904228567.dkr.ecr.***.amazonaws.com/${FRONTEND_ECR_REPOSITORY}:4fb21951e7aa35b33f4e32c2a1eee921ba76a29d"^[[0m
+Build and push frontend image	Push image to ECR	2026-05-21T03:41:41.3371716Z ^[[36;1mdocker push "$IMAGE_URI"^[[0m
+Build and push frontend image	Push image to ECR	2026-05-21T03:41:41.3404771Z shell: /usr/bin/bash -e {0}
+Build and push frontend image	Push image to ECR	2026-05-21T03:41:41.3405031Z env:
+Build and push frontend image	Push image to ECR	2026-05-21T03:41:41.3405275Z   AWS_REGION: ***
+Build and push frontend image	Push image to ECR	2026-05-21T03:41:41.3405526Z   EKS_CLUSTER_NAME: ***
+Build and push frontend image	Push image to ECR	2026-05-21T03:41:41.3405775Z   FRONTEND_ECR_REPOSITORY: ***
+Build and push frontend image	Push image to ECR	2026-05-21T03:41:41.3406319Z   REACT_APP_MOVIE_API_URL: ***
+Build and push frontend image	Push image to ECR	2026-05-21T03:41:41.3406632Z   AWS_DEFAULT_REGION: ***
+Build and push frontend image	Push image to ECR	2026-05-21T03:41:41.3406899Z   AWS_ACCESS_KEY_ID: ***
+Build and push frontend image	Push image to ECR	2026-05-21T03:41:41.3407230Z   AWS_SECRET_ACCESS_KEY: ***
+Build and push frontend image	Push image to ECR	2026-05-21T03:41:41.3411097Z   AWS_SESSION_TOKEN: ***
+Build and push frontend image	Push image to ECR	2026-05-21T03:41:41.3411333Z ##[endgroup]
+Build and push frontend image	Push image to ECR	2026-05-21T03:41:41.4042564Z The push refers to repository [963904228567.dkr.ecr.***.amazonaws.com/***]
+Build and push frontend image	Push image to ECR	2026-05-21T03:41:41.6643542Z 2849d6fb5d36: Preparing
+Build and push frontend image	Push image to ECR	2026-05-21T03:41:41.6644010Z cf76ce1a50d4: Preparing
+Build and push frontend image	Push image to ECR	2026-05-21T03:41:41.6644550Z 6a0ff7333447: Preparing
+Build and push frontend image	Push image to ECR	2026-05-21T03:41:41.6644800Z 02c4cedcafd2: Preparing
+Build and push frontend image	Push image to ECR	2026-05-21T03:41:41.6645038Z 60408ba8c4a0: Preparing
+Build and push frontend image	Push image to ECR	2026-05-21T03:41:41.6645280Z dc923cea9549: Preparing
+Build and push frontend image	Push image to ECR	2026-05-21T03:41:41.6645694Z d26cfa2c5d93: Preparing
+Build and push frontend image	Push image to ECR	2026-05-21T03:41:41.6646073Z ec7aaa5c3b9b: Preparing
+Build and push frontend image	Push image to ECR	2026-05-21T03:41:41.6646426Z 7cd52847ad77: Preparing
+Build and push frontend image	Push image to ECR	2026-05-21T03:41:41.6646661Z d26cfa2c5d93: Waiting
+Build and push frontend image	Push image to ECR	2026-05-21T03:41:41.6646891Z ec7aaa5c3b9b: Waiting
+Build and push frontend image	Push image to ECR	2026-05-21T03:41:41.6647110Z 7cd52847ad77: Waiting
+Build and push frontend image	Push image to ECR	2026-05-21T03:41:41.6652714Z dc923cea9549: Waiting
+Build and push frontend image	Push image to ECR	2026-05-21T03:41:43.3797989Z 60408ba8c4a0: Pushed
+Build and push frontend image	Push image to ECR	2026-05-21T03:41:43.3982760Z cf76ce1a50d4: Pushed
+Build and push frontend image	Push image to ECR	2026-05-21T03:41:43.5497130Z 02c4cedcafd2: Pushed
+Build and push frontend image	Push image to ECR	2026-05-21T03:41:43.5686664Z 2849d6fb5d36: Pushed
+Build and push frontend image	Push image to ECR	2026-05-21T03:41:43.6809965Z dc923cea9549: Layer already exists
+Build and push frontend image	Push image to ECR	2026-05-21T03:41:43.6908272Z d26cfa2c5d93: Layer already exists
+Build and push frontend image	Push image to ECR	2026-05-21T03:41:43.8527505Z ec7aaa5c3b9b: Layer already exists
+Build and push frontend image	Push image to ECR	2026-05-21T03:41:43.8758040Z 7cd52847ad77: Layer already exists
+Build and push frontend image	Push image to ECR	2026-05-21T03:41:56.5193448Z 6a0ff7333447: Pushed
+Build and push frontend image	Push image to ECR	2026-05-21T03:41:59.1672051Z 4fb21951e7aa35b33f4e32c2a1eee921ba76a29d: digest: sha256:a178c297f8daba1be4e5390c79847cd31a33991827d38d7e372564f6e0dcb37b size: 2206
+Build and push frontend image	Post Login to Amazon ECR	﻿2026-05-21T03:41:59.1752818Z Post job cleanup.
+Build and push frontend image	Post Login to Amazon ECR	2026-05-21T03:41:59.2379852Z Logging out of registry 963904228567.dkr.ecr.***.amazonaws.com
+Build and push frontend image	Post Configure AWS credentials	﻿2026-05-21T03:41:59.2715510Z Post job cleanup.
+Build and push frontend image	Post Checkout code	﻿2026-05-21T03:41:59.4107564Z Post job cleanup.
+Build and push frontend image	Post Checkout code	2026-05-21T03:41:59.5077312Z [command]/usr/bin/git version
+Build and push frontend image	Post Checkout code	2026-05-21T03:41:59.5113745Z git version 2.54.0
+Build and push frontend image	Post Checkout code	2026-05-21T03:41:59.5159472Z Temporarily overriding HOME='/home/runner/work/_temp/3467afba-3588-4cdb-87ed-2a5f730e165b' before making global git config changes
+Build and push frontend image	Post Checkout code	2026-05-21T03:41:59.5160884Z Adding repository directory to the temporary git global config as a safe directory
+Build and push frontend image	Post Checkout code	2026-05-21T03:41:59.5166860Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/movie-picture-pipeline/movie-picture-pipeline
+Build and push frontend image	Post Checkout code	2026-05-21T03:41:59.5207436Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+Build and push frontend image	Post Checkout code	2026-05-21T03:41:59.5239357Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+Build and push frontend image	Post Checkout code	2026-05-21T03:41:59.5461280Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+Build and push frontend image	Post Checkout code	2026-05-21T03:41:59.5485612Z http.https://github.com/.extraheader
+Build and push frontend image	Post Checkout code	2026-05-21T03:41:59.5498041Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+Build and push frontend image	Post Checkout code	2026-05-21T03:41:59.5528359Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+Build and push frontend image	Post Checkout code	2026-05-21T03:41:59.5745987Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+Build and push frontend image	Post Checkout code	2026-05-21T03:41:59.5776207Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+Build and push frontend image	Complete job	﻿2026-05-21T03:41:59.6099564Z Cleaning up orphan processes
+Build and push frontend image	Complete job	2026-05-21T03:41:59.6521276Z ##[warning]Node.js 20 actions are deprecated. The following actions are running on Node.js 20 and may not work as expected: actions/checkout@v4, aws-actions/configure-aws-credentials@v4. Actions will be forced to run with Node.js 24 by default starting June 2nd, 2026. Node.js 20 will be removed from the runner on September 16th, 2026. Please check if updated versions of these actions are available that support Node.js 24. To opt into Node.js 24 now, set the FORCE_JAVASCRIPT_ACTIONS_TO_NODE24=true environment variable on the runner or in your workflow file. Once Node.js 24 becomes the default, you can temporarily opt out by setting ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION=true. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
+Deploy frontend to EKS	Set up job	﻿2026-05-21T03:42:05.5344991Z Current runner version: '2.334.0'
+Deploy frontend to EKS	Set up job	2026-05-21T03:42:05.5369575Z ##[group]Runner Image Provisioner
+Deploy frontend to EKS	Set up job	2026-05-21T03:42:05.5370378Z Hosted Compute Agent
+Deploy frontend to EKS	Set up job	2026-05-21T03:42:05.5371133Z Version: 20260213.493
+Deploy frontend to EKS	Set up job	2026-05-21T03:42:05.5371777Z Commit: 5c115507f6dd24b8de37d8bbe0bb4509d0cc0fa3
+Deploy frontend to EKS	Set up job	2026-05-21T03:42:05.5372474Z Build Date: 2026-02-13T00:28:41Z
+Deploy frontend to EKS	Set up job	2026-05-21T03:42:05.5373146Z Worker ID: {4f07580d-f3c4-4ec4-b441-98675db4e02e}
+Deploy frontend to EKS	Set up job	2026-05-21T03:42:05.5373807Z Azure Region: northcentralus
+Deploy frontend to EKS	Set up job	2026-05-21T03:42:05.5374355Z ##[endgroup]
+Deploy frontend to EKS	Set up job	2026-05-21T03:42:05.5376212Z ##[group]Operating System
+Deploy frontend to EKS	Set up job	2026-05-21T03:42:05.5376855Z Ubuntu
+Deploy frontend to EKS	Set up job	2026-05-21T03:42:05.5377356Z 24.04.4
+Deploy frontend to EKS	Set up job	2026-05-21T03:42:05.5377848Z LTS
+Deploy frontend to EKS	Set up job	2026-05-21T03:42:05.5378317Z ##[endgroup]
+Deploy frontend to EKS	Set up job	2026-05-21T03:42:05.5378854Z ##[group]Runner Image
+Deploy frontend to EKS	Set up job	2026-05-21T03:42:05.5379450Z Image: ubuntu-24.04
+Deploy frontend to EKS	Set up job	2026-05-21T03:42:05.5379983Z Version: 20260513.135.3
+Deploy frontend to EKS	Set up job	2026-05-21T03:42:05.5381137Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20260513.135/images/ubuntu/Ubuntu2404-Readme.md
+Deploy frontend to EKS	Set up job	2026-05-21T03:42:05.5382719Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20260513.135
+Deploy frontend to EKS	Set up job	2026-05-21T03:42:05.5383625Z ##[endgroup]
+Deploy frontend to EKS	Set up job	2026-05-21T03:42:05.5384680Z ##[group]GITHUB_TOKEN Permissions
+Deploy frontend to EKS	Set up job	2026-05-21T03:42:05.5386831Z Contents: read
+Deploy frontend to EKS	Set up job	2026-05-21T03:42:05.5387381Z Metadata: read
+Deploy frontend to EKS	Set up job	2026-05-21T03:42:05.5387948Z Packages: read
+Deploy frontend to EKS	Set up job	2026-05-21T03:42:05.5388465Z ##[endgroup]
+Deploy frontend to EKS	Set up job	2026-05-21T03:42:05.5390640Z Secret source: Actions
+Deploy frontend to EKS	Set up job	2026-05-21T03:42:05.5391520Z Prepare workflow directory
+Deploy frontend to EKS	Set up job	2026-05-21T03:42:05.5897897Z Prepare all required actions
+Deploy frontend to EKS	Set up job	2026-05-21T03:42:05.5935441Z Getting action download info
+Deploy frontend to EKS	Set up job	2026-05-21T03:42:05.9939793Z Download action repository 'actions/checkout@v4' (SHA:34e114876b0b11c390a56381ad16ebd13914f8d5)
+Deploy frontend to EKS	Set up job	2026-05-21T03:42:06.1373524Z Download action repository 'aws-actions/configure-aws-credentials@v4' (SHA:7474bc4690e29a8392af63c5b98e7449536d5c3a)
+Deploy frontend to EKS	Set up job	2026-05-21T03:42:06.4919854Z Download action repository 'azure/setup-kubectl@v4' (SHA:776406bce94f63e41d621b960d78ee25c8b76ede)
+Deploy frontend to EKS	Set up job	2026-05-21T03:42:06.6715165Z Download action repository 'imranismail/setup-kustomize@v2' (SHA:2ba527d4d055ab63514ba50a99456fc35684947f)
+Deploy frontend to EKS	Set up job	2026-05-21T03:42:07.0549370Z Complete job name: Deploy *** to EKS
+Deploy frontend to EKS	Checkout code	﻿2026-05-21T03:42:07.1400237Z ##[group]Run actions/checkout@v4
+Deploy frontend to EKS	Checkout code	2026-05-21T03:42:07.1401957Z with:
+Deploy frontend to EKS	Checkout code	2026-05-21T03:42:07.1402925Z   repository: LeoLin990405/movie-picture-pipeline
+Deploy frontend to EKS	Checkout code	2026-05-21T03:42:07.1404464Z   token: ***
+Deploy frontend to EKS	Checkout code	2026-05-21T03:42:07.1405291Z   ssh-strict: true
+Deploy frontend to EKS	Checkout code	2026-05-21T03:42:07.1406138Z   ssh-user: git
+Deploy frontend to EKS	Checkout code	2026-05-21T03:42:07.1406997Z   persist-credentials: true
+Deploy frontend to EKS	Checkout code	2026-05-21T03:42:07.1407950Z   clean: true
+Deploy frontend to EKS	Checkout code	2026-05-21T03:42:07.1408827Z   sparse-checkout-cone-mode: true
+Deploy frontend to EKS	Checkout code	2026-05-21T03:42:07.1409846Z   fetch-depth: 1
+Deploy frontend to EKS	Checkout code	2026-05-21T03:42:07.1410686Z   fetch-tags: false
+Deploy frontend to EKS	Checkout code	2026-05-21T03:42:07.1411648Z   show-progress: true
+Deploy frontend to EKS	Checkout code	2026-05-21T03:42:07.1412530Z   lfs: false
+Deploy frontend to EKS	Checkout code	2026-05-21T03:42:07.1413329Z   submodules: false
+Deploy frontend to EKS	Checkout code	2026-05-21T03:42:07.1414197Z   set-safe-directory: true
+Deploy frontend to EKS	Checkout code	2026-05-21T03:42:07.1415397Z env:
+Deploy frontend to EKS	Checkout code	2026-05-21T03:42:07.1416281Z   AWS_REGION: ***
+Deploy frontend to EKS	Checkout code	2026-05-21T03:42:07.1417159Z   EKS_CLUSTER_NAME: ***
+Deploy frontend to EKS	Checkout code	2026-05-21T03:42:07.1418097Z   FRONTEND_ECR_REPOSITORY: ***
+Deploy frontend to EKS	Checkout code	2026-05-21T03:42:07.1419807Z   REACT_APP_MOVIE_API_URL: ***
+Deploy frontend to EKS	Checkout code	2026-05-21T03:42:07.1420943Z ##[endgroup]
+Deploy frontend to EKS	Checkout code	2026-05-21T03:42:07.2549553Z Syncing repository: LeoLin990405/movie-picture-pipeline
+Deploy frontend to EKS	Checkout code	2026-05-21T03:42:07.2552697Z ##[group]Getting Git version info
+Deploy frontend to EKS	Checkout code	2026-05-21T03:42:07.2554332Z Working directory is '/home/runner/work/movie-picture-pipeline/movie-picture-pipeline'
+Deploy frontend to EKS	Checkout code	2026-05-21T03:42:07.2556632Z [command]/usr/bin/git version
+Deploy frontend to EKS	Checkout code	2026-05-21T03:42:07.2591403Z git version 2.54.0
+Deploy frontend to EKS	Checkout code	2026-05-21T03:42:07.2616805Z ##[endgroup]
+Deploy frontend to EKS	Checkout code	2026-05-21T03:42:07.2632103Z Temporarily overriding HOME='/home/runner/work/_temp/88bff849-bfd4-44a1-8c83-a1bd4cef81d7' before making global git config changes
+Deploy frontend to EKS	Checkout code	2026-05-21T03:42:07.2637838Z Adding repository directory to the temporary git global config as a safe directory
+Deploy frontend to EKS	Checkout code	2026-05-21T03:42:07.2642630Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/movie-picture-pipeline/movie-picture-pipeline
+Deploy frontend to EKS	Checkout code	2026-05-21T03:42:07.2692064Z Deleting the contents of '/home/runner/work/movie-picture-pipeline/movie-picture-pipeline'
+Deploy frontend to EKS	Checkout code	2026-05-21T03:42:07.2696188Z ##[group]Initializing the repository
+Deploy frontend to EKS	Checkout code	2026-05-21T03:42:07.2701228Z [command]/usr/bin/git init /home/runner/work/movie-picture-pipeline/movie-picture-pipeline
+Deploy frontend to EKS	Checkout code	2026-05-21T03:42:07.2782968Z hint: Using 'master' as the name for the initial branch. This default branch name
+Deploy frontend to EKS	Checkout code	2026-05-21T03:42:07.2785394Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+Deploy frontend to EKS	Checkout code	2026-05-21T03:42:07.2788213Z hint: to use in all of your new repositories, which will suppress this warning,
+Deploy frontend to EKS	Checkout code	2026-05-21T03:42:07.2790498Z hint: call:
+Deploy frontend to EKS	Checkout code	2026-05-21T03:42:07.2791897Z hint:
+Deploy frontend to EKS	Checkout code	2026-05-21T03:42:07.2793460Z hint: 	git config --global init.defaultBranch <name>
+Deploy frontend to EKS	Checkout code	2026-05-21T03:42:07.2795411Z hint:
+Deploy frontend to EKS	Checkout code	2026-05-21T03:42:07.2797156Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+Deploy frontend to EKS	Checkout code	2026-05-21T03:42:07.2799995Z hint: 'development'. The just-created branch can be renamed via this command:
+Deploy frontend to EKS	Checkout code	2026-05-21T03:42:07.2802610Z hint:
+Deploy frontend to EKS	Checkout code	2026-05-21T03:42:07.2803925Z hint: 	git branch -m <name>
+Deploy frontend to EKS	Checkout code	2026-05-21T03:42:07.2805392Z hint:
+Deploy frontend to EKS	Checkout code	2026-05-21T03:42:07.2807163Z hint: Disable this message with "git config set advice.defaultBranchName false"
+Deploy frontend to EKS	Checkout code	2026-05-21T03:42:07.2809420Z Initialized empty Git repository in /home/runner/work/movie-picture-pipeline/movie-picture-pipeline/.git/
+Deploy frontend to EKS	Checkout code	2026-05-21T03:42:07.2814719Z [command]/usr/bin/git remote add origin https://github.com/LeoLin990405/movie-picture-pipeline
+Deploy frontend to EKS	Checkout code	2026-05-21T03:42:07.2847754Z ##[endgroup]
+Deploy frontend to EKS	Checkout code	2026-05-21T03:42:07.2850070Z ##[group]Disabling automatic garbage collection
+Deploy frontend to EKS	Checkout code	2026-05-21T03:42:07.2852394Z [command]/usr/bin/git config --local gc.auto 0
+Deploy frontend to EKS	Checkout code	2026-05-21T03:42:07.2878814Z ##[endgroup]
+Deploy frontend to EKS	Checkout code	2026-05-21T03:42:07.2881331Z ##[group]Setting up auth
+Deploy frontend to EKS	Checkout code	2026-05-21T03:42:07.2886935Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+Deploy frontend to EKS	Checkout code	2026-05-21T03:42:07.2918347Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+Deploy frontend to EKS	Checkout code	2026-05-21T03:42:07.3196284Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+Deploy frontend to EKS	Checkout code	2026-05-21T03:42:07.3225168Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+Deploy frontend to EKS	Checkout code	2026-05-21T03:42:07.3397241Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+Deploy frontend to EKS	Checkout code	2026-05-21T03:42:07.3433734Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+Deploy frontend to EKS	Checkout code	2026-05-21T03:42:07.3610716Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+Deploy frontend to EKS	Checkout code	2026-05-21T03:42:07.3641340Z ##[endgroup]
+Deploy frontend to EKS	Checkout code	2026-05-21T03:42:07.3643890Z ##[group]Fetching the repository
+Deploy frontend to EKS	Checkout code	2026-05-21T03:42:07.3652665Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +4fb21951e7aa35b33f4e32c2a1eee921ba76a29d:refs/remotes/origin/main
+Deploy frontend to EKS	Checkout code	2026-05-21T03:42:07.6512669Z From https://github.com/LeoLin990405/movie-picture-pipeline
+Deploy frontend to EKS	Checkout code	2026-05-21T03:42:07.6515535Z  * [new ref]         4fb21951e7aa35b33f4e32c2a1eee921ba76a29d -> origin/main
+Deploy frontend to EKS	Checkout code	2026-05-21T03:42:07.6547461Z ##[endgroup]
+Deploy frontend to EKS	Checkout code	2026-05-21T03:42:07.6549836Z ##[group]Determining the checkout info
+Deploy frontend to EKS	Checkout code	2026-05-21T03:42:07.6552672Z ##[endgroup]
+Deploy frontend to EKS	Checkout code	2026-05-21T03:42:07.6554649Z [command]/usr/bin/git sparse-checkout disable
+Deploy frontend to EKS	Checkout code	2026-05-21T03:42:07.6591568Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+Deploy frontend to EKS	Checkout code	2026-05-21T03:42:07.6616339Z ##[group]Checking out the ref
+Deploy frontend to EKS	Checkout code	2026-05-21T03:42:07.6620061Z [command]/usr/bin/git checkout --progress --force -B main refs/remotes/origin/main
+Deploy frontend to EKS	Checkout code	2026-05-21T03:42:07.6710345Z Switched to a new branch 'main'
+Deploy frontend to EKS	Checkout code	2026-05-21T03:42:07.6712385Z branch 'main' set up to track 'origin/main'.
+Deploy frontend to EKS	Checkout code	2026-05-21T03:42:07.6719269Z ##[endgroup]
+Deploy frontend to EKS	Checkout code	2026-05-21T03:42:07.6749623Z [command]/usr/bin/git log -1 --format=%H
+Deploy frontend to EKS	Checkout code	2026-05-21T03:42:07.6767081Z 4fb21951e7aa35b33f4e32c2a1eee921ba76a29d
+Deploy frontend to EKS	Configure AWS credentials	﻿2026-05-21T03:42:07.7063410Z ##[group]Run aws-actions/configure-aws-credentials@v4
+Deploy frontend to EKS	Configure AWS credentials	2026-05-21T03:42:07.7064592Z with:
+Deploy frontend to EKS	Configure AWS credentials	2026-05-21T03:42:07.7065513Z   aws-access-key-id: ***
+Deploy frontend to EKS	Configure AWS credentials	2026-05-21T03:42:07.7066734Z   aws-secret-access-key: ***
+Deploy frontend to EKS	Configure AWS credentials	2026-05-21T03:42:07.7079311Z   aws-session-token: ***
+Deploy frontend to EKS	Configure AWS credentials	2026-05-21T03:42:07.7080306Z   aws-region: ***
+Deploy frontend to EKS	Configure AWS credentials	2026-05-21T03:42:07.7081434Z   audience: sts.amazonaws.com
+Deploy frontend to EKS	Configure AWS credentials	2026-05-21T03:42:07.7082456Z   output-env-credentials: true
+Deploy frontend to EKS	Configure AWS credentials	2026-05-21T03:42:07.7083353Z env:
+Deploy frontend to EKS	Configure AWS credentials	2026-05-21T03:42:07.7084115Z   AWS_REGION: ***
+Deploy frontend to EKS	Configure AWS credentials	2026-05-21T03:42:07.7084936Z   EKS_CLUSTER_NAME: ***
+Deploy frontend to EKS	Configure AWS credentials	2026-05-21T03:42:07.7085831Z   FRONTEND_ECR_REPOSITORY: ***
+Deploy frontend to EKS	Configure AWS credentials	2026-05-21T03:42:07.7087491Z   REACT_APP_MOVIE_API_URL: ***
+Deploy frontend to EKS	Configure AWS credentials	2026-05-21T03:42:07.7088410Z ##[endgroup]
+Deploy frontend to EKS	Configure AWS credentials	2026-05-21T03:42:07.9756252Z Proceeding with IAM user credentials
+Deploy frontend to EKS	Setup kubectl	﻿2026-05-21T03:42:07.9870641Z ##[group]Run azure/setup-kubectl@v4
+Deploy frontend to EKS	Setup kubectl	2026-05-21T03:42:07.9871800Z with:
+Deploy frontend to EKS	Setup kubectl	2026-05-21T03:42:07.9872496Z   version: latest
+Deploy frontend to EKS	Setup kubectl	2026-05-21T03:42:07.9873193Z env:
+Deploy frontend to EKS	Setup kubectl	2026-05-21T03:42:07.9873974Z   AWS_REGION: ***
+Deploy frontend to EKS	Setup kubectl	2026-05-21T03:42:07.9874755Z   EKS_CLUSTER_NAME: ***
+Deploy frontend to EKS	Setup kubectl	2026-05-21T03:42:07.9875607Z   FRONTEND_ECR_REPOSITORY: ***
+Deploy frontend to EKS	Setup kubectl	2026-05-21T03:42:07.9877186Z   REACT_APP_MOVIE_API_URL: ***
+Deploy frontend to EKS	Setup kubectl	2026-05-21T03:42:07.9878079Z   AWS_DEFAULT_REGION: ***
+Deploy frontend to EKS	Setup kubectl	2026-05-21T03:42:07.9878953Z   AWS_ACCESS_KEY_ID: ***
+Deploy frontend to EKS	Setup kubectl	2026-05-21T03:42:07.9880024Z   AWS_SECRET_ACCESS_KEY: ***
+Deploy frontend to EKS	Setup kubectl	2026-05-21T03:42:07.9891724Z   AWS_SESSION_TOKEN: ***
+Deploy frontend to EKS	Setup kubectl	2026-05-21T03:42:07.9892544Z ##[endgroup]
+Deploy frontend to EKS	Setup kustomize	﻿2026-05-21T03:42:08.4838700Z ##[group]Run imranismail/setup-kustomize@v2
+Deploy frontend to EKS	Setup kustomize	2026-05-21T03:42:08.4839693Z with:
+Deploy frontend to EKS	Setup kustomize	2026-05-21T03:42:08.4840419Z   kustomize-version: *
+Deploy frontend to EKS	Setup kustomize	2026-05-21T03:42:08.4841787Z   github-token: ***
+Deploy frontend to EKS	Setup kustomize	2026-05-21T03:42:08.4842555Z   fail-fast: true
+Deploy frontend to EKS	Setup kustomize	2026-05-21T03:42:08.4843263Z env:
+Deploy frontend to EKS	Setup kustomize	2026-05-21T03:42:08.4843961Z   AWS_REGION: ***
+Deploy frontend to EKS	Setup kustomize	2026-05-21T03:42:08.4844745Z   EKS_CLUSTER_NAME: ***
+Deploy frontend to EKS	Setup kustomize	2026-05-21T03:42:08.4845627Z   FRONTEND_ECR_REPOSITORY: ***
+Deploy frontend to EKS	Setup kustomize	2026-05-21T03:42:08.4847188Z   REACT_APP_MOVIE_API_URL: ***
+Deploy frontend to EKS	Setup kustomize	2026-05-21T03:42:08.4848105Z   AWS_DEFAULT_REGION: ***
+Deploy frontend to EKS	Setup kustomize	2026-05-21T03:42:08.4848988Z   AWS_ACCESS_KEY_ID: ***
+Deploy frontend to EKS	Setup kustomize	2026-05-21T03:42:08.4850085Z   AWS_SECRET_ACCESS_KEY: ***
+Deploy frontend to EKS	Setup kustomize	2026-05-21T03:42:08.4861832Z   AWS_SESSION_TOKEN: ***
+Deploy frontend to EKS	Setup kustomize	2026-05-21T03:42:08.4862669Z ##[endgroup]
+Deploy frontend to EKS	Setup kustomize	2026-05-21T03:42:10.4607254Z [command]/usr/bin/tar xz --warning=no-unknown-keyword --overwrite -C /home/runner/work/_temp/072e52c8-21e2-41f7-a5a6-f375947172d9 -f /home/runner/work/_temp/eba3e69c-d81d-4caf-a872-b5975c1a754a
+Deploy frontend to EKS	Update kubeconfig	﻿2026-05-21T03:42:10.5682750Z ##[group]Run aws eks update-kubeconfig --name "$EKS_CLUSTER_NAME" --region "$AWS_REGION"
+Deploy frontend to EKS	Update kubeconfig	2026-05-21T03:42:10.5683534Z ^[[36;1maws eks update-kubeconfig --name "$EKS_CLUSTER_NAME" --region "$AWS_REGION"^[[0m
+Deploy frontend to EKS	Update kubeconfig	2026-05-21T03:42:10.5706751Z shell: /usr/bin/bash -e {0}
+Deploy frontend to EKS	Update kubeconfig	2026-05-21T03:42:10.5707041Z env:
+Deploy frontend to EKS	Update kubeconfig	2026-05-21T03:42:10.5707470Z   AWS_REGION: ***
+Deploy frontend to EKS	Update kubeconfig	2026-05-21T03:42:10.5707726Z   EKS_CLUSTER_NAME: ***
+Deploy frontend to EKS	Update kubeconfig	2026-05-21T03:42:10.5707971Z   FRONTEND_ECR_REPOSITORY: ***
+Deploy frontend to EKS	Update kubeconfig	2026-05-21T03:42:10.5708501Z   REACT_APP_MOVIE_API_URL: ***
+Deploy frontend to EKS	Update kubeconfig	2026-05-21T03:42:10.5708758Z   AWS_DEFAULT_REGION: ***
+Deploy frontend to EKS	Update kubeconfig	2026-05-21T03:42:10.5709023Z   AWS_ACCESS_KEY_ID: ***
+Deploy frontend to EKS	Update kubeconfig	2026-05-21T03:42:10.5709334Z   AWS_SECRET_ACCESS_KEY: ***
+Deploy frontend to EKS	Update kubeconfig	2026-05-21T03:42:10.5713223Z   AWS_SESSION_TOKEN: ***
+Deploy frontend to EKS	Update kubeconfig	2026-05-21T03:42:10.5713451Z ##[endgroup]
+Deploy frontend to EKS	Update kubeconfig	2026-05-21T03:42:11.7935764Z Added new context arn:aws:eks:***:963904228567:***/*** to /home/runner/.kube/config
+Deploy frontend to EKS	Deploy *** manifests	﻿2026-05-21T03:42:11.8986930Z ##[group]Run ACCOUNT_ID="$(aws sts get-caller-identity --query Account --output text)"
+Deploy frontend to EKS	Deploy *** manifests	2026-05-21T03:42:11.8987536Z ^[[36;1mACCOUNT_ID="$(aws sts get-caller-identity --query Account --output text)"^[[0m
+Deploy frontend to EKS	Deploy *** manifests	2026-05-21T03:42:11.8988112Z ^[[36;1mIMAGE_URI="${ACCOUNT_ID}.dkr.ecr.${AWS_REGION}.amazonaws.com/${FRONTEND_ECR_REPOSITORY}:${GITHUB_SHA}"^[[0m
+Deploy frontend to EKS	Deploy *** manifests	2026-05-21T03:42:11.8988696Z ^[[36;1mkustomize edit set image ***="$IMAGE_URI"^[[0m
+Deploy frontend to EKS	Deploy *** manifests	2026-05-21T03:42:11.8989014Z ^[[36;1mkustomize build . | kubectl apply -f -^[[0m
+Deploy frontend to EKS	Deploy *** manifests	2026-05-21T03:42:11.9009364Z shell: /usr/bin/bash -e {0}
+Deploy frontend to EKS	Deploy *** manifests	2026-05-21T03:42:11.9009638Z env:
+Deploy frontend to EKS	Deploy *** manifests	2026-05-21T03:42:11.9009911Z   AWS_REGION: ***
+Deploy frontend to EKS	Deploy *** manifests	2026-05-21T03:42:11.9010161Z   EKS_CLUSTER_NAME: ***
+Deploy frontend to EKS	Deploy *** manifests	2026-05-21T03:42:11.9010431Z   FRONTEND_ECR_REPOSITORY: ***
+Deploy frontend to EKS	Deploy *** manifests	2026-05-21T03:42:11.9011123Z   REACT_APP_MOVIE_API_URL: ***
+Deploy frontend to EKS	Deploy *** manifests	2026-05-21T03:42:11.9011400Z   AWS_DEFAULT_REGION: ***
+Deploy frontend to EKS	Deploy *** manifests	2026-05-21T03:42:11.9011661Z   AWS_ACCESS_KEY_ID: ***
+Deploy frontend to EKS	Deploy *** manifests	2026-05-21T03:42:11.9011992Z   AWS_SECRET_ACCESS_KEY: ***
+Deploy frontend to EKS	Deploy *** manifests	2026-05-21T03:42:11.9015519Z   AWS_SESSION_TOKEN: ***
+Deploy frontend to EKS	Deploy *** manifests	2026-05-21T03:42:11.9015823Z ##[endgroup]
+Deploy frontend to EKS	Deploy *** manifests	2026-05-21T03:42:14.6084475Z service/*** unchanged
+Deploy frontend to EKS	Deploy *** manifests	2026-05-21T03:42:14.6552463Z deployment.apps/*** unchanged
+Deploy frontend to EKS	Verify *** service URL	﻿2026-05-21T03:42:14.6588752Z ##[group]Run ACCOUNT_ID="$(aws sts get-caller-identity --query Account --output text)"
+Deploy frontend to EKS	Verify *** service URL	2026-05-21T03:42:14.6589362Z ^[[36;1mACCOUNT_ID="$(aws sts get-caller-identity --query Account --output text)"^[[0m
+Deploy frontend to EKS	Verify *** service URL	2026-05-21T03:42:14.6589929Z ^[[36;1mIMAGE_URI="${ACCOUNT_ID}.dkr.ecr.${AWS_REGION}.amazonaws.com/${FRONTEND_ECR_REPOSITORY}:${GITHUB_SHA}"^[[0m
+Deploy frontend to EKS	Verify *** service URL	2026-05-21T03:42:14.6590614Z ^[[36;1mif ! kubectl wait --for=condition=Available deployment/*** --timeout=300s; then^[[0m
+Deploy frontend to EKS	Verify *** service URL	2026-05-21T03:42:14.6591272Z ^[[36;1m  kubectl get deployment *** -o wide^[[0m
+Deploy frontend to EKS	Verify *** service URL	2026-05-21T03:42:14.6591597Z ^[[36;1m  kubectl describe deployment ***^[[0m
+Deploy frontend to EKS	Verify *** service URL	2026-05-21T03:42:14.6591932Z ^[[36;1m  kubectl get pods -l app=*** -o wide^[[0m
+Deploy frontend to EKS	Verify *** service URL	2026-05-21T03:42:14.6592245Z ^[[36;1m  kubectl describe pods -l app=***^[[0m
+Deploy frontend to EKS	Verify *** service URL	2026-05-21T03:42:14.6592611Z ^[[36;1m  kubectl logs -l app=*** --all-containers --tail=100 || true^[[0m
+Deploy frontend to EKS	Verify *** service URL	2026-05-21T03:42:14.6592930Z ^[[36;1m  exit 1^[[0m
+Deploy frontend to EKS	Verify *** service URL	2026-05-21T03:42:14.6593120Z ^[[36;1mfi^[[0m
+Deploy frontend to EKS	Verify *** service URL	2026-05-21T03:42:14.6593366Z ^[[36;1mkubectl get pods -l app=*** -o wide^[[0m
+Deploy frontend to EKS	Verify *** service URL	2026-05-21T03:42:14.6593717Z ^[[36;1mkubectl get service *** -o wide^[[0m
+Deploy frontend to EKS	Verify *** service URL	2026-05-21T03:42:14.6593958Z ^[[36;1m^[[0m
+Deploy frontend to EKS	Verify *** service URL	2026-05-21T03:42:14.6594143Z ^[[36;1mFRONTEND_HOST=""^[[0m
+Deploy frontend to EKS	Verify *** service URL	2026-05-21T03:42:14.6594365Z ^[[36;1mfor i in {1..30}; do^[[0m
+Deploy frontend to EKS	Verify *** service URL	2026-05-21T03:42:14.6594876Z ^[[36;1m  FRONTEND_HOST="$(kubectl get service *** -o jsonpath='{.status.loadBalancer.ingress[0].hostname}' 2>/dev/null || true)"^[[0m
+Deploy frontend to EKS	Verify *** service URL	2026-05-21T03:42:14.6595412Z ^[[36;1m  if [ -n "$FRONTEND_HOST" ]; then^[[0m
+Deploy frontend to EKS	Verify *** service URL	2026-05-21T03:42:14.6595671Z ^[[36;1m    break^[[0m
+Deploy frontend to EKS	Verify *** service URL	2026-05-21T03:42:14.6595871Z ^[[36;1m  fi^[[0m
+Deploy frontend to EKS	Verify *** service URL	2026-05-21T03:42:14.6596319Z ^[[36;1m  FRONTEND_HOST="$(kubectl get service *** -o jsonpath='{.status.loadBalancer.ingress[0].ip}' 2>/dev/null || true)"^[[0m
+Deploy frontend to EKS	Verify *** service URL	2026-05-21T03:42:14.6596820Z ^[[36;1m  if [ -n "$FRONTEND_HOST" ]; then^[[0m
+Deploy frontend to EKS	Verify *** service URL	2026-05-21T03:42:14.6597071Z ^[[36;1m    break^[[0m
+Deploy frontend to EKS	Verify *** service URL	2026-05-21T03:42:14.6597262Z ^[[36;1m  fi^[[0m
+Deploy frontend to EKS	Verify *** service URL	2026-05-21T03:42:14.6597551Z ^[[36;1m  echo "Waiting for *** LoadBalancer address ($i/30)..."^[[0m
+Deploy frontend to EKS	Verify *** service URL	2026-05-21T03:42:14.6597868Z ^[[36;1m  sleep 10^[[0m
+Deploy frontend to EKS	Verify *** service URL	2026-05-21T03:42:14.6598072Z ^[[36;1mdone^[[0m
+Deploy frontend to EKS	Verify *** service URL	2026-05-21T03:42:14.6598252Z ^[[36;1m^[[0m
+Deploy frontend to EKS	Verify *** service URL	2026-05-21T03:42:14.6598450Z ^[[36;1mif [ -z "$FRONTEND_HOST" ]; then^[[0m
+Deploy frontend to EKS	Verify *** service URL	2026-05-21T03:42:14.6598786Z ^[[36;1m  echo "Frontend LoadBalancer address was not assigned in time."^[[0m
+Deploy frontend to EKS	Verify *** service URL	2026-05-21T03:42:14.6599165Z ^[[36;1m  kubectl describe service ***^[[0m
+Deploy frontend to EKS	Verify *** service URL	2026-05-21T03:42:14.6599411Z ^[[36;1m  exit 1^[[0m
+Deploy frontend to EKS	Verify *** service URL	2026-05-21T03:42:14.6599603Z ^[[36;1mfi^[[0m
+Deploy frontend to EKS	Verify *** service URL	2026-05-21T03:42:14.6599779Z ^[[36;1m^[[0m
+Deploy frontend to EKS	Verify *** service URL	2026-05-21T03:42:14.6600005Z ^[[36;1mFRONTEND_URL="http://${FRONTEND_HOST}"^[[0m
+Deploy frontend to EKS	Verify *** service URL	2026-05-21T03:42:14.6600322Z ^[[36;1mecho "Frontend service URL: ${FRONTEND_URL}"^[[0m
+Deploy frontend to EKS	Verify *** service URL	2026-05-21T03:42:14.6600600Z ^[[36;1m{^[[0m
+Deploy frontend to EKS	Verify *** service URL	2026-05-21T03:42:14.6601019Z ^[[36;1m  echo "### Frontend EKS Deployment Verification"^[[0m
+Deploy frontend to EKS	Verify *** service URL	2026-05-21T03:42:14.6601315Z ^[[36;1m  echo ""^[[0m
+Deploy frontend to EKS	Verify *** service URL	2026-05-21T03:42:14.6601563Z ^[[36;1m  echo "- Image deployed: \`${IMAGE_URI}\`"^[[0m
+Deploy frontend to EKS	Verify *** service URL	2026-05-21T03:42:14.6601886Z ^[[36;1m  echo "- Frontend service URL: ${FRONTEND_URL}"^[[0m
+Deploy frontend to EKS	Verify *** service URL	2026-05-21T03:42:14.6602179Z ^[[36;1m  echo ""^[[0m
+Deploy frontend to EKS	Verify *** service URL	2026-05-21T03:42:14.6602377Z ^[[36;1m  echo '```'^[[0m
+Deploy frontend to EKS	Verify *** service URL	2026-05-21T03:42:14.6602623Z ^[[36;1m  kubectl get service *** -o wide^[[0m
+Deploy frontend to EKS	Verify *** service URL	2026-05-21T03:42:14.6602879Z ^[[36;1m  echo '```'^[[0m
+Deploy frontend to EKS	Verify *** service URL	2026-05-21T03:42:14.6603095Z ^[[36;1m} >> "$GITHUB_STEP_SUMMARY"^[[0m
+Deploy frontend to EKS	Verify *** service URL	2026-05-21T03:42:14.6623192Z shell: /usr/bin/bash -e {0}
+Deploy frontend to EKS	Verify *** service URL	2026-05-21T03:42:14.6623441Z env:
+Deploy frontend to EKS	Verify *** service URL	2026-05-21T03:42:14.6623662Z   AWS_REGION: ***
+Deploy frontend to EKS	Verify *** service URL	2026-05-21T03:42:14.6623874Z   EKS_CLUSTER_NAME: ***
+Deploy frontend to EKS	Verify *** service URL	2026-05-21T03:42:14.6624146Z   FRONTEND_ECR_REPOSITORY: ***
+Deploy frontend to EKS	Verify *** service URL	2026-05-21T03:42:14.6624636Z   REACT_APP_MOVIE_API_URL: ***
+Deploy frontend to EKS	Verify *** service URL	2026-05-21T03:42:14.6624885Z   AWS_DEFAULT_REGION: ***
+Deploy frontend to EKS	Verify *** service URL	2026-05-21T03:42:14.6625129Z   AWS_ACCESS_KEY_ID: ***
+Deploy frontend to EKS	Verify *** service URL	2026-05-21T03:42:14.6625436Z   AWS_SECRET_ACCESS_KEY: ***
+Deploy frontend to EKS	Verify *** service URL	2026-05-21T03:42:14.6629079Z   AWS_SESSION_TOKEN: ***
+Deploy frontend to EKS	Verify *** service URL	2026-05-21T03:42:14.6629297Z ##[endgroup]
+Deploy frontend to EKS	Verify *** service URL	2026-05-21T03:42:16.3492210Z deployment.apps/*** condition met
+Deploy frontend to EKS	Verify *** service URL	2026-05-21T03:42:17.0974744Z NAME                        READY   STATUS    RESTARTS   AGE   IP          NODE                        NOMINATED NODE   READINESS GATES
+Deploy frontend to EKS	Verify *** service URL	2026-05-21T03:42:17.0975926Z ***-7f76685767-26j9k   1/1     Running   0          15m   10.0.1.89   ip-10-0-1-82.ec2.internal   <none>           <none>
+Deploy frontend to EKS	Verify *** service URL	2026-05-21T03:42:17.8422898Z NAME       TYPE           CLUSTER-IP      EXTERNAL-IP                                                               PORT(S)        AGE   SELECTOR
+Deploy frontend to EKS	Verify *** service URL	2026-05-21T03:42:17.8423845Z ***   LoadBalancer   172.20.13.208   a5182956fcc0d445599f57219e2e4688-1548340538.***.elb.amazonaws.com   80:30921/TCP   8h    app=***
+Deploy frontend to EKS	Verify *** service URL	2026-05-21T03:42:18.6461943Z Frontend service URL: http://a5182956fcc0d445599f57219e2e4688-1548340538.***.elb.amazonaws.com
+Deploy frontend to EKS	Post Configure AWS credentials	﻿2026-05-21T03:42:19.4219951Z Post job cleanup.
+Deploy frontend to EKS	Post Checkout code	﻿2026-05-21T03:42:19.5447059Z Post job cleanup.
+Deploy frontend to EKS	Post Checkout code	2026-05-21T03:42:19.6352636Z [command]/usr/bin/git version
+Deploy frontend to EKS	Post Checkout code	2026-05-21T03:42:19.6385171Z git version 2.54.0
+Deploy frontend to EKS	Post Checkout code	2026-05-21T03:42:19.6425122Z Temporarily overriding HOME='/home/runner/work/_temp/f3b4ab3f-f871-4289-983e-ea3058b530e6' before making global git config changes
+Deploy frontend to EKS	Post Checkout code	2026-05-21T03:42:19.6426383Z Adding repository directory to the temporary git global config as a safe directory
+Deploy frontend to EKS	Post Checkout code	2026-05-21T03:42:19.6431769Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/movie-picture-pipeline/movie-picture-pipeline
+Deploy frontend to EKS	Post Checkout code	2026-05-21T03:42:19.6464074Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+Deploy frontend to EKS	Post Checkout code	2026-05-21T03:42:19.6492167Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+Deploy frontend to EKS	Post Checkout code	2026-05-21T03:42:19.6665561Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+Deploy frontend to EKS	Post Checkout code	2026-05-21T03:42:19.6686962Z http.https://github.com/.extraheader
+Deploy frontend to EKS	Post Checkout code	2026-05-21T03:42:19.6698345Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+Deploy frontend to EKS	Post Checkout code	2026-05-21T03:42:19.6724402Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+Deploy frontend to EKS	Post Checkout code	2026-05-21T03:42:19.6896783Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+Deploy frontend to EKS	Post Checkout code	2026-05-21T03:42:19.6922462Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+Deploy frontend to EKS	Complete job	﻿2026-05-21T03:42:19.7194549Z Cleaning up orphan processes
+Deploy frontend to EKS	Complete job	2026-05-21T03:42:19.7388304Z ##[warning]Node.js 20 actions are deprecated. The following actions are running on Node.js 20 and may not work as expected: actions/checkout@v4, aws-actions/configure-aws-credentials@v4, azure/setup-kubectl@v4, imranismail/setup-kustomize@v2. Actions will be forced to run with Node.js 24 by default starting June 2nd, 2026. Node.js 20 will be removed from the runner on September 16th, 2026. Please check if updated versions of these actions are available that support Node.js 24. To opt into Node.js 24 now, set the FORCE_JAVASCRIPT_ACTIONS_TO_NODE24=true environment variable on the runner or in your workflow file. Once Node.js 24 becomes the default, you can temporarily opt out by setting ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION=true. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/

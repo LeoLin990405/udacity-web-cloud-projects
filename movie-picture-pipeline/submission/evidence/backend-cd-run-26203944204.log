@@ -1,0 +1,1448 @@
+Test backend	Set up job	﻿2026-05-21T03:37:51.7587687Z Current runner version: '2.334.0'
+Test backend	Set up job	2026-05-21T03:37:51.7611062Z ##[group]Runner Image Provisioner
+Test backend	Set up job	2026-05-21T03:37:51.7611877Z Hosted Compute Agent
+Test backend	Set up job	2026-05-21T03:37:51.7612471Z Version: 20260213.493
+Test backend	Set up job	2026-05-21T03:37:51.7613144Z Commit: 5c115507f6dd24b8de37d8bbe0bb4509d0cc0fa3
+Test backend	Set up job	2026-05-21T03:37:51.7613850Z Build Date: 2026-02-13T00:28:41Z
+Test backend	Set up job	2026-05-21T03:37:51.7614453Z Worker ID: {ebaf7ad7-7948-4877-868f-26d6e45fe5e3}
+Test backend	Set up job	2026-05-21T03:37:51.7615199Z Azure Region: westus
+Test backend	Set up job	2026-05-21T03:37:51.7615764Z ##[endgroup]
+Test backend	Set up job	2026-05-21T03:37:51.7617111Z ##[group]Operating System
+Test backend	Set up job	2026-05-21T03:37:51.7617774Z Ubuntu
+Test backend	Set up job	2026-05-21T03:37:51.7618249Z 24.04.4
+Test backend	Set up job	2026-05-21T03:37:51.7618701Z LTS
+Test backend	Set up job	2026-05-21T03:37:51.7619430Z ##[endgroup]
+Test backend	Set up job	2026-05-21T03:37:51.7620047Z ##[group]Runner Image
+Test backend	Set up job	2026-05-21T03:37:51.7620586Z Image: ubuntu-24.04
+Test backend	Set up job	2026-05-21T03:37:51.7621179Z Version: 20260513.135.3
+Test backend	Set up job	2026-05-21T03:37:51.7622168Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20260513.135/images/ubuntu/Ubuntu2404-Readme.md
+Test backend	Set up job	2026-05-21T03:37:51.7623918Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20260513.135
+Test backend	Set up job	2026-05-21T03:37:51.7624800Z ##[endgroup]
+Test backend	Set up job	2026-05-21T03:37:51.7625959Z ##[group]GITHUB_TOKEN Permissions
+Test backend	Set up job	2026-05-21T03:37:51.7627980Z Contents: read
+Test backend	Set up job	2026-05-21T03:37:51.7628617Z Metadata: read
+Test backend	Set up job	2026-05-21T03:37:51.7629421Z Packages: read
+Test backend	Set up job	2026-05-21T03:37:51.7629943Z ##[endgroup]
+Test backend	Set up job	2026-05-21T03:37:51.7632078Z Secret source: Actions
+Test backend	Set up job	2026-05-21T03:37:51.7632826Z Prepare workflow directory
+Test backend	Set up job	2026-05-21T03:37:51.8165605Z Prepare all required actions
+Test backend	Set up job	2026-05-21T03:37:51.8201619Z Getting action download info
+Test backend	Set up job	2026-05-21T03:37:52.2669955Z Download action repository 'actions/checkout@v4' (SHA:34e114876b0b11c390a56381ad16ebd13914f8d5)
+Test backend	Set up job	2026-05-21T03:37:52.4363729Z Download action repository 'actions/setup-python@v5' (SHA:a26af69be951a213d495a4c3e4e4022e16d87065)
+Test backend	Set up job	2026-05-21T03:37:52.5147649Z Download action repository 'actions/cache@v4' (SHA:0057852bfaa89a56745cba8c7296529d2fc39830)
+Test backend	Set up job	2026-05-21T03:37:52.7010466Z Complete job name: Test ***
+Test backend	Checkout code	﻿2026-05-21T03:37:52.7691713Z ##[group]Run actions/checkout@v4
+Test backend	Checkout code	2026-05-21T03:37:52.7692551Z with:
+Test backend	Checkout code	2026-05-21T03:37:52.7693026Z   repository: LeoLin990405/movie-picture-pipeline
+Test backend	Checkout code	2026-05-21T03:37:52.7693767Z   token: ***
+Test backend	Checkout code	2026-05-21T03:37:52.7694152Z   ssh-strict: true
+Test backend	Checkout code	2026-05-21T03:37:52.7694550Z   ssh-user: git
+Test backend	Checkout code	2026-05-21T03:37:52.7694956Z   persist-credentials: true
+Test backend	Checkout code	2026-05-21T03:37:52.7695466Z   clean: true
+Test backend	Checkout code	2026-05-21T03:37:52.7695924Z   sparse-checkout-cone-mode: true
+Test backend	Checkout code	2026-05-21T03:37:52.7696406Z   fetch-depth: 1
+Test backend	Checkout code	2026-05-21T03:37:52.7696796Z   fetch-tags: false
+Test backend	Checkout code	2026-05-21T03:37:52.7697192Z   show-progress: true
+Test backend	Checkout code	2026-05-21T03:37:52.7697591Z   lfs: false
+Test backend	Checkout code	2026-05-21T03:37:52.7697956Z   submodules: false
+Test backend	Checkout code	2026-05-21T03:37:52.7698355Z   set-safe-directory: true
+Test backend	Checkout code	2026-05-21T03:37:52.7699235Z env:
+Test backend	Checkout code	2026-05-21T03:37:52.7699677Z   AWS_REGION: ***
+Test backend	Checkout code	2026-05-21T03:37:52.7700099Z   EKS_CLUSTER_NAME: ***
+Test backend	Checkout code	2026-05-21T03:37:52.7700551Z   BACKEND_ECR_REPOSITORY: ***
+Test backend	Checkout code	2026-05-21T03:37:52.7701011Z ##[endgroup]
+Test backend	Checkout code	2026-05-21T03:37:52.8858172Z Syncing repository: LeoLin990405/movie-picture-pipeline
+Test backend	Checkout code	2026-05-21T03:37:52.8860363Z ##[group]Getting Git version info
+Test backend	Checkout code	2026-05-21T03:37:52.8861376Z Working directory is '/home/runner/work/movie-picture-pipeline/movie-picture-pipeline'
+Test backend	Checkout code	2026-05-21T03:37:52.8862623Z [command]/usr/bin/git version
+Test backend	Checkout code	2026-05-21T03:37:52.8958950Z git version 2.54.0
+Test backend	Checkout code	2026-05-21T03:37:52.8985019Z ##[endgroup]
+Test backend	Checkout code	2026-05-21T03:37:52.9006937Z Temporarily overriding HOME='/home/runner/work/_temp/e17226e7-4e39-46cb-b3a4-bb0fcc33c547' before making global git config changes
+Test backend	Checkout code	2026-05-21T03:37:52.9009793Z Adding repository directory to the temporary git global config as a safe directory
+Test backend	Checkout code	2026-05-21T03:37:52.9014096Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/movie-picture-pipeline/movie-picture-pipeline
+Test backend	Checkout code	2026-05-21T03:37:52.9064890Z Deleting the contents of '/home/runner/work/movie-picture-pipeline/movie-picture-pipeline'
+Test backend	Checkout code	2026-05-21T03:37:52.9068031Z ##[group]Initializing the repository
+Test backend	Checkout code	2026-05-21T03:37:52.9073711Z [command]/usr/bin/git init /home/runner/work/movie-picture-pipeline/movie-picture-pipeline
+Test backend	Checkout code	2026-05-21T03:37:52.9188610Z hint: Using 'master' as the name for the initial branch. This default branch name
+Test backend	Checkout code	2026-05-21T03:37:52.9190297Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+Test backend	Checkout code	2026-05-21T03:37:52.9191218Z hint: to use in all of your new repositories, which will suppress this warning,
+Test backend	Checkout code	2026-05-21T03:37:52.9191896Z hint: call:
+Test backend	Checkout code	2026-05-21T03:37:52.9192246Z hint:
+Test backend	Checkout code	2026-05-21T03:37:52.9192715Z hint: 	git config --global init.defaultBranch <name>
+Test backend	Checkout code	2026-05-21T03:37:52.9193401Z hint:
+Test backend	Checkout code	2026-05-21T03:37:52.9193954Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+Test backend	Checkout code	2026-05-21T03:37:52.9195089Z hint: 'development'. The just-created branch can be renamed via this command:
+Test backend	Checkout code	2026-05-21T03:37:52.9196201Z hint:
+Test backend	Checkout code	2026-05-21T03:37:52.9196660Z hint: 	git branch -m <name>
+Test backend	Checkout code	2026-05-21T03:37:52.9197445Z hint:
+Test backend	Checkout code	2026-05-21T03:37:52.9198536Z hint: Disable this message with "git config set advice.defaultBranchName false"
+Test backend	Checkout code	2026-05-21T03:37:52.9201010Z Initialized empty Git repository in /home/runner/work/movie-picture-pipeline/movie-picture-pipeline/.git/
+Test backend	Checkout code	2026-05-21T03:37:52.9209272Z [command]/usr/bin/git remote add origin https://github.com/LeoLin990405/movie-picture-pipeline
+Test backend	Checkout code	2026-05-21T03:37:52.9253655Z ##[endgroup]
+Test backend	Checkout code	2026-05-21T03:37:52.9254896Z ##[group]Disabling automatic garbage collection
+Test backend	Checkout code	2026-05-21T03:37:52.9258583Z [command]/usr/bin/git config --local gc.auto 0
+Test backend	Checkout code	2026-05-21T03:37:52.9286663Z ##[endgroup]
+Test backend	Checkout code	2026-05-21T03:37:52.9287911Z ##[group]Setting up auth
+Test backend	Checkout code	2026-05-21T03:37:52.9294402Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+Test backend	Checkout code	2026-05-21T03:37:52.9326381Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+Test backend	Checkout code	2026-05-21T03:37:52.9687624Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+Test backend	Checkout code	2026-05-21T03:37:52.9716713Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+Test backend	Checkout code	2026-05-21T03:37:52.9928241Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+Test backend	Checkout code	2026-05-21T03:37:52.9958671Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+Test backend	Checkout code	2026-05-21T03:37:53.0175824Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+Test backend	Checkout code	2026-05-21T03:37:53.0208607Z ##[endgroup]
+Test backend	Checkout code	2026-05-21T03:37:53.0209776Z ##[group]Fetching the repository
+Test backend	Checkout code	2026-05-21T03:37:53.0216976Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +4fb21951e7aa35b33f4e32c2a1eee921ba76a29d:refs/remotes/origin/main
+Test backend	Checkout code	2026-05-21T03:37:53.4637603Z From https://github.com/LeoLin990405/movie-picture-pipeline
+Test backend	Checkout code	2026-05-21T03:37:53.4640073Z  * [new ref]         4fb21951e7aa35b33f4e32c2a1eee921ba76a29d -> origin/main
+Test backend	Checkout code	2026-05-21T03:37:53.4678713Z ##[endgroup]
+Test backend	Checkout code	2026-05-21T03:37:53.4680274Z ##[group]Determining the checkout info
+Test backend	Checkout code	2026-05-21T03:37:53.4681917Z ##[endgroup]
+Test backend	Checkout code	2026-05-21T03:37:53.4687534Z [command]/usr/bin/git sparse-checkout disable
+Test backend	Checkout code	2026-05-21T03:37:53.4730995Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+Test backend	Checkout code	2026-05-21T03:37:53.4756872Z ##[group]Checking out the ref
+Test backend	Checkout code	2026-05-21T03:37:53.4761703Z [command]/usr/bin/git checkout --progress --force -B main refs/remotes/origin/main
+Test backend	Checkout code	2026-05-21T03:37:53.4866218Z Switched to a new branch 'main'
+Test backend	Checkout code	2026-05-21T03:37:53.4869863Z branch 'main' set up to track 'origin/main'.
+Test backend	Checkout code	2026-05-21T03:37:53.4876172Z ##[endgroup]
+Test backend	Checkout code	2026-05-21T03:37:53.4911472Z [command]/usr/bin/git log -1 --format=%H
+Test backend	Checkout code	2026-05-21T03:37:53.4932216Z 4fb21951e7aa35b33f4e32c2a1eee921ba76a29d
+Test backend	Setup Python	﻿2026-05-21T03:37:53.5176070Z ##[group]Run actions/setup-python@v5
+Test backend	Setup Python	2026-05-21T03:37:53.5176847Z with:
+Test backend	Setup Python	2026-05-21T03:37:53.5177225Z   python-version: 3.10
+Test backend	Setup Python	2026-05-21T03:37:53.5177654Z   check-latest: false
+Test backend	Setup Python	2026-05-21T03:37:53.5178217Z   token: ***
+Test backend	Setup Python	2026-05-21T03:37:53.5178620Z   update-environment: true
+Test backend	Setup Python	2026-05-21T03:37:53.5179425Z   allow-prereleases: false
+Test backend	Setup Python	2026-05-21T03:37:53.5179880Z   freethreaded: false
+Test backend	Setup Python	2026-05-21T03:37:53.5180318Z env:
+Test backend	Setup Python	2026-05-21T03:37:53.5180718Z   AWS_REGION: ***
+Test backend	Setup Python	2026-05-21T03:37:53.5181136Z   EKS_CLUSTER_NAME: ***
+Test backend	Setup Python	2026-05-21T03:37:53.5181593Z   BACKEND_ECR_REPOSITORY: ***
+Test backend	Setup Python	2026-05-21T03:37:53.5182045Z ##[endgroup]
+Test backend	Setup Python	2026-05-21T03:37:53.6867786Z ##[group]Installed versions
+Test backend	Setup Python	2026-05-21T03:37:53.6972235Z Successfully set up CPython (3.10.20)
+Test backend	Setup Python	2026-05-21T03:37:53.6973966Z ##[endgroup]
+Test backend	Restore pipenv cache	﻿2026-05-21T03:37:53.7764304Z ##[group]Run actions/cache@v4
+Test backend	Restore pipenv cache	2026-05-21T03:37:53.7765358Z with:
+Test backend	Restore pipenv cache	2026-05-21T03:37:53.7766151Z   path: ~/.local/share/virtualenvs
+Test backend	Restore pipenv cache	2026-05-21T03:37:53.7768170Z   key: ***-pipenv-Linux-8a33228c7833befedb65840f499ae74afe02c1d1cc42478bf4f8ea3d75473c7c
+Test backend	Restore pipenv cache	2026-05-21T03:37:53.7770623Z   restore-keys: ***-pipenv-Linux-
+Test backend	Restore pipenv cache	
+Test backend	Restore pipenv cache	2026-05-21T03:37:53.7771719Z   enableCrossOsArchive: false
+Test backend	Restore pipenv cache	2026-05-21T03:37:53.7772827Z   fail-on-cache-miss: false
+Test backend	Restore pipenv cache	2026-05-21T03:37:53.7773675Z   lookup-only: false
+Test backend	Restore pipenv cache	2026-05-21T03:37:53.7774192Z   save-always: false
+Test backend	Restore pipenv cache	2026-05-21T03:37:53.7774671Z env:
+Test backend	Restore pipenv cache	2026-05-21T03:37:53.7775162Z   AWS_REGION: ***
+Test backend	Restore pipenv cache	2026-05-21T03:37:53.7775664Z   EKS_CLUSTER_NAME: ***
+Test backend	Restore pipenv cache	2026-05-21T03:37:53.7776238Z   BACKEND_ECR_REPOSITORY: ***
+Test backend	Restore pipenv cache	2026-05-21T03:37:53.7776975Z   pythonLocation: /opt/hostedtoolcache/Python/3.10.20/x64
+Test backend	Restore pipenv cache	2026-05-21T03:37:53.7778039Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.10.20/x64/lib/pkgconfig
+Test backend	Restore pipenv cache	2026-05-21T03:37:53.7779413Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.10.20/x64
+Test backend	Restore pipenv cache	2026-05-21T03:37:53.7780442Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.10.20/x64
+Test backend	Restore pipenv cache	2026-05-21T03:37:53.7781398Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.10.20/x64
+Test backend	Restore pipenv cache	2026-05-21T03:37:53.7782359Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.10.20/x64/lib
+Test backend	Restore pipenv cache	2026-05-21T03:37:53.7783175Z ##[endgroup]
+Test backend	Restore pipenv cache	2026-05-21T03:37:54.1703070Z Cache hit for: ***-pipenv-Linux-8a33228c7833befedb65840f499ae74afe02c1d1cc42478bf4f8ea3d75473c7c
+Test backend	Restore pipenv cache	2026-05-21T03:37:55.4560586Z Received 0 of 7167500 (0.0%), 0.0 MBs/sec
+Test backend	Restore pipenv cache	2026-05-21T03:37:55.7177797Z Received 7167500 of 7167500 (100.0%), 5.4 MBs/sec
+Test backend	Restore pipenv cache	2026-05-21T03:37:55.7178860Z Cache Size: ~7 MB (7167500 B)
+Test backend	Restore pipenv cache	2026-05-21T03:37:55.7212137Z [command]/usr/bin/tar -xf /home/runner/work/_temp/c2d0ed2d-16a5-4802-a371-6fcf7fa3a2b6/cache.tzst -P -C /home/runner/work/movie-picture-pipeline/movie-picture-pipeline --use-compress-program unzstd
+Test backend	Restore pipenv cache	2026-05-21T03:37:55.8419710Z Cache restored successfully
+Test backend	Restore pipenv cache	2026-05-21T03:37:55.8504123Z Cache restored from key: ***-pipenv-Linux-8a33228c7833befedb65840f499ae74afe02c1d1cc42478bf4f8ea3d75473c7c
+Test backend	Install pipenv	﻿2026-05-21T03:37:55.8609347Z ##[group]Run python -m pip install --upgrade pip pipenv
+Test backend	Install pipenv	2026-05-21T03:37:55.8609885Z ^[[36;1mpython -m pip install --upgrade pip pipenv^[[0m
+Test backend	Install pipenv	2026-05-21T03:37:55.8655073Z shell: /usr/bin/bash -e {0}
+Test backend	Install pipenv	2026-05-21T03:37:55.8655376Z env:
+Test backend	Install pipenv	2026-05-21T03:37:55.8655635Z   AWS_REGION: ***
+Test backend	Install pipenv	2026-05-21T03:37:55.8655864Z   EKS_CLUSTER_NAME: ***
+Test backend	Install pipenv	2026-05-21T03:37:55.8656113Z   BACKEND_ECR_REPOSITORY: ***
+Test backend	Install pipenv	2026-05-21T03:37:55.8656443Z   pythonLocation: /opt/hostedtoolcache/Python/3.10.20/x64
+Test backend	Install pipenv	2026-05-21T03:37:55.8656903Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.10.20/x64/lib/pkgconfig
+Test backend	Install pipenv	2026-05-21T03:37:55.8657385Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.10.20/x64
+Test backend	Install pipenv	2026-05-21T03:37:55.8657762Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.10.20/x64
+Test backend	Install pipenv	2026-05-21T03:37:55.8658141Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.10.20/x64
+Test backend	Install pipenv	2026-05-21T03:37:55.8658526Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.10.20/x64/lib
+Test backend	Install pipenv	2026-05-21T03:37:55.8659085Z ##[endgroup]
+Test backend	Install pipenv	2026-05-21T03:37:56.6201170Z Requirement already satisfied: pip in /opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages (26.1.1)
+Test backend	Install pipenv	2026-05-21T03:37:56.7912311Z Collecting pipenv
+Test backend	Install pipenv	2026-05-21T03:37:56.9621041Z   Downloading pipenv-2026.6.1-py3-none-any.whl.metadata (18 kB)
+Test backend	Install pipenv	2026-05-21T03:37:56.9944399Z Collecting certifi (from pipenv)
+Test backend	Install pipenv	2026-05-21T03:37:57.0378837Z   Downloading certifi-2026.5.20-py3-none-any.whl.metadata (2.5 kB)
+Test backend	Install pipenv	2026-05-21T03:37:57.0531202Z Collecting packaging>=22 (from pipenv)
+Test backend	Install pipenv	2026-05-21T03:37:57.0959465Z   Downloading packaging-26.2-py3-none-any.whl.metadata (3.5 kB)
+Test backend	Install pipenv	2026-05-21T03:37:57.0996348Z Requirement already satisfied: setuptools>=67 in /opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages (from pipenv) (79.0.1)
+Test backend	Install pipenv	2026-05-21T03:37:57.1354294Z Collecting virtualenv>=20.24.2 (from pipenv)
+Test backend	Install pipenv	2026-05-21T03:37:57.1785101Z   Downloading virtualenv-21.3.3-py3-none-any.whl.metadata (3.5 kB)
+Test backend	Install pipenv	2026-05-21T03:37:57.2032718Z Collecting distlib<1,>=0.3.7 (from virtualenv>=20.24.2->pipenv)
+Test backend	Install pipenv	2026-05-21T03:37:57.2464797Z   Downloading distlib-0.4.0-py2.py3-none-any.whl.metadata (5.2 kB)
+Test backend	Install pipenv	2026-05-21T03:37:57.2656753Z Collecting filelock<4,>=3.24.2 (from virtualenv>=20.24.2->pipenv)
+Test backend	Install pipenv	2026-05-21T03:37:57.3085654Z   Downloading filelock-3.29.0-py3-none-any.whl.metadata (2.0 kB)
+Test backend	Install pipenv	2026-05-21T03:37:57.3258715Z Collecting platformdirs<5,>=3.9.1 (from virtualenv>=20.24.2->pipenv)
+Test backend	Install pipenv	2026-05-21T03:37:57.3685995Z   Downloading platformdirs-4.9.6-py3-none-any.whl.metadata (4.7 kB)
+Test backend	Install pipenv	2026-05-21T03:37:57.3810101Z Collecting python-discovery>=1.3.1 (from virtualenv>=20.24.2->pipenv)
+Test backend	Install pipenv	2026-05-21T03:37:57.4238616Z   Downloading python_discovery-1.3.1-py3-none-any.whl.metadata (5.6 kB)
+Test backend	Install pipenv	2026-05-21T03:37:57.4421047Z Collecting typing-extensions>=4.13.2 (from virtualenv>=20.24.2->pipenv)
+Test backend	Install pipenv	2026-05-21T03:37:57.4852814Z   Downloading typing_extensions-4.15.0-py3-none-any.whl.metadata (3.3 kB)
+Test backend	Install pipenv	2026-05-21T03:37:57.5370069Z Downloading pipenv-2026.6.1-py3-none-any.whl (2.3 MB)
+Test backend	Install pipenv	2026-05-21T03:37:57.8829256Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.3/2.3 MB 9.7 MB/s  0:00:00
+Test backend	Install pipenv	2026-05-21T03:37:57.9281902Z Downloading packaging-26.2-py3-none-any.whl (100 kB)
+Test backend	Install pipenv	2026-05-21T03:37:57.9737280Z Downloading virtualenv-21.3.3-py3-none-any.whl (7.6 MB)
+Test backend	Install pipenv	2026-05-21T03:37:58.1558066Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 7.6/7.6 MB 41.4 MB/s  0:00:00
+Test backend	Install pipenv	2026-05-21T03:37:58.1989217Z Downloading distlib-0.4.0-py2.py3-none-any.whl (469 kB)
+Test backend	Install pipenv	2026-05-21T03:37:58.2473860Z Downloading filelock-3.29.0-py3-none-any.whl (39 kB)
+Test backend	Install pipenv	2026-05-21T03:37:58.2927062Z Downloading platformdirs-4.9.6-py3-none-any.whl (21 kB)
+Test backend	Install pipenv	2026-05-21T03:37:58.3379797Z Downloading python_discovery-1.3.1-py3-none-any.whl (33 kB)
+Test backend	Install pipenv	2026-05-21T03:37:58.3835446Z Downloading typing_extensions-4.15.0-py3-none-any.whl (44 kB)
+Test backend	Install pipenv	2026-05-21T03:37:58.4301259Z Downloading certifi-2026.5.20-py3-none-any.whl (134 kB)
+Test backend	Install pipenv	2026-05-21T03:37:58.4799593Z Installing collected packages: distlib, typing-extensions, platformdirs, packaging, filelock, certifi, python-discovery, virtualenv, pipenv
+Test backend	Install pipenv	2026-05-21T03:37:59.8655566Z 
+Test backend	Install pipenv	2026-05-21T03:37:59.8676469Z Successfully installed certifi-2026.5.20 distlib-0.4.0 filelock-3.29.0 packaging-26.2 pipenv-2026.6.1 platformdirs-4.9.6 python-discovery-1.3.1 typing-extensions-4.15.0 virtualenv-21.3.3
+Test backend	Install dependencies	﻿2026-05-21T03:37:59.9213487Z ##[group]Run pipenv install --dev --deploy
+Test backend	Install dependencies	2026-05-21T03:37:59.9213878Z ^[[36;1mpipenv install --dev --deploy^[[0m
+Test backend	Install dependencies	2026-05-21T03:37:59.9248586Z shell: /usr/bin/bash -e {0}
+Test backend	Install dependencies	2026-05-21T03:37:59.9248836Z env:
+Test backend	Install dependencies	2026-05-21T03:37:59.9249338Z   AWS_REGION: ***
+Test backend	Install dependencies	2026-05-21T03:37:59.9249568Z   EKS_CLUSTER_NAME: ***
+Test backend	Install dependencies	2026-05-21T03:37:59.9249815Z   BACKEND_ECR_REPOSITORY: ***
+Test backend	Install dependencies	2026-05-21T03:37:59.9250135Z   pythonLocation: /opt/hostedtoolcache/Python/3.10.20/x64
+Test backend	Install dependencies	2026-05-21T03:37:59.9250580Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.10.20/x64/lib/pkgconfig
+Test backend	Install dependencies	2026-05-21T03:37:59.9251022Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.10.20/x64
+Test backend	Install dependencies	2026-05-21T03:37:59.9251415Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.10.20/x64
+Test backend	Install dependencies	2026-05-21T03:37:59.9251807Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.10.20/x64
+Test backend	Install dependencies	2026-05-21T03:37:59.9252204Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.10.20/x64/lib
+Test backend	Install dependencies	2026-05-21T03:37:59.9252537Z ##[endgroup]
+Test backend	Install dependencies	2026-05-21T03:38:00.3364109Z Installing dependencies from Pipfile.lock (f8f835)...
+Test backend	Install dependencies	2026-05-21T03:38:00.4105046Z Installing dependencies from Pipfile.lock (f8f835)...
+Test backend	Run tests	﻿2026-05-21T03:38:00.4853471Z ##[group]Run pipenv run test
+Test backend	Run tests	2026-05-21T03:38:00.4853787Z ^[[36;1mpipenv run test^[[0m
+Test backend	Run tests	2026-05-21T03:38:00.4887763Z shell: /usr/bin/bash -e {0}
+Test backend	Run tests	2026-05-21T03:38:00.4888011Z env:
+Test backend	Run tests	2026-05-21T03:38:00.4888413Z   AWS_REGION: ***
+Test backend	Run tests	2026-05-21T03:38:00.4888657Z   EKS_CLUSTER_NAME: ***
+Test backend	Run tests	2026-05-21T03:38:00.4889141Z   BACKEND_ECR_REPOSITORY: ***
+Test backend	Run tests	2026-05-21T03:38:00.4889512Z   pythonLocation: /opt/hostedtoolcache/Python/3.10.20/x64
+Test backend	Run tests	2026-05-21T03:38:00.4889954Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.10.20/x64/lib/pkgconfig
+Test backend	Run tests	2026-05-21T03:38:00.4890376Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.10.20/x64
+Test backend	Run tests	2026-05-21T03:38:00.4890757Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.10.20/x64
+Test backend	Run tests	2026-05-21T03:38:00.4891138Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.10.20/x64
+Test backend	Run tests	2026-05-21T03:38:00.4891516Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.10.20/x64/lib
+Test backend	Run tests	2026-05-21T03:38:00.4891854Z ##[endgroup]
+Test backend	Run tests	2026-05-21T03:38:01.1347304Z ============================= test session starts ==============================
+Test backend	Run tests	2026-05-21T03:38:01.1348486Z platform linux -- Python 3.10.20, pytest-7.2.1, pluggy-1.0.0 -- /home/runner/.local/share/virtualenvs/***-eqRY7pyk/bin/python
+Test backend	Run tests	2026-05-21T03:38:01.1349519Z cachedir: .pytest_cache
+Test backend	Run tests	2026-05-21T03:38:01.1350098Z rootdir: /home/runner/work/movie-picture-pipeline/movie-picture-pipeline/starter/***
+Test backend	Run tests	2026-05-21T03:38:01.2615678Z collecting ... collected 3 items
+Test backend	Run tests	2026-05-21T03:38:01.2616264Z 
+Test backend	Run tests	2026-05-21T03:38:01.2728937Z test_app.py::test_movies_endpoint_returns_200 PASSED                     [ 33%]
+Test backend	Run tests	2026-05-21T03:38:01.2744361Z test_app.py::test_movies_endpoint_returns_json PASSED                    [ 66%]
+Test backend	Run tests	2026-05-21T03:38:01.2767871Z test_app.py::test_movies_endpoint_returns_valid_data PASSED              [100%]
+Test backend	Run tests	2026-05-21T03:38:01.2768467Z 
+Test backend	Run tests	2026-05-21T03:38:01.2768703Z ============================== 3 passed in 0.14s ===============================
+Test backend	Post Restore pipenv cache	﻿2026-05-21T03:38:01.3671063Z Post job cleanup.
+Test backend	Post Restore pipenv cache	2026-05-21T03:38:01.4946009Z Cache hit occurred on the primary key ***-pipenv-Linux-8a33228c7833befedb65840f499ae74afe02c1d1cc42478bf4f8ea3d75473c7c, not saving cache.
+Test backend	Post Setup Python	﻿2026-05-21T03:38:01.5047721Z Post job cleanup.
+Test backend	Post Checkout code	﻿2026-05-21T03:38:01.6739627Z Post job cleanup.
+Test backend	Post Checkout code	2026-05-21T03:38:01.7711140Z [command]/usr/bin/git version
+Test backend	Post Checkout code	2026-05-21T03:38:01.7746248Z git version 2.54.0
+Test backend	Post Checkout code	2026-05-21T03:38:01.7790733Z Temporarily overriding HOME='/home/runner/work/_temp/5569de73-fc3b-4960-990c-186535e4bbf2' before making global git config changes
+Test backend	Post Checkout code	2026-05-21T03:38:01.7792143Z Adding repository directory to the temporary git global config as a safe directory
+Test backend	Post Checkout code	2026-05-21T03:38:01.7803749Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/movie-picture-pipeline/movie-picture-pipeline
+Test backend	Post Checkout code	2026-05-21T03:38:01.7836905Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+Test backend	Post Checkout code	2026-05-21T03:38:01.7868531Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+Test backend	Post Checkout code	2026-05-21T03:38:01.8086333Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+Test backend	Post Checkout code	2026-05-21T03:38:01.8110578Z http.https://github.com/.extraheader
+Test backend	Post Checkout code	2026-05-21T03:38:01.8122530Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+Test backend	Post Checkout code	2026-05-21T03:38:01.8151715Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+Test backend	Post Checkout code	2026-05-21T03:38:01.8367005Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+Test backend	Post Checkout code	2026-05-21T03:38:01.8397095Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+Test backend	Complete job	﻿2026-05-21T03:38:01.8714876Z Cleaning up orphan processes
+Test backend	Complete job	2026-05-21T03:38:01.8984077Z ##[warning]Node.js 20 actions are deprecated. The following actions are running on Node.js 20 and may not work as expected: actions/cache@v4, actions/checkout@v4, actions/setup-python@v5. Actions will be forced to run with Node.js 24 by default starting June 2nd, 2026. Node.js 20 will be removed from the runner on September 16th, 2026. Please check if updated versions of these actions are available that support Node.js 24. To opt into Node.js 24 now, set the FORCE_JAVASCRIPT_ACTIONS_TO_NODE24=true environment variable on the runner or in your workflow file. Once Node.js 24 becomes the default, you can temporarily opt out by setting ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION=true. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
+Lint backend	Set up job	﻿2026-05-21T03:37:51.1596341Z Current runner version: '2.334.0'
+Lint backend	Set up job	2026-05-21T03:37:51.1631302Z ##[group]Runner Image Provisioner
+Lint backend	Set up job	2026-05-21T03:37:51.1632623Z Hosted Compute Agent
+Lint backend	Set up job	2026-05-21T03:37:51.1633446Z Version: 20260213.493
+Lint backend	Set up job	2026-05-21T03:37:51.1634096Z Commit: 5c115507f6dd24b8de37d8bbe0bb4509d0cc0fa3
+Lint backend	Set up job	2026-05-21T03:37:51.1636327Z Build Date: 2026-02-13T00:28:41Z
+Lint backend	Set up job	2026-05-21T03:37:51.1637654Z Worker ID: {c7026463-aa2a-4d5c-99e8-e378ba443b4b}
+Lint backend	Set up job	2026-05-21T03:37:51.1639639Z Azure Region: northcentralus
+Lint backend	Set up job	2026-05-21T03:37:51.1640780Z ##[endgroup]
+Lint backend	Set up job	2026-05-21T03:37:51.1643015Z ##[group]Operating System
+Lint backend	Set up job	2026-05-21T03:37:51.1643629Z Ubuntu
+Lint backend	Set up job	2026-05-21T03:37:51.1644753Z 24.04.4
+Lint backend	Set up job	2026-05-21T03:37:51.1646482Z LTS
+Lint backend	Set up job	2026-05-21T03:37:51.1647601Z ##[endgroup]
+Lint backend	Set up job	2026-05-21T03:37:51.1648678Z ##[group]Runner Image
+Lint backend	Set up job	2026-05-21T03:37:51.1649488Z Image: ubuntu-24.04
+Lint backend	Set up job	2026-05-21T03:37:51.1650087Z Version: 20260513.135.3
+Lint backend	Set up job	2026-05-21T03:37:51.1651733Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20260513.135/images/ubuntu/Ubuntu2404-Readme.md
+Lint backend	Set up job	2026-05-21T03:37:51.1655927Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20260513.135
+Lint backend	Set up job	2026-05-21T03:37:51.1659807Z ##[endgroup]
+Lint backend	Set up job	2026-05-21T03:37:51.1661685Z ##[group]GITHUB_TOKEN Permissions
+Lint backend	Set up job	2026-05-21T03:37:51.1665699Z Contents: read
+Lint backend	Set up job	2026-05-21T03:37:51.1666336Z Metadata: read
+Lint backend	Set up job	2026-05-21T03:37:51.1667274Z Packages: read
+Lint backend	Set up job	2026-05-21T03:37:51.1668398Z ##[endgroup]
+Lint backend	Set up job	2026-05-21T03:37:51.1671652Z Secret source: Actions
+Lint backend	Set up job	2026-05-21T03:37:51.1673052Z Prepare workflow directory
+Lint backend	Set up job	2026-05-21T03:37:51.2432470Z Prepare all required actions
+Lint backend	Set up job	2026-05-21T03:37:51.2486125Z Getting action download info
+Lint backend	Set up job	2026-05-21T03:37:51.5975286Z Download action repository 'actions/checkout@v4' (SHA:34e114876b0b11c390a56381ad16ebd13914f8d5)
+Lint backend	Set up job	2026-05-21T03:37:51.7590976Z Download action repository 'actions/setup-python@v5' (SHA:a26af69be951a213d495a4c3e4e4022e16d87065)
+Lint backend	Set up job	2026-05-21T03:37:51.8365722Z Download action repository 'actions/cache@v4' (SHA:0057852bfaa89a56745cba8c7296529d2fc39830)
+Lint backend	Set up job	2026-05-21T03:37:52.1128839Z Complete job name: Lint ***
+Lint backend	Checkout code	﻿2026-05-21T03:37:52.1884125Z ##[group]Run actions/checkout@v4
+Lint backend	Checkout code	2026-05-21T03:37:52.1885194Z with:
+Lint backend	Checkout code	2026-05-21T03:37:52.1885826Z   repository: LeoLin990405/movie-picture-pipeline
+Lint backend	Checkout code	2026-05-21T03:37:52.1887159Z   token: ***
+Lint backend	Checkout code	2026-05-21T03:37:52.1887674Z   ssh-strict: true
+Lint backend	Checkout code	2026-05-21T03:37:52.1888204Z   ssh-user: git
+Lint backend	Checkout code	2026-05-21T03:37:52.1888756Z   persist-credentials: true
+Lint backend	Checkout code	2026-05-21T03:37:52.1889397Z   clean: true
+Lint backend	Checkout code	2026-05-21T03:37:52.1889946Z   sparse-checkout-cone-mode: true
+Lint backend	Checkout code	2026-05-21T03:37:52.1890667Z   fetch-depth: 1
+Lint backend	Checkout code	2026-05-21T03:37:52.1891191Z   fetch-tags: false
+Lint backend	Checkout code	2026-05-21T03:37:52.1891740Z   show-progress: true
+Lint backend	Checkout code	2026-05-21T03:37:52.1892295Z   lfs: false
+Lint backend	Checkout code	2026-05-21T03:37:52.1892783Z   submodules: false
+Lint backend	Checkout code	2026-05-21T03:37:52.1893339Z   set-safe-directory: true
+Lint backend	Checkout code	2026-05-21T03:37:52.1894197Z env:
+Lint backend	Checkout code	2026-05-21T03:37:52.1894729Z   AWS_REGION: ***
+Lint backend	Checkout code	2026-05-21T03:37:52.1895280Z   EKS_CLUSTER_NAME: ***
+Lint backend	Checkout code	2026-05-21T03:37:52.1895905Z   BACKEND_ECR_REPOSITORY: ***
+Lint backend	Checkout code	2026-05-21T03:37:52.1896551Z ##[endgroup]
+Lint backend	Checkout code	2026-05-21T03:37:52.3042260Z Syncing repository: LeoLin990405/movie-picture-pipeline
+Lint backend	Checkout code	2026-05-21T03:37:52.3044762Z ##[group]Getting Git version info
+Lint backend	Checkout code	2026-05-21T03:37:52.3046151Z Working directory is '/home/runner/work/movie-picture-pipeline/movie-picture-pipeline'
+Lint backend	Checkout code	2026-05-21T03:37:52.3048410Z [command]/usr/bin/git version
+Lint backend	Checkout code	2026-05-21T03:37:52.3121146Z git version 2.54.0
+Lint backend	Checkout code	2026-05-21T03:37:52.3147689Z ##[endgroup]
+Lint backend	Checkout code	2026-05-21T03:37:52.3163008Z Temporarily overriding HOME='/home/runner/work/_temp/ee0b089d-2779-43c2-8188-b7a7cec6be63' before making global git config changes
+Lint backend	Checkout code	2026-05-21T03:37:52.3165448Z Adding repository directory to the temporary git global config as a safe directory
+Lint backend	Checkout code	2026-05-21T03:37:52.3176480Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/movie-picture-pipeline/movie-picture-pipeline
+Lint backend	Checkout code	2026-05-21T03:37:52.3220015Z Deleting the contents of '/home/runner/work/movie-picture-pipeline/movie-picture-pipeline'
+Lint backend	Checkout code	2026-05-21T03:37:52.3222761Z ##[group]Initializing the repository
+Lint backend	Checkout code	2026-05-21T03:37:52.3227984Z [command]/usr/bin/git init /home/runner/work/movie-picture-pipeline/movie-picture-pipeline
+Lint backend	Checkout code	2026-05-21T03:37:52.3318100Z hint: Using 'master' as the name for the initial branch. This default branch name
+Lint backend	Checkout code	2026-05-21T03:37:52.3320025Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+Lint backend	Checkout code	2026-05-21T03:37:52.3322182Z hint: to use in all of your new repositories, which will suppress this warning,
+Lint backend	Checkout code	2026-05-21T03:37:52.3324071Z hint: call:
+Lint backend	Checkout code	2026-05-21T03:37:52.3324948Z hint:
+Lint backend	Checkout code	2026-05-21T03:37:52.3326113Z hint: 	git config --global init.defaultBranch <name>
+Lint backend	Checkout code	2026-05-21T03:37:52.3327959Z hint:
+Lint backend	Checkout code	2026-05-21T03:37:52.3329435Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+Lint backend	Checkout code	2026-05-21T03:37:52.3332083Z hint: 'development'. The just-created branch can be renamed via this command:
+Lint backend	Checkout code	2026-05-21T03:37:52.3334152Z hint:
+Lint backend	Checkout code	2026-05-21T03:37:52.3335072Z hint: 	git branch -m <name>
+Lint backend	Checkout code	2026-05-21T03:37:52.3336197Z hint:
+Lint backend	Checkout code	2026-05-21T03:37:52.3337970Z hint: Disable this message with "git config set advice.defaultBranchName false"
+Lint backend	Checkout code	2026-05-21T03:37:52.3341734Z Initialized empty Git repository in /home/runner/work/movie-picture-pipeline/movie-picture-pipeline/.git/
+Lint backend	Checkout code	2026-05-21T03:37:52.3345025Z [command]/usr/bin/git remote add origin https://github.com/LeoLin990405/movie-picture-pipeline
+Lint backend	Checkout code	2026-05-21T03:37:52.3376472Z ##[endgroup]
+Lint backend	Checkout code	2026-05-21T03:37:52.3378417Z ##[group]Disabling automatic garbage collection
+Lint backend	Checkout code	2026-05-21T03:37:52.3380821Z [command]/usr/bin/git config --local gc.auto 0
+Lint backend	Checkout code	2026-05-21T03:37:52.3409858Z ##[endgroup]
+Lint backend	Checkout code	2026-05-21T03:37:52.3411503Z ##[group]Setting up auth
+Lint backend	Checkout code	2026-05-21T03:37:52.3417858Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+Lint backend	Checkout code	2026-05-21T03:37:52.3452029Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+Lint backend	Checkout code	2026-05-21T03:37:52.3759532Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+Lint backend	Checkout code	2026-05-21T03:37:52.3789404Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+Lint backend	Checkout code	2026-05-21T03:37:52.3999754Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+Lint backend	Checkout code	2026-05-21T03:37:52.4029394Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+Lint backend	Checkout code	2026-05-21T03:37:52.4258140Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+Lint backend	Checkout code	2026-05-21T03:37:52.4292865Z ##[endgroup]
+Lint backend	Checkout code	2026-05-21T03:37:52.4293869Z ##[group]Fetching the repository
+Lint backend	Checkout code	2026-05-21T03:37:52.4303918Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +4fb21951e7aa35b33f4e32c2a1eee921ba76a29d:refs/remotes/origin/main
+Lint backend	Checkout code	2026-05-21T03:37:52.7312688Z From https://github.com/LeoLin990405/movie-picture-pipeline
+Lint backend	Checkout code	2026-05-21T03:37:52.7315650Z  * [new ref]         4fb21951e7aa35b33f4e32c2a1eee921ba76a29d -> origin/main
+Lint backend	Checkout code	2026-05-21T03:37:52.7349163Z ##[endgroup]
+Lint backend	Checkout code	2026-05-21T03:37:52.7351208Z ##[group]Determining the checkout info
+Lint backend	Checkout code	2026-05-21T03:37:52.7353541Z ##[endgroup]
+Lint backend	Checkout code	2026-05-21T03:37:52.7357480Z [command]/usr/bin/git sparse-checkout disable
+Lint backend	Checkout code	2026-05-21T03:37:52.7400037Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+Lint backend	Checkout code	2026-05-21T03:37:52.7427088Z ##[group]Checking out the ref
+Lint backend	Checkout code	2026-05-21T03:37:52.7431044Z [command]/usr/bin/git checkout --progress --force -B main refs/remotes/origin/main
+Lint backend	Checkout code	2026-05-21T03:37:52.7534386Z Switched to a new branch 'main'
+Lint backend	Checkout code	2026-05-21T03:37:52.7537368Z branch 'main' set up to track 'origin/main'.
+Lint backend	Checkout code	2026-05-21T03:37:52.7545130Z ##[endgroup]
+Lint backend	Checkout code	2026-05-21T03:37:52.7580220Z [command]/usr/bin/git log -1 --format=%H
+Lint backend	Checkout code	2026-05-21T03:37:52.7601114Z 4fb21951e7aa35b33f4e32c2a1eee921ba76a29d
+Lint backend	Setup Python	﻿2026-05-21T03:37:52.7909209Z ##[group]Run actions/setup-python@v5
+Lint backend	Setup Python	2026-05-21T03:37:52.7910395Z with:
+Lint backend	Setup Python	2026-05-21T03:37:52.7911218Z   python-version: 3.10
+Lint backend	Setup Python	2026-05-21T03:37:52.7912160Z   check-latest: false
+Lint backend	Setup Python	2026-05-21T03:37:52.7913346Z   token: ***
+Lint backend	Setup Python	2026-05-21T03:37:52.7914223Z   update-environment: true
+Lint backend	Setup Python	2026-05-21T03:37:52.7915220Z   allow-prereleases: false
+Lint backend	Setup Python	2026-05-21T03:37:52.7916210Z   freethreaded: false
+Lint backend	Setup Python	2026-05-21T03:37:52.7917356Z env:
+Lint backend	Setup Python	2026-05-21T03:37:52.7918163Z   AWS_REGION: ***
+Lint backend	Setup Python	2026-05-21T03:37:52.7919021Z   EKS_CLUSTER_NAME: ***
+Lint backend	Setup Python	2026-05-21T03:37:52.7920012Z   BACKEND_ECR_REPOSITORY: ***
+Lint backend	Setup Python	2026-05-21T03:37:52.7920989Z ##[endgroup]
+Lint backend	Setup Python	2026-05-21T03:37:52.9609025Z ##[group]Installed versions
+Lint backend	Setup Python	2026-05-21T03:37:52.9727569Z Successfully set up CPython (3.10.20)
+Lint backend	Setup Python	2026-05-21T03:37:52.9730181Z ##[endgroup]
+Lint backend	Restore pipenv cache	﻿2026-05-21T03:37:53.0488068Z ##[group]Run actions/cache@v4
+Lint backend	Restore pipenv cache	2026-05-21T03:37:53.0489062Z with:
+Lint backend	Restore pipenv cache	2026-05-21T03:37:53.0489802Z   path: ~/.local/share/virtualenvs
+Lint backend	Restore pipenv cache	2026-05-21T03:37:53.0491631Z   key: ***-pipenv-Linux-8a33228c7833befedb65840f499ae74afe02c1d1cc42478bf4f8ea3d75473c7c
+Lint backend	Restore pipenv cache	2026-05-21T03:37:53.0493445Z   restore-keys: ***-pipenv-Linux-
+Lint backend	Restore pipenv cache	
+Lint backend	Restore pipenv cache	2026-05-21T03:37:53.0494457Z   enableCrossOsArchive: false
+Lint backend	Restore pipenv cache	2026-05-21T03:37:53.0495399Z   fail-on-cache-miss: false
+Lint backend	Restore pipenv cache	2026-05-21T03:37:53.0496277Z   lookup-only: false
+Lint backend	Restore pipenv cache	2026-05-21T03:37:53.0497363Z   save-always: false
+Lint backend	Restore pipenv cache	2026-05-21T03:37:53.0498140Z env:
+Lint backend	Restore pipenv cache	2026-05-21T03:37:53.0498874Z   AWS_REGION: ***
+Lint backend	Restore pipenv cache	2026-05-21T03:37:53.0499667Z   EKS_CLUSTER_NAME: ***
+Lint backend	Restore pipenv cache	2026-05-21T03:37:53.0500539Z   BACKEND_ECR_REPOSITORY: ***
+Lint backend	Restore pipenv cache	2026-05-21T03:37:53.0562775Z   pythonLocation: /opt/hostedtoolcache/Python/3.10.20/x64
+Lint backend	Restore pipenv cache	2026-05-21T03:37:53.0564612Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.10.20/x64/lib/pkgconfig
+Lint backend	Restore pipenv cache	2026-05-21T03:37:53.0566245Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.10.20/x64
+Lint backend	Restore pipenv cache	2026-05-21T03:37:53.0568111Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.10.20/x64
+Lint backend	Restore pipenv cache	2026-05-21T03:37:53.0569552Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.10.20/x64
+Lint backend	Restore pipenv cache	2026-05-21T03:37:53.0570989Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.10.20/x64/lib
+Lint backend	Restore pipenv cache	2026-05-21T03:37:53.0572224Z ##[endgroup]
+Lint backend	Restore pipenv cache	2026-05-21T03:37:53.3321626Z Cache hit for: ***-pipenv-Linux-8a33228c7833befedb65840f499ae74afe02c1d1cc42478bf4f8ea3d75473c7c
+Lint backend	Restore pipenv cache	2026-05-21T03:37:53.8257481Z Received 7167500 of 7167500 (100.0%), 17.2 MBs/sec
+Lint backend	Restore pipenv cache	2026-05-21T03:37:53.8260175Z Cache Size: ~7 MB (7167500 B)
+Lint backend	Restore pipenv cache	2026-05-21T03:37:53.8294887Z [command]/usr/bin/tar -xf /home/runner/work/_temp/bad29d5f-9e07-4824-9a42-072d674324b1/cache.tzst -P -C /home/runner/work/movie-picture-pipeline/movie-picture-pipeline --use-compress-program unzstd
+Lint backend	Restore pipenv cache	2026-05-21T03:37:53.9363476Z Cache restored successfully
+Lint backend	Restore pipenv cache	2026-05-21T03:37:53.9447992Z Cache restored from key: ***-pipenv-Linux-8a33228c7833befedb65840f499ae74afe02c1d1cc42478bf4f8ea3d75473c7c
+Lint backend	Install pipenv	﻿2026-05-21T03:37:53.9581361Z ##[group]Run python -m pip install --upgrade pip pipenv
+Lint backend	Install pipenv	2026-05-21T03:37:53.9582877Z ^[[36;1mpython -m pip install --upgrade pip pipenv^[[0m
+Lint backend	Install pipenv	2026-05-21T03:37:53.9681207Z shell: /usr/bin/bash -e {0}
+Lint backend	Install pipenv	2026-05-21T03:37:53.9682154Z env:
+Lint backend	Install pipenv	2026-05-21T03:37:53.9683010Z   AWS_REGION: ***
+Lint backend	Install pipenv	2026-05-21T03:37:53.9684291Z   EKS_CLUSTER_NAME: ***
+Lint backend	Install pipenv	2026-05-21T03:37:53.9685416Z   BACKEND_ECR_REPOSITORY: ***
+Lint backend	Install pipenv	2026-05-21T03:37:53.9686591Z   pythonLocation: /opt/hostedtoolcache/Python/3.10.20/x64
+Lint backend	Install pipenv	2026-05-21T03:37:53.9688370Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.10.20/x64/lib/pkgconfig
+Lint backend	Install pipenv	2026-05-21T03:37:53.9689963Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.10.20/x64
+Lint backend	Install pipenv	2026-05-21T03:37:53.9691404Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.10.20/x64
+Lint backend	Install pipenv	2026-05-21T03:37:53.9692840Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.10.20/x64
+Lint backend	Install pipenv	2026-05-21T03:37:53.9694290Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.10.20/x64/lib
+Lint backend	Install pipenv	2026-05-21T03:37:53.9695543Z ##[endgroup]
+Lint backend	Install pipenv	2026-05-21T03:37:56.4453975Z Requirement already satisfied: pip in /opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages (26.1.1)
+Lint backend	Install pipenv	2026-05-21T03:37:56.6240785Z Collecting pipenv
+Lint backend	Install pipenv	2026-05-21T03:37:56.6771901Z   Downloading pipenv-2026.6.1-py3-none-any.whl.metadata (18 kB)
+Lint backend	Install pipenv	2026-05-21T03:37:56.7129036Z Collecting certifi (from pipenv)
+Lint backend	Install pipenv	2026-05-21T03:37:56.7166328Z   Downloading certifi-2026.5.20-py3-none-any.whl.metadata (2.5 kB)
+Lint backend	Install pipenv	2026-05-21T03:37:56.7343354Z Collecting packaging>=22 (from pipenv)
+Lint backend	Install pipenv	2026-05-21T03:37:56.7379786Z   Downloading packaging-26.2-py3-none-any.whl.metadata (3.5 kB)
+Lint backend	Install pipenv	2026-05-21T03:37:56.7412192Z Requirement already satisfied: setuptools>=67 in /opt/hostedtoolcache/Python/3.10.20/x64/lib/python3.10/site-packages (from pipenv) (79.0.1)
+Lint backend	Install pipenv	2026-05-21T03:37:56.7784977Z Collecting virtualenv>=20.24.2 (from pipenv)
+Lint backend	Install pipenv	2026-05-21T03:37:56.7823231Z   Downloading virtualenv-21.3.3-py3-none-any.whl.metadata (3.5 kB)
+Lint backend	Install pipenv	2026-05-21T03:37:56.8115305Z Collecting distlib<1,>=0.3.7 (from virtualenv>=20.24.2->pipenv)
+Lint backend	Install pipenv	2026-05-21T03:37:56.8147969Z   Downloading distlib-0.4.0-py2.py3-none-any.whl.metadata (5.2 kB)
+Lint backend	Install pipenv	2026-05-21T03:37:56.8343849Z Collecting filelock<4,>=3.24.2 (from virtualenv>=20.24.2->pipenv)
+Lint backend	Install pipenv	2026-05-21T03:37:56.8377723Z   Downloading filelock-3.29.0-py3-none-any.whl.metadata (2.0 kB)
+Lint backend	Install pipenv	2026-05-21T03:37:56.8567203Z Collecting platformdirs<5,>=3.9.1 (from virtualenv>=20.24.2->pipenv)
+Lint backend	Install pipenv	2026-05-21T03:37:56.8601029Z   Downloading platformdirs-4.9.6-py3-none-any.whl.metadata (4.7 kB)
+Lint backend	Install pipenv	2026-05-21T03:37:56.8739746Z Collecting python-discovery>=1.3.1 (from virtualenv>=20.24.2->pipenv)
+Lint backend	Install pipenv	2026-05-21T03:37:56.8778310Z   Downloading python_discovery-1.3.1-py3-none-any.whl.metadata (5.6 kB)
+Lint backend	Install pipenv	2026-05-21T03:37:56.8963063Z Collecting typing-extensions>=4.13.2 (from virtualenv>=20.24.2->pipenv)
+Lint backend	Install pipenv	2026-05-21T03:37:56.9000244Z   Downloading typing_extensions-4.15.0-py3-none-any.whl.metadata (3.3 kB)
+Lint backend	Install pipenv	2026-05-21T03:37:56.9127272Z Downloading pipenv-2026.6.1-py3-none-any.whl (2.3 MB)
+Lint backend	Install pipenv	2026-05-21T03:37:56.9479953Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.3/2.3 MB 82.1 MB/s  0:00:00
+Lint backend	Install pipenv	2026-05-21T03:37:56.9519051Z Downloading packaging-26.2-py3-none-any.whl (100 kB)
+Lint backend	Install pipenv	2026-05-21T03:37:56.9574790Z Downloading virtualenv-21.3.3-py3-none-any.whl (7.6 MB)
+Lint backend	Install pipenv	2026-05-21T03:37:57.0029607Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 7.6/7.6 MB 177.5 MB/s  0:00:00
+Lint backend	Install pipenv	2026-05-21T03:37:57.0066369Z Downloading distlib-0.4.0-py2.py3-none-any.whl (469 kB)
+Lint backend	Install pipenv	2026-05-21T03:37:57.0133398Z Downloading filelock-3.29.0-py3-none-any.whl (39 kB)
+Lint backend	Install pipenv	2026-05-21T03:37:57.0189255Z Downloading platformdirs-4.9.6-py3-none-any.whl (21 kB)
+Lint backend	Install pipenv	2026-05-21T03:37:57.0245785Z Downloading python_discovery-1.3.1-py3-none-any.whl (33 kB)
+Lint backend	Install pipenv	2026-05-21T03:37:57.0303616Z Downloading typing_extensions-4.15.0-py3-none-any.whl (44 kB)
+Lint backend	Install pipenv	2026-05-21T03:37:57.0361223Z Downloading certifi-2026.5.20-py3-none-any.whl (134 kB)
+Lint backend	Install pipenv	2026-05-21T03:37:57.1193681Z Installing collected packages: distlib, typing-extensions, platformdirs, packaging, filelock, certifi, python-discovery, virtualenv, pipenv
+Lint backend	Install pipenv	2026-05-21T03:37:58.5896606Z 
+Lint backend	Install pipenv	2026-05-21T03:37:58.5917529Z Successfully installed certifi-2026.5.20 distlib-0.4.0 filelock-3.29.0 packaging-26.2 pipenv-2026.6.1 platformdirs-4.9.6 python-discovery-1.3.1 typing-extensions-4.15.0 virtualenv-21.3.3
+Lint backend	Install dependencies	﻿2026-05-21T03:37:58.6429467Z ##[group]Run pipenv install --dev --deploy
+Lint backend	Install dependencies	2026-05-21T03:37:58.6429861Z ^[[36;1mpipenv install --dev --deploy^[[0m
+Lint backend	Install dependencies	2026-05-21T03:37:58.6463752Z shell: /usr/bin/bash -e {0}
+Lint backend	Install dependencies	2026-05-21T03:37:58.6463999Z env:
+Lint backend	Install dependencies	2026-05-21T03:37:58.6464394Z   AWS_REGION: ***
+Lint backend	Install dependencies	2026-05-21T03:37:58.6464629Z   EKS_CLUSTER_NAME: ***
+Lint backend	Install dependencies	2026-05-21T03:37:58.6464890Z   BACKEND_ECR_REPOSITORY: ***
+Lint backend	Install dependencies	2026-05-21T03:37:58.6465205Z   pythonLocation: /opt/hostedtoolcache/Python/3.10.20/x64
+Lint backend	Install dependencies	2026-05-21T03:37:58.6465638Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.10.20/x64/lib/pkgconfig
+Lint backend	Install dependencies	2026-05-21T03:37:58.6466055Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.10.20/x64
+Lint backend	Install dependencies	2026-05-21T03:37:58.6466430Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.10.20/x64
+Lint backend	Install dependencies	2026-05-21T03:37:58.6466945Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.10.20/x64
+Lint backend	Install dependencies	2026-05-21T03:37:58.6467325Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.10.20/x64/lib
+Lint backend	Install dependencies	2026-05-21T03:37:58.6467640Z ##[endgroup]
+Lint backend	Install dependencies	2026-05-21T03:37:59.1102025Z Installing dependencies from Pipfile.lock (f8f835)...
+Lint backend	Install dependencies	2026-05-21T03:37:59.1911374Z Installing dependencies from Pipfile.lock (f8f835)...
+Lint backend	Run lint	﻿2026-05-21T03:37:59.2659470Z ##[group]Run pipenv run lint
+Lint backend	Run lint	2026-05-21T03:37:59.2659810Z ^[[36;1mpipenv run lint^[[0m
+Lint backend	Run lint	2026-05-21T03:37:59.2693866Z shell: /usr/bin/bash -e {0}
+Lint backend	Run lint	2026-05-21T03:37:59.2694116Z env:
+Lint backend	Run lint	2026-05-21T03:37:59.2694372Z   AWS_REGION: ***
+Lint backend	Run lint	2026-05-21T03:37:59.2694605Z   EKS_CLUSTER_NAME: ***
+Lint backend	Run lint	2026-05-21T03:37:59.2694852Z   BACKEND_ECR_REPOSITORY: ***
+Lint backend	Run lint	2026-05-21T03:37:59.2695171Z   pythonLocation: /opt/hostedtoolcache/Python/3.10.20/x64
+Lint backend	Run lint	2026-05-21T03:37:59.2695609Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.10.20/x64/lib/pkgconfig
+Lint backend	Run lint	2026-05-21T03:37:59.2696049Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.10.20/x64
+Lint backend	Run lint	2026-05-21T03:37:59.2696431Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.10.20/x64
+Lint backend	Run lint	2026-05-21T03:37:59.2697035Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.10.20/x64
+Lint backend	Run lint	2026-05-21T03:37:59.2697439Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.10.20/x64/lib
+Lint backend	Run lint	2026-05-21T03:37:59.2697795Z ##[endgroup]
+Lint backend	Post Restore pipenv cache	﻿2026-05-21T03:38:00.2821454Z Post job cleanup.
+Lint backend	Post Restore pipenv cache	2026-05-21T03:38:00.4137783Z Cache hit occurred on the primary key ***-pipenv-Linux-8a33228c7833befedb65840f499ae74afe02c1d1cc42478bf4f8ea3d75473c7c, not saving cache.
+Lint backend	Post Setup Python	﻿2026-05-21T03:38:00.4248235Z Post job cleanup.
+Lint backend	Post Checkout code	﻿2026-05-21T03:38:00.5938173Z Post job cleanup.
+Lint backend	Post Checkout code	2026-05-21T03:38:00.6944347Z [command]/usr/bin/git version
+Lint backend	Post Checkout code	2026-05-21T03:38:00.6980330Z git version 2.54.0
+Lint backend	Post Checkout code	2026-05-21T03:38:00.7024962Z Temporarily overriding HOME='/home/runner/work/_temp/2cbb7299-80b8-46ad-affe-3f81f6235979' before making global git config changes
+Lint backend	Post Checkout code	2026-05-21T03:38:00.7026184Z Adding repository directory to the temporary git global config as a safe directory
+Lint backend	Post Checkout code	2026-05-21T03:38:00.7031361Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/movie-picture-pipeline/movie-picture-pipeline
+Lint backend	Post Checkout code	2026-05-21T03:38:00.7068522Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+Lint backend	Post Checkout code	2026-05-21T03:38:00.7102128Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+Lint backend	Post Checkout code	2026-05-21T03:38:00.7333127Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+Lint backend	Post Checkout code	2026-05-21T03:38:00.7358255Z http.https://github.com/.extraheader
+Lint backend	Post Checkout code	2026-05-21T03:38:00.7371383Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+Lint backend	Post Checkout code	2026-05-21T03:38:00.7402777Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+Lint backend	Post Checkout code	2026-05-21T03:38:00.7628530Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+Lint backend	Post Checkout code	2026-05-21T03:38:00.7661546Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+Lint backend	Complete job	﻿2026-05-21T03:38:00.7993454Z Cleaning up orphan processes
+Lint backend	Complete job	2026-05-21T03:38:00.8258909Z ##[warning]Node.js 20 actions are deprecated. The following actions are running on Node.js 20 and may not work as expected: actions/cache@v4, actions/checkout@v4, actions/setup-python@v5. Actions will be forced to run with Node.js 24 by default starting June 2nd, 2026. Node.js 20 will be removed from the runner on September 16th, 2026. Please check if updated versions of these actions are available that support Node.js 24. To opt into Node.js 24 now, set the FORCE_JAVASCRIPT_ACTIONS_TO_NODE24=true environment variable on the runner or in your workflow file. Once Node.js 24 becomes the default, you can temporarily opt out by setting ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION=true. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
+Build and push backend image	Set up job	﻿2026-05-21T03:38:08.0193246Z Current runner version: '2.334.0'
+Build and push backend image	Set up job	2026-05-21T03:38:08.0217988Z ##[group]Runner Image Provisioner
+Build and push backend image	Set up job	2026-05-21T03:38:08.0218921Z Hosted Compute Agent
+Build and push backend image	Set up job	2026-05-21T03:38:08.0219689Z Version: 20260213.493
+Build and push backend image	Set up job	2026-05-21T03:38:08.0220403Z Commit: 5c115507f6dd24b8de37d8bbe0bb4509d0cc0fa3
+Build and push backend image	Set up job	2026-05-21T03:38:08.0221204Z Build Date: 2026-02-13T00:28:41Z
+Build and push backend image	Set up job	2026-05-21T03:38:08.0222009Z Worker ID: {3207a51d-1ad6-432c-93e2-faf7f8889874}
+Build and push backend image	Set up job	2026-05-21T03:38:08.0222719Z Azure Region: westus3
+Build and push backend image	Set up job	2026-05-21T03:38:08.0223345Z ##[endgroup]
+Build and push backend image	Set up job	2026-05-21T03:38:08.0224791Z ##[group]Operating System
+Build and push backend image	Set up job	2026-05-21T03:38:08.0225467Z Ubuntu
+Build and push backend image	Set up job	2026-05-21T03:38:08.0226061Z 24.04.4
+Build and push backend image	Set up job	2026-05-21T03:38:08.0226890Z LTS
+Build and push backend image	Set up job	2026-05-21T03:38:08.0227403Z ##[endgroup]
+Build and push backend image	Set up job	2026-05-21T03:38:08.0228030Z ##[group]Runner Image
+Build and push backend image	Set up job	2026-05-21T03:38:08.0228667Z Image: ubuntu-24.04
+Build and push backend image	Set up job	2026-05-21T03:38:08.0229273Z Version: 20260513.135.3
+Build and push backend image	Set up job	2026-05-21T03:38:08.0230356Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20260513.135/images/ubuntu/Ubuntu2404-Readme.md
+Build and push backend image	Set up job	2026-05-21T03:38:08.0232064Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20260513.135
+Build and push backend image	Set up job	2026-05-21T03:38:08.0233037Z ##[endgroup]
+Build and push backend image	Set up job	2026-05-21T03:38:08.0234190Z ##[group]GITHUB_TOKEN Permissions
+Build and push backend image	Set up job	2026-05-21T03:38:08.0236564Z Contents: read
+Build and push backend image	Set up job	2026-05-21T03:38:08.0237207Z Metadata: read
+Build and push backend image	Set up job	2026-05-21T03:38:08.0237860Z Packages: read
+Build and push backend image	Set up job	2026-05-21T03:38:08.0238448Z ##[endgroup]
+Build and push backend image	Set up job	2026-05-21T03:38:08.0240639Z Secret source: Actions
+Build and push backend image	Set up job	2026-05-21T03:38:08.0241385Z Prepare workflow directory
+Build and push backend image	Set up job	2026-05-21T03:38:08.0795225Z Prepare all required actions
+Build and push backend image	Set up job	2026-05-21T03:38:08.0832577Z Getting action download info
+Build and push backend image	Set up job	2026-05-21T03:38:08.4990497Z Download action repository 'actions/checkout@v4' (SHA:34e114876b0b11c390a56381ad16ebd13914f8d5)
+Build and push backend image	Set up job	2026-05-21T03:38:08.6161398Z Download action repository 'aws-actions/configure-aws-credentials@v4' (SHA:7474bc4690e29a8392af63c5b98e7449536d5c3a)
+Build and push backend image	Set up job	2026-05-21T03:38:09.4044513Z Download action repository 'aws-actions/amazon-ecr-login@v2' (SHA:fa648b43de3d4d023bcb3f89ed6940096949c419)
+Build and push backend image	Set up job	2026-05-21T03:38:10.1946487Z Complete job name: Build and push *** image
+Build and push backend image	Checkout code	﻿2026-05-21T03:38:10.2759857Z ##[group]Run actions/checkout@v4
+Build and push backend image	Checkout code	2026-05-21T03:38:10.2761220Z with:
+Build and push backend image	Checkout code	2026-05-21T03:38:10.2762156Z   repository: LeoLin990405/movie-picture-pipeline
+Build and push backend image	Checkout code	2026-05-21T03:38:10.2763628Z   token: ***
+Build and push backend image	Checkout code	2026-05-21T03:38:10.2764418Z   ssh-strict: true
+Build and push backend image	Checkout code	2026-05-21T03:38:10.2765226Z   ssh-user: git
+Build and push backend image	Checkout code	2026-05-21T03:38:10.2766037Z   persist-credentials: true
+Build and push backend image	Checkout code	2026-05-21T03:38:10.2767291Z   clean: true
+Build and push backend image	Checkout code	2026-05-21T03:38:10.2768219Z   sparse-checkout-cone-mode: true
+Build and push backend image	Checkout code	2026-05-21T03:38:10.2769212Z   fetch-depth: 1
+Build and push backend image	Checkout code	2026-05-21T03:38:10.2770009Z   fetch-tags: false
+Build and push backend image	Checkout code	2026-05-21T03:38:10.2770824Z   show-progress: true
+Build and push backend image	Checkout code	2026-05-21T03:38:10.2771667Z   lfs: false
+Build and push backend image	Checkout code	2026-05-21T03:38:10.2772437Z   submodules: false
+Build and push backend image	Checkout code	2026-05-21T03:38:10.2773274Z   set-safe-directory: true
+Build and push backend image	Checkout code	2026-05-21T03:38:10.2774465Z env:
+Build and push backend image	Checkout code	2026-05-21T03:38:10.2775270Z   AWS_REGION: ***
+Build and push backend image	Checkout code	2026-05-21T03:38:10.2776119Z   EKS_CLUSTER_NAME: ***
+Build and push backend image	Checkout code	2026-05-21T03:38:10.2777354Z   BACKEND_ECR_REPOSITORY: ***
+Build and push backend image	Checkout code	2026-05-21T03:38:10.2778334Z ##[endgroup]
+Build and push backend image	Checkout code	2026-05-21T03:38:10.3905754Z Syncing repository: LeoLin990405/movie-picture-pipeline
+Build and push backend image	Checkout code	2026-05-21T03:38:10.3909044Z ##[group]Getting Git version info
+Build and push backend image	Checkout code	2026-05-21T03:38:10.3910772Z Working directory is '/home/runner/work/movie-picture-pipeline/movie-picture-pipeline'
+Build and push backend image	Checkout code	2026-05-21T03:38:10.3913256Z [command]/usr/bin/git version
+Build and push backend image	Checkout code	2026-05-21T03:38:10.3998706Z git version 2.54.0
+Build and push backend image	Checkout code	2026-05-21T03:38:10.4025089Z ##[endgroup]
+Build and push backend image	Checkout code	2026-05-21T03:38:10.4039441Z Temporarily overriding HOME='/home/runner/work/_temp/a4952180-bbe6-489d-924f-978bcdf0fe2c' before making global git config changes
+Build and push backend image	Checkout code	2026-05-21T03:38:10.4042325Z Adding repository directory to the temporary git global config as a safe directory
+Build and push backend image	Checkout code	2026-05-21T03:38:10.4052057Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/movie-picture-pipeline/movie-picture-pipeline
+Build and push backend image	Checkout code	2026-05-21T03:38:10.4096841Z Deleting the contents of '/home/runner/work/movie-picture-pipeline/movie-picture-pipeline'
+Build and push backend image	Checkout code	2026-05-21T03:38:10.4100265Z ##[group]Initializing the repository
+Build and push backend image	Checkout code	2026-05-21T03:38:10.4104528Z [command]/usr/bin/git init /home/runner/work/movie-picture-pipeline/movie-picture-pipeline
+Build and push backend image	Checkout code	2026-05-21T03:38:10.4241655Z hint: Using 'master' as the name for the initial branch. This default branch name
+Build and push backend image	Checkout code	2026-05-21T03:38:10.4244132Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+Build and push backend image	Checkout code	2026-05-21T03:38:10.4247269Z hint: to use in all of your new repositories, which will suppress this warning,
+Build and push backend image	Checkout code	2026-05-21T03:38:10.4250386Z hint: call:
+Build and push backend image	Checkout code	2026-05-21T03:38:10.4251945Z hint:
+Build and push backend image	Checkout code	2026-05-21T03:38:10.4253785Z hint: 	git config --global init.defaultBranch <name>
+Build and push backend image	Checkout code	2026-05-21T03:38:10.4255941Z hint:
+Build and push backend image	Checkout code	2026-05-21T03:38:10.4258150Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+Build and push backend image	Checkout code	2026-05-21T03:38:10.4261469Z hint: 'development'. The just-created branch can be renamed via this command:
+Build and push backend image	Checkout code	2026-05-21T03:38:10.4264007Z hint:
+Build and push backend image	Checkout code	2026-05-21T03:38:10.4265269Z hint: 	git branch -m <name>
+Build and push backend image	Checkout code	2026-05-21T03:38:10.4267110Z hint:
+Build and push backend image	Checkout code	2026-05-21T03:38:10.4268385Z hint: Disable this message with "git config set advice.defaultBranchName false"
+Build and push backend image	Checkout code	2026-05-21T03:38:10.4270808Z Initialized empty Git repository in /home/runner/work/movie-picture-pipeline/movie-picture-pipeline/.git/
+Build and push backend image	Checkout code	2026-05-21T03:38:10.4276867Z [command]/usr/bin/git remote add origin https://github.com/LeoLin990405/movie-picture-pipeline
+Build and push backend image	Checkout code	2026-05-21T03:38:10.4305022Z ##[endgroup]
+Build and push backend image	Checkout code	2026-05-21T03:38:10.4307833Z ##[group]Disabling automatic garbage collection
+Build and push backend image	Checkout code	2026-05-21T03:38:10.4310109Z [command]/usr/bin/git config --local gc.auto 0
+Build and push backend image	Checkout code	2026-05-21T03:38:10.4338190Z ##[endgroup]
+Build and push backend image	Checkout code	2026-05-21T03:38:10.4340499Z ##[group]Setting up auth
+Build and push backend image	Checkout code	2026-05-21T03:38:10.4345450Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+Build and push backend image	Checkout code	2026-05-21T03:38:10.4381007Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+Build and push backend image	Checkout code	2026-05-21T03:38:10.4720851Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+Build and push backend image	Checkout code	2026-05-21T03:38:10.4749357Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+Build and push backend image	Checkout code	2026-05-21T03:38:10.4960781Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+Build and push backend image	Checkout code	2026-05-21T03:38:10.4989704Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+Build and push backend image	Checkout code	2026-05-21T03:38:10.5211879Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+Build and push backend image	Checkout code	2026-05-21T03:38:10.5245281Z ##[endgroup]
+Build and push backend image	Checkout code	2026-05-21T03:38:10.5246985Z ##[group]Fetching the repository
+Build and push backend image	Checkout code	2026-05-21T03:38:10.5254343Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +4fb21951e7aa35b33f4e32c2a1eee921ba76a29d:refs/remotes/origin/main
+Build and push backend image	Checkout code	2026-05-21T03:38:11.0828338Z From https://github.com/LeoLin990405/movie-picture-pipeline
+Build and push backend image	Checkout code	2026-05-21T03:38:11.0829512Z  * [new ref]         4fb21951e7aa35b33f4e32c2a1eee921ba76a29d -> origin/main
+Build and push backend image	Checkout code	2026-05-21T03:38:11.0874237Z ##[endgroup]
+Build and push backend image	Checkout code	2026-05-21T03:38:11.0875005Z ##[group]Determining the checkout info
+Build and push backend image	Checkout code	2026-05-21T03:38:11.0878365Z ##[endgroup]
+Build and push backend image	Checkout code	2026-05-21T03:38:11.0885199Z [command]/usr/bin/git sparse-checkout disable
+Build and push backend image	Checkout code	2026-05-21T03:38:11.0934622Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+Build and push backend image	Checkout code	2026-05-21T03:38:11.0963213Z ##[group]Checking out the ref
+Build and push backend image	Checkout code	2026-05-21T03:38:11.0969412Z [command]/usr/bin/git checkout --progress --force -B main refs/remotes/origin/main
+Build and push backend image	Checkout code	2026-05-21T03:38:11.1081644Z Switched to a new branch 'main'
+Build and push backend image	Checkout code	2026-05-21T03:38:11.1084065Z branch 'main' set up to track 'origin/main'.
+Build and push backend image	Checkout code	2026-05-21T03:38:11.1092851Z ##[endgroup]
+Build and push backend image	Checkout code	2026-05-21T03:38:11.1137926Z [command]/usr/bin/git log -1 --format=%H
+Build and push backend image	Checkout code	2026-05-21T03:38:11.1166100Z 4fb21951e7aa35b33f4e32c2a1eee921ba76a29d
+Build and push backend image	Verify deployment configuration	﻿2026-05-21T03:38:11.1382056Z ##[group]Run test -n "***"
+Build and push backend image	Verify deployment configuration	2026-05-21T03:38:11.1382481Z ^[[36;1mtest -n "***"^[[0m
+Build and push backend image	Verify deployment configuration	2026-05-21T03:38:11.1382897Z ^[[36;1mtest -n "***"^[[0m
+Build and push backend image	Verify deployment configuration	2026-05-21T03:38:11.1386823Z ^[[36;1mtest -n "***"^[[0m
+Build and push backend image	Verify deployment configuration	2026-05-21T03:38:11.1387090Z ^[[36;1mtest -n "***"^[[0m
+Build and push backend image	Verify deployment configuration	2026-05-21T03:38:11.1387319Z ^[[36;1mtest -n "***"^[[0m
+Build and push backend image	Verify deployment configuration	2026-05-21T03:38:11.1387544Z ^[[36;1mtest -n "***"^[[0m
+Build and push backend image	Verify deployment configuration	2026-05-21T03:38:11.1422283Z shell: /usr/bin/bash -e {0}
+Build and push backend image	Verify deployment configuration	2026-05-21T03:38:11.1422625Z env:
+Build and push backend image	Verify deployment configuration	2026-05-21T03:38:11.1422870Z   AWS_REGION: ***
+Build and push backend image	Verify deployment configuration	2026-05-21T03:38:11.1423109Z   EKS_CLUSTER_NAME: ***
+Build and push backend image	Verify deployment configuration	2026-05-21T03:38:11.1423361Z   BACKEND_ECR_REPOSITORY: ***
+Build and push backend image	Verify deployment configuration	2026-05-21T03:38:11.1423600Z ##[endgroup]
+Build and push backend image	Configure AWS credentials	﻿2026-05-21T03:38:11.1654403Z ##[group]Run aws-actions/configure-aws-credentials@v4
+Build and push backend image	Configure AWS credentials	2026-05-21T03:38:11.1654803Z with:
+Build and push backend image	Configure AWS credentials	2026-05-21T03:38:11.1655134Z   aws-access-key-id: ***
+Build and push backend image	Configure AWS credentials	2026-05-21T03:38:11.1655500Z   aws-secret-access-key: ***
+Build and push backend image	Configure AWS credentials	2026-05-21T03:38:11.1659678Z   aws-session-token: ***
+Build and push backend image	Configure AWS credentials	2026-05-21T03:38:11.1659957Z   aws-region: ***
+Build and push backend image	Configure AWS credentials	2026-05-21T03:38:11.1660194Z   audience: sts.amazonaws.com
+Build and push backend image	Configure AWS credentials	2026-05-21T03:38:11.1660461Z   output-env-credentials: true
+Build and push backend image	Configure AWS credentials	2026-05-21T03:38:11.1660702Z env:
+Build and push backend image	Configure AWS credentials	2026-05-21T03:38:11.1660901Z   AWS_REGION: ***
+Build and push backend image	Configure AWS credentials	2026-05-21T03:38:11.1661119Z   EKS_CLUSTER_NAME: ***
+Build and push backend image	Configure AWS credentials	2026-05-21T03:38:11.1661365Z   BACKEND_ECR_REPOSITORY: ***
+Build and push backend image	Configure AWS credentials	2026-05-21T03:38:11.1661604Z ##[endgroup]
+Build and push backend image	Configure AWS credentials	2026-05-21T03:38:11.6110236Z Proceeding with IAM user credentials
+Build and push backend image	Login to Amazon ECR	﻿2026-05-21T03:38:11.6216130Z ##[group]Run aws-actions/amazon-ecr-login@v2
+Build and push backend image	Login to Amazon ECR	2026-05-21T03:38:11.6216905Z with:
+Build and push backend image	Login to Amazon ECR	2026-05-21T03:38:11.6217122Z   mask-password: true
+Build and push backend image	Login to Amazon ECR	2026-05-21T03:38:11.6217364Z   registry-type: private
+Build and push backend image	Login to Amazon ECR	2026-05-21T03:38:11.6217599Z   skip-logout: false
+Build and push backend image	Login to Amazon ECR	2026-05-21T03:38:11.6217802Z env:
+Build and push backend image	Login to Amazon ECR	2026-05-21T03:38:11.6218106Z   AWS_REGION: ***
+Build and push backend image	Login to Amazon ECR	2026-05-21T03:38:11.6218334Z   EKS_CLUSTER_NAME: ***
+Build and push backend image	Login to Amazon ECR	2026-05-21T03:38:11.6218580Z   BACKEND_ECR_REPOSITORY: ***
+Build and push backend image	Login to Amazon ECR	2026-05-21T03:38:11.6218839Z   AWS_DEFAULT_REGION: ***
+Build and push backend image	Login to Amazon ECR	2026-05-21T03:38:11.6219095Z   AWS_ACCESS_KEY_ID: ***
+Build and push backend image	Login to Amazon ECR	2026-05-21T03:38:11.6219422Z   AWS_SECRET_ACCESS_KEY: ***
+Build and push backend image	Login to Amazon ECR	2026-05-21T03:38:11.6223222Z   AWS_SESSION_TOKEN: ***
+Build and push backend image	Login to Amazon ECR	2026-05-21T03:38:11.6223453Z ##[endgroup]
+Build and push backend image	Login to Amazon ECR	2026-05-21T03:38:11.7355830Z Using environment variable credentials.
+Build and push backend image	Login to Amazon ECR	2026-05-21T03:38:12.0553047Z Logging into registry 963904228567.dkr.ecr.***.amazonaws.com
+Build and push backend image	Build Docker image	﻿2026-05-21T03:38:12.6951677Z ##[group]Run docker build --tag=mp-***:4fb21951e7aa35b33f4e32c2a1eee921ba76a29d .
+Build and push backend image	Build Docker image	2026-05-21T03:38:12.6952340Z ^[[36;1mdocker build --tag=mp-***:4fb21951e7aa35b33f4e32c2a1eee921ba76a29d .^[[0m
+Build and push backend image	Build Docker image	2026-05-21T03:38:12.6985969Z shell: /usr/bin/bash -e {0}
+Build and push backend image	Build Docker image	2026-05-21T03:38:12.6986451Z env:
+Build and push backend image	Build Docker image	2026-05-21T03:38:12.6986763Z   AWS_REGION: ***
+Build and push backend image	Build Docker image	2026-05-21T03:38:12.6987055Z   EKS_CLUSTER_NAME: ***
+Build and push backend image	Build Docker image	2026-05-21T03:38:12.6987308Z   BACKEND_ECR_REPOSITORY: ***
+Build and push backend image	Build Docker image	2026-05-21T03:38:12.6987577Z   AWS_DEFAULT_REGION: ***
+Build and push backend image	Build Docker image	2026-05-21T03:38:12.6987834Z   AWS_ACCESS_KEY_ID: ***
+Build and push backend image	Build Docker image	2026-05-21T03:38:12.6988165Z   AWS_SECRET_ACCESS_KEY: ***
+Build and push backend image	Build Docker image	2026-05-21T03:38:12.6991871Z   AWS_SESSION_TOKEN: ***
+Build and push backend image	Build Docker image	2026-05-21T03:38:12.6992147Z ##[endgroup]
+Build and push backend image	Build Docker image	2026-05-21T03:38:13.1585023Z #0 building with "default" instance using docker driver
+Build and push backend image	Build Docker image	2026-05-21T03:38:13.1586076Z 
+Build and push backend image	Build Docker image	2026-05-21T03:38:13.1587068Z #1 [internal] load build definition from Dockerfile
+Build and push backend image	Build Docker image	2026-05-21T03:38:13.1587840Z #1 transferring dockerfile: 654B done
+Build and push backend image	Build Docker image	2026-05-21T03:38:13.1588290Z #1 DONE 0.0s
+Build and push backend image	Build Docker image	2026-05-21T03:38:13.1588548Z 
+Build and push backend image	Build Docker image	2026-05-21T03:38:13.1588994Z #2 [internal] load metadata for public.ecr.aws/docker/library/python:3.10-slim-bookworm
+Build and push backend image	Build Docker image	2026-05-21T03:38:13.9289801Z #2 DONE 0.9s
+Build and push backend image	Build Docker image	2026-05-21T03:38:14.0505364Z 
+Build and push backend image	Build Docker image	2026-05-21T03:38:14.0506013Z #3 [internal] load .dockerignore
+Build and push backend image	Build Docker image	2026-05-21T03:38:14.0507362Z #3 transferring context: 2B done
+Build and push backend image	Build Docker image	2026-05-21T03:38:14.0507848Z #3 DONE 0.0s
+Build and push backend image	Build Docker image	2026-05-21T03:38:14.0507996Z 
+Build and push backend image	Build Docker image	2026-05-21T03:38:14.0508124Z #4 [internal] load build context
+Build and push backend image	Build Docker image	2026-05-21T03:38:14.0508550Z #4 transferring context: 26.15kB done
+Build and push backend image	Build Docker image	2026-05-21T03:38:14.0508955Z #4 DONE 0.0s
+Build and push backend image	Build Docker image	2026-05-21T03:38:14.0509108Z 
+Build and push backend image	Build Docker image	2026-05-21T03:38:14.0509673Z #5 [1/8] FROM public.ecr.aws/docker/library/python:3.10-slim-bookworm@sha256:cb1503943096ba7e3713bab3a59c4fa493c1799949c1f16dedfc2a7ff80754da
+Build and push backend image	Build Docker image	2026-05-21T03:38:14.0511173Z #5 resolve public.ecr.aws/docker/library/python:3.10-slim-bookworm@sha256:cb1503943096ba7e3713bab3a59c4fa493c1799949c1f16dedfc2a7ff80754da done
+Build and push backend image	Build Docker image	2026-05-21T03:38:14.0512945Z #5 sha256:068fedd6b0f109b8186d00d49327b6fc6747c428fd3c9a8739424ff5f38d7531 0B / 28.23MB 0.1s
+Build and push backend image	Build Docker image	2026-05-21T03:38:14.0514267Z #5 sha256:8a5eacb2bb814dea504626f971132e96d20cdc3721bd2e1b63a41cd0c152c095 0B / 3.52MB 0.1s
+Build and push backend image	Build Docker image	2026-05-21T03:38:14.0515262Z #5 sha256:cfb2b8aa2b7e86f4393dd07f42230666f2fcfd3e180ccae3ac14119d5d0c9acc 0B / 15.38MB 0.1s
+Build and push backend image	Build Docker image	2026-05-21T03:38:14.0516899Z #5 sha256:cb1503943096ba7e3713bab3a59c4fa493c1799949c1f16dedfc2a7ff80754da 9.13kB / 9.13kB done
+Build and push backend image	Build Docker image	2026-05-21T03:38:14.0517673Z #5 sha256:3f1c4633a6bf935beb4013137b9f3e542c7bf04aace3a27550d4661fbacab479 1.75kB / 1.75kB done
+Build and push backend image	Build Docker image	2026-05-21T03:38:14.0518294Z #5 sha256:95c9f2a4348259c98b0690ec94a020ca15a8a99212720dd57a2e2aa04899c71e 5.50kB / 5.50kB done
+Build and push backend image	Build Docker image	2026-05-21T03:38:14.1614264Z #5 sha256:068fedd6b0f109b8186d00d49327b6fc6747c428fd3c9a8739424ff5f38d7531 16.78MB / 28.23MB 0.2s
+Build and push backend image	Build Docker image	2026-05-21T03:38:14.3250736Z #5 sha256:068fedd6b0f109b8186d00d49327b6fc6747c428fd3c9a8739424ff5f38d7531 28.23MB / 28.23MB 0.2s done
+Build and push backend image	Build Docker image	2026-05-21T03:38:14.3252918Z #5 sha256:8a5eacb2bb814dea504626f971132e96d20cdc3721bd2e1b63a41cd0c152c095 3.52MB / 3.52MB 0.3s done
+Build and push backend image	Build Docker image	2026-05-21T03:38:14.3254370Z #5 extracting sha256:068fedd6b0f109b8186d00d49327b6fc6747c428fd3c9a8739424ff5f38d7531 0.1s
+Build and push backend image	Build Docker image	2026-05-21T03:38:14.3255682Z #5 sha256:0f9a160da2020445bafab042b7b1a33e174db04f20055c2dfc8b0e0887fa6be8 0B / 250B 0.3s
+Build and push backend image	Build Docker image	2026-05-21T03:38:14.4421195Z #5 sha256:0f9a160da2020445bafab042b7b1a33e174db04f20055c2dfc8b0e0887fa6be8 250B / 250B 0.3s done
+Build and push backend image	Build Docker image	2026-05-21T03:38:14.6505047Z #5 sha256:cfb2b8aa2b7e86f4393dd07f42230666f2fcfd3e180ccae3ac14119d5d0c9acc 9.44MB / 15.38MB 0.7s
+Build and push backend image	Build Docker image	2026-05-21T03:38:14.7930005Z #5 sha256:cfb2b8aa2b7e86f4393dd07f42230666f2fcfd3e180ccae3ac14119d5d0c9acc 14.68MB / 15.38MB 0.8s
+Build and push backend image	Build Docker image	2026-05-21T03:38:14.9180014Z #5 sha256:cfb2b8aa2b7e86f4393dd07f42230666f2fcfd3e180ccae3ac14119d5d0c9acc 15.38MB / 15.38MB 0.9s done
+Build and push backend image	Build Docker image	2026-05-21T03:38:15.3078853Z #5 extracting sha256:068fedd6b0f109b8186d00d49327b6fc6747c428fd3c9a8739424ff5f38d7531 1.1s done
+Build and push backend image	Build Docker image	2026-05-21T03:38:15.4567486Z #5 extracting sha256:8a5eacb2bb814dea504626f971132e96d20cdc3721bd2e1b63a41cd0c152c095 0.1s
+Build and push backend image	Build Docker image	2026-05-21T03:38:15.6124140Z #5 extracting sha256:8a5eacb2bb814dea504626f971132e96d20cdc3721bd2e1b63a41cd0c152c095 0.1s done
+Build and push backend image	Build Docker image	2026-05-21T03:38:16.6017857Z #5 extracting sha256:cfb2b8aa2b7e86f4393dd07f42230666f2fcfd3e180ccae3ac14119d5d0c9acc
+Build and push backend image	Build Docker image	2026-05-21T03:38:17.3447759Z #5 extracting sha256:cfb2b8aa2b7e86f4393dd07f42230666f2fcfd3e180ccae3ac14119d5d0c9acc 0.7s done
+Build and push backend image	Build Docker image	2026-05-21T03:38:17.3449331Z #5 extracting sha256:0f9a160da2020445bafab042b7b1a33e174db04f20055c2dfc8b0e0887fa6be8
+Build and push backend image	Build Docker image	2026-05-21T03:38:17.5215225Z #5 extracting sha256:0f9a160da2020445bafab042b7b1a33e174db04f20055c2dfc8b0e0887fa6be8 done
+Build and push backend image	Build Docker image	2026-05-21T03:38:17.5216544Z #5 DONE 3.4s
+Build and push backend image	Build Docker image	2026-05-21T03:38:17.5216764Z 
+Build and push backend image	Build Docker image	2026-05-21T03:38:17.5217129Z #6 [2/8] RUN useradd --uid 1000 --create-home app
+Build and push backend image	Build Docker image	2026-05-21T03:38:17.5217699Z #6 DONE 0.1s
+Build and push backend image	Build Docker image	2026-05-21T03:38:17.6729810Z 
+Build and push backend image	Build Docker image	2026-05-21T03:38:17.6922232Z #7 [3/8] RUN apt-get update &&   apt-get install --no-install-recommends --yes   build-essential   gcc   libffi-dev   libpcre3   libpcre3-dev   openssl   && pip install pipenv   && apt-get clean   && rm -rf /var/lib/apt/lists/*
+Build and push backend image	Build Docker image	2026-05-21T03:38:17.6923663Z #7 0.170 Get:1 http://deb.debian.org/debian bookworm InRelease [151 kB]
+Build and push backend image	Build Docker image	2026-05-21T03:38:17.8762626Z #7 0.194 Get:2 http://deb.debian.org/debian bookworm-updates InRelease [55.4 kB]
+Build and push backend image	Build Docker image	2026-05-21T03:38:17.8763725Z #7 0.205 Get:3 http://deb.debian.org/debian-security bookworm-security InRelease [48.0 kB]
+Build and push backend image	Build Docker image	2026-05-21T03:38:17.8764695Z #7 0.252 Get:4 http://deb.debian.org/debian bookworm/main amd64 Packages [8790 kB]
+Build and push backend image	Build Docker image	2026-05-21T03:38:17.8765627Z #7 0.353 Get:5 http://deb.debian.org/debian bookworm-updates/main amd64 Packages [6924 B]
+Build and push backend image	Build Docker image	2026-05-21T03:38:18.0271306Z #7 0.354 Get:6 http://deb.debian.org/debian-security bookworm-security/main amd64 Packages [306 kB]
+Build and push backend image	Build Docker image	2026-05-21T03:38:18.6188267Z #7 1.096 Fetched 9357 kB in 1s (9891 kB/s)
+Build and push backend image	Build Docker image	2026-05-21T03:38:19.0000740Z #7 1.096 Reading package lists...
+Build and push backend image	Build Docker image	2026-05-21T03:38:19.3987142Z #7 1.498 Reading package lists...
+Build and push backend image	Build Docker image	2026-05-21T03:38:19.5841901Z #7 1.886 Building dependency tree...
+Build and push backend image	Build Docker image	2026-05-21T03:38:19.5842817Z #7 1.971 Reading state information...
+Build and push backend image	Build Docker image	2026-05-21T03:38:19.5843659Z #7 2.062 openssl is already the newest version (3.0.20-1~deb12u1).
+Build and push backend image	Build Docker image	2026-05-21T03:38:19.5845558Z #7 2.062 openssl set to manually installed.
+Build and push backend image	Build Docker image	2026-05-21T03:38:19.5846639Z #7 2.062 The following additional packages will be installed:
+Build and push backend image	Build Docker image	2026-05-21T03:38:19.5847624Z #7 2.062   binutils binutils-common binutils-x86-64-linux-gnu bzip2 cpp cpp-12 dpkg-dev
+Build and push backend image	Build Docker image	2026-05-21T03:38:19.7365237Z #7 2.062   g++ g++-12 gcc-12 libasan8 libatomic1 libbinutils libc-dev-bin libc6-dev
+Build and push backend image	Build Docker image	2026-05-21T03:38:19.7366036Z #7 2.062   libcc1-0 libcrypt-dev libctf-nobfd0 libctf0 libdpkg-perl libgcc-12-dev
+Build and push backend image	Build Docker image	2026-05-21T03:38:19.7367132Z #7 2.062   libgdbm-compat4 libgomp1 libgprofng0 libisl23 libitm1 libjansson4 liblsan0
+Build and push backend image	Build Docker image	2026-05-21T03:38:19.7367846Z #7 2.062   libmpc3 libmpfr6 libnsl-dev libpcre16-3 libpcre32-3 libpcrecpp0v5
+Build and push backend image	Build Docker image	2026-05-21T03:38:19.7368605Z #7 2.062   libperl5.36 libquadmath0 libstdc++-12-dev libtirpc-dev libtsan2 libubsan1
+Build and push backend image	Build Docker image	2026-05-21T03:38:19.7369384Z #7 2.063   linux-libc-dev make patch perl perl-modules-5.36 rpcsvc-proto xz-utils
+Build and push backend image	Build Docker image	2026-05-21T03:38:19.7369965Z #7 2.064 Suggested packages:
+Build and push backend image	Build Docker image	2026-05-21T03:38:19.7370481Z #7 2.064   binutils-doc bzip2-doc cpp-doc gcc-12-locales cpp-12-doc debian-keyring
+Build and push backend image	Build Docker image	2026-05-21T03:38:19.7371203Z #7 2.064   g++-multilib g++-12-multilib gcc-12-doc gcc-multilib manpages-dev autoconf
+Build and push backend image	Build Docker image	2026-05-21T03:38:19.7371939Z #7 2.064   automake libtool flex bison gdb gcc-doc gcc-12-multilib glibc-doc gnupg | sq
+Build and push backend image	Build Docker image	2026-05-21T03:38:19.7372717Z #7 2.064   | sqop | pgpainless-cli sensible-utils git bzr libstdc++-12-doc make-doc ed
+Build and push backend image	Build Docker image	2026-05-21T03:38:19.7373374Z #7 2.064   diffutils-doc perl-doc libterm-readline-gnu-perl
+Build and push backend image	Build Docker image	2026-05-21T03:38:19.7373945Z #7 2.064   | libterm-readline-perl-perl libtap-harness-archive-perl
+Build and push backend image	Build Docker image	2026-05-21T03:38:19.7374443Z #7 2.064 Recommended packages:
+Build and push backend image	Build Docker image	2026-05-21T03:38:19.7374962Z #7 2.064   fakeroot gnupg | sq | sqop | pgpainless-cli libalgorithm-merge-perl manpages
+Build and push backend image	Build Docker image	2026-05-21T03:38:19.7375743Z #7 2.064   manpages-dev libc-devtools libfile-fcntllock-perl liblocale-gettext-perl
+Build and push backend image	Build Docker image	2026-05-21T03:38:19.7808245Z #7 2.258 The following NEW packages will be installed:
+Build and push backend image	Build Docker image	2026-05-21T03:38:19.7809359Z #7 2.258   binutils binutils-common binutils-x86-64-linux-gnu build-essential bzip2 cpp
+Build and push backend image	Build Docker image	2026-05-21T03:38:19.9170929Z #7 2.258   cpp-12 dpkg-dev g++ g++-12 gcc gcc-12 libasan8 libatomic1 libbinutils
+Build and push backend image	Build Docker image	2026-05-21T03:38:19.9172838Z #7 2.259   libc-dev-bin libc6-dev libcc1-0 libcrypt-dev libctf-nobfd0 libctf0
+Build and push backend image	Build Docker image	2026-05-21T03:38:19.9175066Z #7 2.259   libdpkg-perl libffi-dev libgcc-12-dev libgdbm-compat4 libgomp1 libgprofng0
+Build and push backend image	Build Docker image	2026-05-21T03:38:19.9177459Z #7 2.259   libisl23 libitm1 libjansson4 liblsan0 libmpc3 libmpfr6 libnsl-dev
+Build and push backend image	Build Docker image	2026-05-21T03:38:19.9178933Z #7 2.259   libpcre16-3 libpcre3 libpcre3-dev libpcre32-3 libpcrecpp0v5 libperl5.36
+Build and push backend image	Build Docker image	2026-05-21T03:38:19.9180576Z #7 2.259   libquadmath0 libstdc++-12-dev libtirpc-dev libtsan2 libubsan1 linux-libc-dev
+Build and push backend image	Build Docker image	2026-05-21T03:38:19.9181290Z #7 2.260   make patch perl perl-modules-5.36 rpcsvc-proto xz-utils
+Build and push backend image	Build Docker image	2026-05-21T03:38:19.9182335Z #7 2.305 0 upgraded, 52 newly installed, 0 to remove and 1 not upgraded.
+Build and push backend image	Build Docker image	2026-05-21T03:38:19.9182824Z #7 2.305 Need to get 75.4 MB of archives.
+Build and push backend image	Build Docker image	2026-05-21T03:38:19.9183211Z #7 2.305 After this operation, 319 MB of additional disk space will be used.
+Build and push backend image	Build Docker image	2026-05-21T03:38:19.9184573Z #7 2.305 Get:1 http://deb.debian.org/debian bookworm/main amd64 perl-modules-5.36 all 5.36.0-7+deb12u3 [2815 kB]
+Build and push backend image	Build Docker image	2026-05-21T03:38:19.9185250Z #7 2.395 Get:2 http://deb.debian.org/debian bookworm/main amd64 libgdbm-compat4 amd64 1.23-3 [48.2 kB]
+Build and push backend image	Build Docker image	2026-05-21T03:38:20.0265277Z #7 2.395 Get:3 http://deb.debian.org/debian bookworm/main amd64 libperl5.36 amd64 5.36.0-7+deb12u3 [4196 kB]
+Build and push backend image	Build Docker image	2026-05-21T03:38:20.0266921Z #7 2.418 Get:4 http://deb.debian.org/debian bookworm/main amd64 perl amd64 5.36.0-7+deb12u3 [239 kB]
+Build and push backend image	Build Docker image	2026-05-21T03:38:20.0268274Z #7 2.420 Get:5 http://deb.debian.org/debian bookworm/main amd64 bzip2 amd64 1.0.8-5+b1 [49.8 kB]
+Build and push backend image	Build Docker image	2026-05-21T03:38:20.0270403Z #7 2.420 Get:6 http://deb.debian.org/debian bookworm/main amd64 xz-utils amd64 5.4.1-1 [471 kB]
+Build and push backend image	Build Docker image	2026-05-21T03:38:20.0271211Z #7 2.430 Get:7 http://deb.debian.org/debian bookworm/main amd64 binutils-common amd64 2.40-2 [2487 kB]
+Build and push backend image	Build Docker image	2026-05-21T03:38:20.0272001Z #7 2.440 Get:8 http://deb.debian.org/debian bookworm/main amd64 libbinutils amd64 2.40-2 [572 kB]
+Build and push backend image	Build Docker image	2026-05-21T03:38:20.0272788Z #7 2.442 Get:9 http://deb.debian.org/debian bookworm/main amd64 libctf-nobfd0 amd64 2.40-2 [153 kB]
+Build and push backend image	Build Docker image	2026-05-21T03:38:20.0274849Z #7 2.442 Get:10 http://deb.debian.org/debian bookworm/main amd64 libctf0 amd64 2.40-2 [89.8 kB]
+Build and push backend image	Build Docker image	2026-05-21T03:38:20.0275509Z #7 2.443 Get:11 http://deb.debian.org/debian bookworm/main amd64 libgprofng0 amd64 2.40-2 [812 kB]
+Build and push backend image	Build Docker image	2026-05-21T03:38:20.0276129Z #7 2.446 Get:12 http://deb.debian.org/debian bookworm/main amd64 libjansson4 amd64 2.14-2 [40.8 kB]
+Build and push backend image	Build Docker image	2026-05-21T03:38:20.0277075Z #7 2.446 Get:13 http://deb.debian.org/debian bookworm/main amd64 binutils-x86-64-linux-gnu amd64 2.40-2 [2246 kB]
+Build and push backend image	Build Docker image	2026-05-21T03:38:20.0277712Z #7 2.454 Get:14 http://deb.debian.org/debian bookworm/main amd64 binutils amd64 2.40-2 [65.0 kB]
+Build and push backend image	Build Docker image	2026-05-21T03:38:20.0278317Z #7 2.454 Get:15 http://deb.debian.org/debian bookworm/main amd64 libc-dev-bin amd64 2.36-9+deb12u14 [48.1 kB]
+Build and push backend image	Build Docker image	2026-05-21T03:38:20.0280361Z #7 2.455 Get:16 http://deb.debian.org/debian-security bookworm-security/main amd64 linux-libc-dev amd64 6.1.172-1 [2272 kB]
+Build and push backend image	Build Docker image	2026-05-21T03:38:20.0281068Z #7 2.460 Get:17 http://deb.debian.org/debian bookworm/main amd64 libcrypt-dev amd64 1:4.4.33-2 [118 kB]
+Build and push backend image	Build Docker image	2026-05-21T03:38:20.0281680Z #7 2.460 Get:18 http://deb.debian.org/debian bookworm/main amd64 libtirpc-dev amd64 1.3.3+ds-1 [191 kB]
+Build and push backend image	Build Docker image	2026-05-21T03:38:20.0282266Z #7 2.461 Get:19 http://deb.debian.org/debian bookworm/main amd64 libnsl-dev amd64 1.3.0-2 [66.4 kB]
+Build and push backend image	Build Docker image	2026-05-21T03:38:20.0282857Z #7 2.462 Get:20 http://deb.debian.org/debian bookworm/main amd64 rpcsvc-proto amd64 1.4.3-1 [63.3 kB]
+Build and push backend image	Build Docker image	2026-05-21T03:38:20.0283461Z #7 2.472 Get:21 http://deb.debian.org/debian bookworm/main amd64 libc6-dev amd64 2.36-9+deb12u14 [1904 kB]
+Build and push backend image	Build Docker image	2026-05-21T03:38:20.0284238Z #7 2.493 Get:22 http://deb.debian.org/debian bookworm/main amd64 libisl23 amd64 0.25-1.1 [683 kB]
+Build and push backend image	Build Docker image	2026-05-21T03:38:20.0286620Z #7 2.504 Get:23 http://deb.debian.org/debian bookworm/main amd64 libmpfr6 amd64 4.2.0-1 [701 kB]
+Build and push backend image	Build Docker image	2026-05-21T03:38:20.2715599Z #7 2.507 Get:24 http://deb.debian.org/debian bookworm/main amd64 libmpc3 amd64 1.3.1-1 [51.5 kB]
+Build and push backend image	Build Docker image	2026-05-21T03:38:20.2716909Z #7 2.508 Get:25 http://deb.debian.org/debian bookworm/main amd64 cpp-12 amd64 12.2.0-14+deb12u1 [9768 kB]
+Build and push backend image	Build Docker image	2026-05-21T03:38:20.2717833Z #7 2.539 Get:26 http://deb.debian.org/debian bookworm/main amd64 cpp amd64 4:12.2.0-3 [6836 B]
+Build and push backend image	Build Docker image	2026-05-21T03:38:20.2718835Z #7 2.540 Get:27 http://deb.debian.org/debian bookworm/main amd64 libcc1-0 amd64 12.2.0-14+deb12u1 [41.7 kB]
+Build and push backend image	Build Docker image	2026-05-21T03:38:20.2719784Z #7 2.540 Get:28 http://deb.debian.org/debian bookworm/main amd64 libgomp1 amd64 12.2.0-14+deb12u1 [116 kB]
+Build and push backend image	Build Docker image	2026-05-21T03:38:20.2720699Z #7 2.541 Get:29 http://deb.debian.org/debian bookworm/main amd64 libitm1 amd64 12.2.0-14+deb12u1 [26.1 kB]
+Build and push backend image	Build Docker image	2026-05-21T03:38:20.2721636Z #7 2.541 Get:30 http://deb.debian.org/debian bookworm/main amd64 libatomic1 amd64 12.2.0-14+deb12u1 [9376 B]
+Build and push backend image	Build Docker image	2026-05-21T03:38:20.2722557Z #7 2.542 Get:31 http://deb.debian.org/debian bookworm/main amd64 libasan8 amd64 12.2.0-14+deb12u1 [2193 kB]
+Build and push backend image	Build Docker image	2026-05-21T03:38:20.2723462Z #7 2.549 Get:32 http://deb.debian.org/debian bookworm/main amd64 liblsan0 amd64 12.2.0-14+deb12u1 [969 kB]
+Build and push backend image	Build Docker image	2026-05-21T03:38:20.2724420Z #7 2.558 Get:33 http://deb.debian.org/debian bookworm/main amd64 libtsan2 amd64 12.2.0-14+deb12u1 [2197 kB]
+Build and push backend image	Build Docker image	2026-05-21T03:38:20.2725354Z #7 2.575 Get:34 http://deb.debian.org/debian bookworm/main amd64 libubsan1 amd64 12.2.0-14+deb12u1 [883 kB]
+Build and push backend image	Build Docker image	2026-05-21T03:38:20.2726415Z #7 2.588 Get:35 http://deb.debian.org/debian bookworm/main amd64 libquadmath0 amd64 12.2.0-14+deb12u1 [145 kB]
+Build and push backend image	Build Docker image	2026-05-21T03:38:20.2727658Z #7 2.589 Get:36 http://deb.debian.org/debian bookworm/main amd64 libgcc-12-dev amd64 12.2.0-14+deb12u1 [2437 kB]
+Build and push backend image	Build Docker image	2026-05-21T03:38:20.2728612Z #7 2.598 Get:37 http://deb.debian.org/debian bookworm/main amd64 gcc-12 amd64 12.2.0-14+deb12u1 [19.3 MB]
+Build and push backend image	Build Docker image	2026-05-21T03:38:20.4724325Z #7 2.950 Get:38 http://deb.debian.org/debian bookworm/main amd64 gcc amd64 4:12.2.0-3 [5216 B]
+Build and push backend image	Build Docker image	2026-05-21T03:38:20.5736029Z #7 2.950 Get:39 http://deb.debian.org/debian bookworm/main amd64 libstdc++-12-dev amd64 12.2.0-14+deb12u1 [2047 kB]
+Build and push backend image	Build Docker image	2026-05-21T03:38:20.5737964Z #7 2.957 Get:40 http://deb.debian.org/debian bookworm/main amd64 g++-12 amd64 12.2.0-14+deb12u1 [10.7 MB]
+Build and push backend image	Build Docker image	2026-05-21T03:38:20.5739387Z #7 3.004 Get:41 http://deb.debian.org/debian bookworm/main amd64 g++ amd64 4:12.2.0-3 [1356 B]
+Build and push backend image	Build Docker image	2026-05-21T03:38:20.5740703Z #7 3.004 Get:42 http://deb.debian.org/debian bookworm/main amd64 make amd64 4.3-4.1 [396 kB]
+Build and push backend image	Build Docker image	2026-05-21T03:38:20.5742149Z #7 3.006 Get:43 http://deb.debian.org/debian bookworm/main amd64 libdpkg-perl all 1.21.23 [604 kB]
+Build and push backend image	Build Docker image	2026-05-21T03:38:20.5743030Z #7 3.008 Get:44 http://deb.debian.org/debian bookworm/main amd64 patch amd64 2.7.6-7 [128 kB]
+Build and push backend image	Build Docker image	2026-05-21T03:38:20.5743854Z #7 3.008 Get:45 http://deb.debian.org/debian bookworm/main amd64 dpkg-dev all 1.21.23 [1354 kB]
+Build and push backend image	Build Docker image	2026-05-21T03:38:20.5744724Z #7 3.013 Get:46 http://deb.debian.org/debian bookworm/main amd64 build-essential amd64 12.9 [7704 B]
+Build and push backend image	Build Docker image	2026-05-21T03:38:20.5745470Z #7 3.013 Get:47 http://deb.debian.org/debian bookworm/main amd64 libffi-dev amd64 3.4.4-1 [59.4 kB]
+Build and push backend image	Build Docker image	2026-05-21T03:38:20.5746082Z #7 3.017 Get:48 http://deb.debian.org/debian bookworm/main amd64 libpcre16-3 amd64 2:8.39-15 [257 kB]
+Build and push backend image	Build Docker image	2026-05-21T03:38:20.5747021Z #7 3.028 Get:49 http://deb.debian.org/debian bookworm/main amd64 libpcre3 amd64 2:8.39-15 [341 kB]
+Build and push backend image	Build Docker image	2026-05-21T03:38:20.5747635Z #7 3.039 Get:50 http://deb.debian.org/debian bookworm/main amd64 libpcre32-3 amd64 2:8.39-15 [248 kB]
+Build and push backend image	Build Docker image	2026-05-21T03:38:20.5748423Z #7 3.051 Get:51 http://deb.debian.org/debian bookworm/main amd64 libpcrecpp0v5 amd64 2:8.39-15 [143 kB]
+Build and push backend image	Build Docker image	2026-05-21T03:38:20.6916572Z #7 3.061 Get:52 http://deb.debian.org/debian bookworm/main amd64 libpcre3-dev amd64 2:8.39-15 [653 kB]
+Build and push backend image	Build Docker image	2026-05-21T03:38:20.6917600Z #7 3.169 debconf: delaying package configuration, since apt-utils is not installed
+Build and push backend image	Build Docker image	2026-05-21T03:38:20.8838122Z #7 3.189 Fetched 75.4 MB in 1s (92.9 MB/s)
+Build and push backend image	Build Docker image	2026-05-21T03:38:20.8838860Z #7 3.202 Selecting previously unselected package perl-modules-5.36.
+Build and push backend image	Build Docker image	2026-05-21T03:38:20.8839515Z #7 3.203 (Reading database ... 
+Build and push backend image	Build Docker image	2026-05-21T03:38:20.8839913Z (Reading database ... 5%
+Build and push backend image	Build Docker image	2026-05-21T03:38:20.8840319Z (Reading database ... 10%
+Build and push backend image	Build Docker image	2026-05-21T03:38:20.8840724Z (Reading database ... 15%
+Build and push backend image	Build Docker image	2026-05-21T03:38:20.8841116Z (Reading database ... 20%
+Build and push backend image	Build Docker image	2026-05-21T03:38:20.8841506Z (Reading database ... 25%
+Build and push backend image	Build Docker image	2026-05-21T03:38:20.8841901Z (Reading database ... 30%
+Build and push backend image	Build Docker image	2026-05-21T03:38:20.8842286Z (Reading database ... 35%
+Build and push backend image	Build Docker image	2026-05-21T03:38:20.8842702Z (Reading database ... 40%
+Build and push backend image	Build Docker image	2026-05-21T03:38:20.8843091Z (Reading database ... 45%
+Build and push backend image	Build Docker image	2026-05-21T03:38:20.8843479Z (Reading database ... 50%
+Build and push backend image	Build Docker image	2026-05-21T03:38:20.8843876Z (Reading database ... 55%
+Build and push backend image	Build Docker image	2026-05-21T03:38:20.8844266Z (Reading database ... 60%
+Build and push backend image	Build Docker image	2026-05-21T03:38:20.8844658Z (Reading database ... 65%
+Build and push backend image	Build Docker image	2026-05-21T03:38:20.8845070Z (Reading database ... 70%
+Build and push backend image	Build Docker image	2026-05-21T03:38:20.8845463Z (Reading database ... 75%
+Build and push backend image	Build Docker image	2026-05-21T03:38:20.8845856Z (Reading database ... 80%
+Build and push backend image	Build Docker image	2026-05-21T03:38:20.8846475Z (Reading database ... 85%
+Build and push backend image	Build Docker image	2026-05-21T03:38:20.8846895Z (Reading database ... 90%
+Build and push backend image	Build Docker image	2026-05-21T03:38:20.8847308Z (Reading database ... 95%
+Build and push backend image	Build Docker image	2026-05-21T03:38:20.8847719Z (Reading database ... 100%
+Build and push backend image	Build Docker image	2026-05-21T03:38:20.8848292Z (Reading database ... 6695 files and directories currently installed.)
+Build and push backend image	Build Docker image	2026-05-21T03:38:20.8849153Z #7 3.210 Preparing to unpack .../00-perl-modules-5.36_5.36.0-7+deb12u3_all.deb ...
+Build and push backend image	Build Docker image	2026-05-21T03:38:20.8849919Z #7 3.211 Unpacking perl-modules-5.36 (5.36.0-7+deb12u3) ...
+Build and push backend image	Build Docker image	2026-05-21T03:38:21.0326314Z #7 3.510 Selecting previously unselected package libgdbm-compat4:amd64.
+Build and push backend image	Build Docker image	2026-05-21T03:38:21.2093176Z #7 3.512 Preparing to unpack .../01-libgdbm-compat4_1.23-3_amd64.deb ...
+Build and push backend image	Build Docker image	2026-05-21T03:38:21.2093950Z #7 3.516 Unpacking libgdbm-compat4:amd64 (1.23-3) ...
+Build and push backend image	Build Docker image	2026-05-21T03:38:21.2094603Z #7 3.534 Selecting previously unselected package libperl5.36:amd64.
+Build and push backend image	Build Docker image	2026-05-21T03:38:21.2095397Z #7 3.535 Preparing to unpack .../02-libperl5.36_5.36.0-7+deb12u3_amd64.deb ...
+Build and push backend image	Build Docker image	2026-05-21T03:38:21.2096126Z #7 3.536 Unpacking libperl5.36:amd64 (5.36.0-7+deb12u3) ...
+Build and push backend image	Build Docker image	2026-05-21T03:38:21.3424389Z #7 3.820 Selecting previously unselected package perl.
+Build and push backend image	Build Docker image	2026-05-21T03:38:21.4499266Z #7 3.821 Preparing to unpack .../03-perl_5.36.0-7+deb12u3_amd64.deb ...
+Build and push backend image	Build Docker image	2026-05-21T03:38:21.4499897Z #7 3.827 Unpacking perl (5.36.0-7+deb12u3) ...
+Build and push backend image	Build Docker image	2026-05-21T03:38:21.4500262Z #7 3.855 Selecting previously unselected package bzip2.
+Build and push backend image	Build Docker image	2026-05-21T03:38:21.4500657Z #7 3.856 Preparing to unpack .../04-bzip2_1.0.8-5+b1_amd64.deb ...
+Build and push backend image	Build Docker image	2026-05-21T03:38:21.4501012Z #7 3.857 Unpacking bzip2 (1.0.8-5+b1) ...
+Build and push backend image	Build Docker image	2026-05-21T03:38:21.4501382Z #7 3.876 Selecting previously unselected package xz-utils.
+Build and push backend image	Build Docker image	2026-05-21T03:38:21.4501780Z #7 3.877 Preparing to unpack .../05-xz-utils_5.4.1-1_amd64.deb ...
+Build and push backend image	Build Docker image	2026-05-21T03:38:21.4502133Z #7 3.878 Unpacking xz-utils (5.4.1-1) ...
+Build and push backend image	Build Docker image	2026-05-21T03:38:21.4502529Z #7 3.928 Selecting previously unselected package binutils-common:amd64.
+Build and push backend image	Build Docker image	2026-05-21T03:38:21.6027838Z #7 3.929 Preparing to unpack .../06-binutils-common_2.40-2_amd64.deb ...
+Build and push backend image	Build Docker image	2026-05-21T03:38:21.6028793Z #7 3.930 Unpacking binutils-common:amd64 (2.40-2) ...
+Build and push backend image	Build Docker image	2026-05-21T03:38:21.6147729Z #7 4.092 Selecting previously unselected package libbinutils:amd64.
+Build and push backend image	Build Docker image	2026-05-21T03:38:21.7194580Z #7 4.094 Preparing to unpack .../07-libbinutils_2.40-2_amd64.deb ...
+Build and push backend image	Build Docker image	2026-05-21T03:38:21.7195083Z #7 4.095 Unpacking libbinutils:amd64 (2.40-2) ...
+Build and push backend image	Build Docker image	2026-05-21T03:38:21.7195489Z #7 4.148 Selecting previously unselected package libctf-nobfd0:amd64.
+Build and push backend image	Build Docker image	2026-05-21T03:38:21.7195944Z #7 4.149 Preparing to unpack .../08-libctf-nobfd0_2.40-2_amd64.deb ...
+Build and push backend image	Build Docker image	2026-05-21T03:38:21.7196682Z #7 4.150 Unpacking libctf-nobfd0:amd64 (2.40-2) ...
+Build and push backend image	Build Docker image	2026-05-21T03:38:21.7197106Z #7 4.174 Selecting previously unselected package libctf0:amd64.
+Build and push backend image	Build Docker image	2026-05-21T03:38:21.7197526Z #7 4.176 Preparing to unpack .../09-libctf0_2.40-2_amd64.deb ...
+Build and push backend image	Build Docker image	2026-05-21T03:38:21.7198142Z #7 4.177 Unpacking libctf0:amd64 (2.40-2) ...
+Build and push backend image	Build Docker image	2026-05-21T03:38:21.7198520Z #7 4.197 Selecting previously unselected package libgprofng0:amd64.
+Build and push backend image	Build Docker image	2026-05-21T03:38:21.9615708Z #7 4.198 Preparing to unpack .../10-libgprofng0_2.40-2_amd64.deb ...
+Build and push backend image	Build Docker image	2026-05-21T03:38:21.9616764Z #7 4.200 Unpacking libgprofng0:amd64 (2.40-2) ...
+Build and push backend image	Build Docker image	2026-05-21T03:38:21.9617365Z #7 4.268 Selecting previously unselected package libjansson4:amd64.
+Build and push backend image	Build Docker image	2026-05-21T03:38:21.9618101Z #7 4.269 Preparing to unpack .../11-libjansson4_2.14-2_amd64.deb ...
+Build and push backend image	Build Docker image	2026-05-21T03:38:21.9618776Z #7 4.270 Unpacking libjansson4:amd64 (2.14-2) ...
+Build and push backend image	Build Docker image	2026-05-21T03:38:21.9619541Z #7 4.286 Selecting previously unselected package binutils-x86-64-linux-gnu.
+Build and push backend image	Build Docker image	2026-05-21T03:38:21.9620533Z #7 4.287 Preparing to unpack .../12-binutils-x86-64-linux-gnu_2.40-2_amd64.deb ...
+Build and push backend image	Build Docker image	2026-05-21T03:38:21.9621552Z #7 4.289 Unpacking binutils-x86-64-linux-gnu (2.40-2) ...
+Build and push backend image	Build Docker image	2026-05-21T03:38:21.9870595Z #7 4.465 Selecting previously unselected package binutils.
+Build and push backend image	Build Docker image	2026-05-21T03:38:22.1837758Z #7 4.466 Preparing to unpack .../13-binutils_2.40-2_amd64.deb ...
+Build and push backend image	Build Docker image	2026-05-21T03:38:22.1838300Z #7 4.467 Unpacking binutils (2.40-2) ...
+Build and push backend image	Build Docker image	2026-05-21T03:38:22.1838747Z #7 4.489 Selecting previously unselected package libc-dev-bin.
+Build and push backend image	Build Docker image	2026-05-21T03:38:22.1839325Z #7 4.490 Preparing to unpack .../14-libc-dev-bin_2.36-9+deb12u14_amd64.deb ...
+Build and push backend image	Build Docker image	2026-05-21T03:38:22.1839866Z #7 4.492 Unpacking libc-dev-bin (2.36-9+deb12u14) ...
+Build and push backend image	Build Docker image	2026-05-21T03:38:22.1840374Z #7 4.508 Selecting previously unselected package linux-libc-dev:amd64.
+Build and push backend image	Build Docker image	2026-05-21T03:38:22.1840963Z #7 4.510 Preparing to unpack .../15-linux-libc-dev_6.1.172-1_amd64.deb ...
+Build and push backend image	Build Docker image	2026-05-21T03:38:22.1841476Z #7 4.511 Unpacking linux-libc-dev:amd64 (6.1.172-1) ...
+Build and push backend image	Build Docker image	2026-05-21T03:38:22.2247937Z #7 4.702 Selecting previously unselected package libcrypt-dev:amd64.
+Build and push backend image	Build Docker image	2026-05-21T03:38:22.3276761Z #7 4.704 Preparing to unpack .../16-libcrypt-dev_1%3a4.4.33-2_amd64.deb ...
+Build and push backend image	Build Docker image	2026-05-21T03:38:22.3277593Z #7 4.709 Unpacking libcrypt-dev:amd64 (1:4.4.33-2) ...
+Build and push backend image	Build Docker image	2026-05-21T03:38:22.3278065Z #7 4.731 Selecting previously unselected package libtirpc-dev:amd64.
+Build and push backend image	Build Docker image	2026-05-21T03:38:22.3278543Z #7 4.732 Preparing to unpack .../17-libtirpc-dev_1.3.3+ds-1_amd64.deb ...
+Build and push backend image	Build Docker image	2026-05-21T03:38:22.3278938Z #7 4.733 Unpacking libtirpc-dev:amd64 (1.3.3+ds-1) ...
+Build and push backend image	Build Docker image	2026-05-21T03:38:22.3279310Z #7 4.761 Selecting previously unselected package libnsl-dev:amd64.
+Build and push backend image	Build Docker image	2026-05-21T03:38:22.3279753Z #7 4.762 Preparing to unpack .../18-libnsl-dev_1.3.0-2_amd64.deb ...
+Build and push backend image	Build Docker image	2026-05-21T03:38:22.3280131Z #7 4.763 Unpacking libnsl-dev:amd64 (1.3.0-2) ...
+Build and push backend image	Build Docker image	2026-05-21T03:38:22.3280489Z #7 4.782 Selecting previously unselected package rpcsvc-proto.
+Build and push backend image	Build Docker image	2026-05-21T03:38:22.3280915Z #7 4.784 Preparing to unpack .../19-rpcsvc-proto_1.4.3-1_amd64.deb ...
+Build and push backend image	Build Docker image	2026-05-21T03:38:22.3281309Z #7 4.785 Unpacking rpcsvc-proto (1.4.3-1) ...
+Build and push backend image	Build Docker image	2026-05-21T03:38:22.3281668Z #7 4.805 Selecting previously unselected package libc6-dev:amd64.
+Build and push backend image	Build Docker image	2026-05-21T03:38:22.4756811Z #7 4.807 Preparing to unpack .../20-libc6-dev_2.36-9+deb12u14_amd64.deb ...
+Build and push backend image	Build Docker image	2026-05-21T03:38:22.4757582Z #7 4.810 Unpacking libc6-dev:amd64 (2.36-9+deb12u14) ...
+Build and push backend image	Build Docker image	2026-05-21T03:38:22.4758017Z #7 4.953 Selecting previously unselected package libisl23:amd64.
+Build and push backend image	Build Docker image	2026-05-21T03:38:22.5791219Z #7 4.955 Preparing to unpack .../21-libisl23_0.25-1.1_amd64.deb ...
+Build and push backend image	Build Docker image	2026-05-21T03:38:22.5791957Z #7 4.956 Unpacking libisl23:amd64 (0.25-1.1) ...
+Build and push backend image	Build Docker image	2026-05-21T03:38:22.5792595Z #7 5.015 Selecting previously unselected package libmpfr6:amd64.
+Build and push backend image	Build Docker image	2026-05-21T03:38:22.5793308Z #7 5.016 Preparing to unpack .../22-libmpfr6_4.2.0-1_amd64.deb ...
+Build and push backend image	Build Docker image	2026-05-21T03:38:22.5793933Z #7 5.018 Unpacking libmpfr6:amd64 (4.2.0-1) ...
+Build and push backend image	Build Docker image	2026-05-21T03:38:22.5794538Z #7 5.057 Selecting previously unselected package libmpc3:amd64.
+Build and push backend image	Build Docker image	2026-05-21T03:38:22.7516186Z #7 5.058 Preparing to unpack .../23-libmpc3_1.3.1-1_amd64.deb ...
+Build and push backend image	Build Docker image	2026-05-21T03:38:22.7517544Z #7 5.060 Unpacking libmpc3:amd64 (1.3.1-1) ...
+Build and push backend image	Build Docker image	2026-05-21T03:38:22.7518120Z #7 5.077 Selecting previously unselected package cpp-12.
+Build and push backend image	Build Docker image	2026-05-21T03:38:22.7518797Z #7 5.078 Preparing to unpack .../24-cpp-12_12.2.0-14+deb12u1_amd64.deb ...
+Build and push backend image	Build Docker image	2026-05-21T03:38:22.7519724Z #7 5.079 Unpacking cpp-12 (12.2.0-14+deb12u1) ...
+Build and push backend image	Build Docker image	2026-05-21T03:38:23.0978488Z #7 5.575 Selecting previously unselected package cpp.
+Build and push backend image	Build Docker image	2026-05-21T03:38:23.2037406Z #7 5.577 Preparing to unpack .../25-cpp_4%3a12.2.0-3_amd64.deb ...
+Build and push backend image	Build Docker image	2026-05-21T03:38:23.2038198Z #7 5.581 Unpacking cpp (4:12.2.0-3) ...
+Build and push backend image	Build Docker image	2026-05-21T03:38:23.2038749Z #7 5.598 Selecting previously unselected package libcc1-0:amd64.
+Build and push backend image	Build Docker image	2026-05-21T03:38:23.2039369Z #7 5.600 Preparing to unpack .../26-libcc1-0_12.2.0-14+deb12u1_amd64.deb ...
+Build and push backend image	Build Docker image	2026-05-21T03:38:23.2039963Z #7 5.601 Unpacking libcc1-0:amd64 (12.2.0-14+deb12u1) ...
+Build and push backend image	Build Docker image	2026-05-21T03:38:23.2040521Z #7 5.619 Selecting previously unselected package libgomp1:amd64.
+Build and push backend image	Build Docker image	2026-05-21T03:38:23.2041164Z #7 5.621 Preparing to unpack .../27-libgomp1_12.2.0-14+deb12u1_amd64.deb ...
+Build and push backend image	Build Docker image	2026-05-21T03:38:23.2041786Z #7 5.622 Unpacking libgomp1:amd64 (12.2.0-14+deb12u1) ...
+Build and push backend image	Build Docker image	2026-05-21T03:38:23.2042343Z #7 5.644 Selecting previously unselected package libitm1:amd64.
+Build and push backend image	Build Docker image	2026-05-21T03:38:23.2042965Z #7 5.646 Preparing to unpack .../28-libitm1_12.2.0-14+deb12u1_amd64.deb ...
+Build and push backend image	Build Docker image	2026-05-21T03:38:23.2043543Z #7 5.647 Unpacking libitm1:amd64 (12.2.0-14+deb12u1) ...
+Build and push backend image	Build Docker image	2026-05-21T03:38:23.2044140Z #7 5.663 Selecting previously unselected package libatomic1:amd64.
+Build and push backend image	Build Docker image	2026-05-21T03:38:23.2044777Z #7 5.665 Preparing to unpack .../29-libatomic1_12.2.0-14+deb12u1_amd64.deb ...
+Build and push backend image	Build Docker image	2026-05-21T03:38:23.2045382Z #7 5.666 Unpacking libatomic1:amd64 (12.2.0-14+deb12u1) ...
+Build and push backend image	Build Docker image	2026-05-21T03:38:23.2045932Z #7 5.681 Selecting previously unselected package libasan8:amd64.
+Build and push backend image	Build Docker image	2026-05-21T03:38:23.3572398Z #7 5.683 Preparing to unpack .../30-libasan8_12.2.0-14+deb12u1_amd64.deb ...
+Build and push backend image	Build Docker image	2026-05-21T03:38:23.3573172Z #7 5.684 Unpacking libasan8:amd64 (12.2.0-14+deb12u1) ...
+Build and push backend image	Build Docker image	2026-05-21T03:38:23.3629437Z #7 5.840 Selecting previously unselected package liblsan0:amd64.
+Build and push backend image	Build Docker image	2026-05-21T03:38:23.5978076Z #7 5.842 Preparing to unpack .../31-liblsan0_12.2.0-14+deb12u1_amd64.deb ...
+Build and push backend image	Build Docker image	2026-05-21T03:38:23.5978809Z #7 5.843 Unpacking liblsan0:amd64 (12.2.0-14+deb12u1) ...
+Build and push backend image	Build Docker image	2026-05-21T03:38:23.5979387Z #7 5.922 Selecting previously unselected package libtsan2:amd64.
+Build and push backend image	Build Docker image	2026-05-21T03:38:23.5980008Z #7 5.924 Preparing to unpack .../32-libtsan2_12.2.0-14+deb12u1_amd64.deb ...
+Build and push backend image	Build Docker image	2026-05-21T03:38:23.5980587Z #7 5.925 Unpacking libtsan2:amd64 (12.2.0-14+deb12u1) ...
+Build and push backend image	Build Docker image	2026-05-21T03:38:23.5985430Z #7 6.076 Selecting previously unselected package libubsan1:amd64.
+Build and push backend image	Build Docker image	2026-05-21T03:38:23.8475601Z #7 6.078 Preparing to unpack .../33-libubsan1_12.2.0-14+deb12u1_amd64.deb ...
+Build and push backend image	Build Docker image	2026-05-21T03:38:23.8476217Z #7 6.079 Unpacking libubsan1:amd64 (12.2.0-14+deb12u1) ...
+Build and push backend image	Build Docker image	2026-05-21T03:38:23.8476978Z #7 6.147 Selecting previously unselected package libquadmath0:amd64.
+Build and push backend image	Build Docker image	2026-05-21T03:38:23.8477548Z #7 6.149 Preparing to unpack .../34-libquadmath0_12.2.0-14+deb12u1_amd64.deb ...
+Build and push backend image	Build Docker image	2026-05-21T03:38:23.8478029Z #7 6.150 Unpacking libquadmath0:amd64 (12.2.0-14+deb12u1) ...
+Build and push backend image	Build Docker image	2026-05-21T03:38:23.8478671Z #7 6.172 Selecting previously unselected package libgcc-12-dev:amd64.
+Build and push backend image	Build Docker image	2026-05-21T03:38:23.8479367Z #7 6.174 Preparing to unpack .../35-libgcc-12-dev_12.2.0-14+deb12u1_amd64.deb ...
+Build and push backend image	Build Docker image	2026-05-21T03:38:23.8480062Z #7 6.175 Unpacking libgcc-12-dev:amd64 (12.2.0-14+deb12u1) ...
+Build and push backend image	Build Docker image	2026-05-21T03:38:23.8490587Z #7 6.327 Selecting previously unselected package gcc-12.
+Build and push backend image	Build Docker image	2026-05-21T03:38:24.0030032Z #7 6.328 Preparing to unpack .../36-gcc-12_12.2.0-14+deb12u1_amd64.deb ...
+Build and push backend image	Build Docker image	2026-05-21T03:38:24.0031242Z #7 6.330 Unpacking gcc-12 (12.2.0-14+deb12u1) ...
+Build and push backend image	Build Docker image	2026-05-21T03:38:24.4488165Z #7 6.926 Selecting previously unselected package gcc.
+Build and push backend image	Build Docker image	2026-05-21T03:38:24.6214488Z #7 6.928 Preparing to unpack .../37-gcc_4%3a12.2.0-3_amd64.deb ...
+Build and push backend image	Build Docker image	2026-05-21T03:38:24.6215339Z #7 6.929 Unpacking gcc (4:12.2.0-3) ...
+Build and push backend image	Build Docker image	2026-05-21T03:38:24.6215998Z #7 6.946 Selecting previously unselected package libstdc++-12-dev:amd64.
+Build and push backend image	Build Docker image	2026-05-21T03:38:24.6217080Z #7 6.947 Preparing to unpack .../38-libstdc++-12-dev_12.2.0-14+deb12u1_amd64.deb ...
+Build and push backend image	Build Docker image	2026-05-21T03:38:24.6217879Z #7 6.949 Unpacking libstdc++-12-dev:amd64 (12.2.0-14+deb12u1) ...
+Build and push backend image	Build Docker image	2026-05-21T03:38:24.6693973Z #7 7.147 Selecting previously unselected package g++-12.
+Build and push backend image	Build Docker image	2026-05-21T03:38:24.8226438Z #7 7.149 Preparing to unpack .../39-g++-12_12.2.0-14+deb12u1_amd64.deb ...
+Build and push backend image	Build Docker image	2026-05-21T03:38:24.8227103Z #7 7.150 Unpacking g++-12 (12.2.0-14+deb12u1) ...
+Build and push backend image	Build Docker image	2026-05-21T03:38:25.1819630Z #7 7.659 Selecting previously unselected package g++.
+Build and push backend image	Build Docker image	2026-05-21T03:38:25.2892695Z #7 7.661 Preparing to unpack .../40-g++_4%3a12.2.0-3_amd64.deb ...
+Build and push backend image	Build Docker image	2026-05-21T03:38:25.2893263Z #7 7.662 Unpacking g++ (4:12.2.0-3) ...
+Build and push backend image	Build Docker image	2026-05-21T03:38:25.2893641Z #7 7.675 Selecting previously unselected package make.
+Build and push backend image	Build Docker image	2026-05-21T03:38:25.2894049Z #7 7.676 Preparing to unpack .../41-make_4.3-4.1_amd64.deb ...
+Build and push backend image	Build Docker image	2026-05-21T03:38:25.2894397Z #7 7.677 Unpacking make (4.3-4.1) ...
+Build and push backend image	Build Docker image	2026-05-21T03:38:25.2894769Z #7 7.713 Selecting previously unselected package libdpkg-perl.
+Build and push backend image	Build Docker image	2026-05-21T03:38:25.2895206Z #7 7.714 Preparing to unpack .../42-libdpkg-perl_1.21.23_all.deb ...
+Build and push backend image	Build Docker image	2026-05-21T03:38:25.2895584Z #7 7.715 Unpacking libdpkg-perl (1.21.23) ...
+Build and push backend image	Build Docker image	2026-05-21T03:38:25.2895945Z #7 7.767 Selecting previously unselected package patch.
+Build and push backend image	Build Docker image	2026-05-21T03:38:25.3999762Z #7 7.768 Preparing to unpack .../43-patch_2.7.6-7_amd64.deb ...
+Build and push backend image	Build Docker image	2026-05-21T03:38:25.4000435Z #7 7.769 Unpacking patch (2.7.6-7) ...
+Build and push backend image	Build Docker image	2026-05-21T03:38:25.4000942Z #7 7.792 Selecting previously unselected package dpkg-dev.
+Build and push backend image	Build Docker image	2026-05-21T03:38:25.4001401Z #7 7.794 Preparing to unpack .../44-dpkg-dev_1.21.23_all.deb ...
+Build and push backend image	Build Docker image	2026-05-21T03:38:25.4001752Z #7 7.794 Unpacking dpkg-dev (1.21.23) ...
+Build and push backend image	Build Docker image	2026-05-21T03:38:25.4002097Z #7 7.878 Selecting previously unselected package build-essential.
+Build and push backend image	Build Docker image	2026-05-21T03:38:25.5047668Z #7 7.879 Preparing to unpack .../45-build-essential_12.9_amd64.deb ...
+Build and push backend image	Build Docker image	2026-05-21T03:38:25.5048176Z #7 7.880 Unpacking build-essential (12.9) ...
+Build and push backend image	Build Docker image	2026-05-21T03:38:25.5049110Z #7 7.895 Selecting previously unselected package libffi-dev:amd64.
+Build and push backend image	Build Docker image	2026-05-21T03:38:25.5049623Z #7 7.897 Preparing to unpack .../46-libffi-dev_3.4.4-1_amd64.deb ...
+Build and push backend image	Build Docker image	2026-05-21T03:38:25.5050051Z #7 7.898 Unpacking libffi-dev:amd64 (3.4.4-1) ...
+Build and push backend image	Build Docker image	2026-05-21T03:38:25.5050485Z #7 7.918 Selecting previously unselected package libpcre16-3:amd64.
+Build and push backend image	Build Docker image	2026-05-21T03:38:25.5050968Z #7 7.919 Preparing to unpack .../47-libpcre16-3_2%3a8.39-15_amd64.deb ...
+Build and push backend image	Build Docker image	2026-05-21T03:38:25.5051390Z #7 7.920 Unpacking libpcre16-3:amd64 (2:8.39-15) ...
+Build and push backend image	Build Docker image	2026-05-21T03:38:25.5051789Z #7 7.945 Selecting previously unselected package libpcre3:amd64.
+Build and push backend image	Build Docker image	2026-05-21T03:38:25.5052243Z #7 7.947 Preparing to unpack .../48-libpcre3_2%3a8.39-15_amd64.deb ...
+Build and push backend image	Build Docker image	2026-05-21T03:38:25.5052647Z #7 7.948 Unpacking libpcre3:amd64 (2:8.39-15) ...
+Build and push backend image	Build Docker image	2026-05-21T03:38:25.5053045Z #7 7.982 Selecting previously unselected package libpcre32-3:amd64.
+Build and push backend image	Build Docker image	2026-05-21T03:38:25.6149180Z #7 7.984 Preparing to unpack .../49-libpcre32-3_2%3a8.39-15_amd64.deb ...
+Build and push backend image	Build Docker image	2026-05-21T03:38:25.6150124Z #7 7.985 Unpacking libpcre32-3:amd64 (2:8.39-15) ...
+Build and push backend image	Build Docker image	2026-05-21T03:38:25.6150690Z #7 8.010 Selecting previously unselected package libpcrecpp0v5:amd64.
+Build and push backend image	Build Docker image	2026-05-21T03:38:25.6151536Z #7 8.012 Preparing to unpack .../50-libpcrecpp0v5_2%3a8.39-15_amd64.deb ...
+Build and push backend image	Build Docker image	2026-05-21T03:38:25.6152263Z #7 8.013 Unpacking libpcrecpp0v5:amd64 (2:8.39-15) ...
+Build and push backend image	Build Docker image	2026-05-21T03:38:25.6175486Z #7 8.030 Selecting previously unselected package libpcre3-dev:amd64.
+Build and push backend image	Build Docker image	2026-05-21T03:38:25.6176576Z #7 8.032 Preparing to unpack .../51-libpcre3-dev_2%3a8.39-15_amd64.deb ...
+Build and push backend image	Build Docker image	2026-05-21T03:38:25.6177290Z #7 8.032 Unpacking libpcre3-dev:amd64 (2:8.39-15) ...
+Build and push backend image	Build Docker image	2026-05-21T03:38:25.6177914Z #7 8.092 Setting up libpcre16-3:amd64 (2:8.39-15) ...
+Build and push backend image	Build Docker image	2026-05-21T03:38:25.7158670Z #7 8.095 Setting up binutils-common:amd64 (2.40-2) ...
+Build and push backend image	Build Docker image	2026-05-21T03:38:25.7159535Z #7 8.099 Setting up linux-libc-dev:amd64 (6.1.172-1) ...
+Build and push backend image	Build Docker image	2026-05-21T03:38:25.7160330Z #7 8.102 Setting up libctf-nobfd0:amd64 (2.40-2) ...
+Build and push backend image	Build Docker image	2026-05-21T03:38:25.7161024Z #7 8.105 Setting up libgomp1:amd64 (12.2.0-14+deb12u1) ...
+Build and push backend image	Build Docker image	2026-05-21T03:38:25.7161555Z #7 8.107 Setting up bzip2 (1.0.8-5+b1) ...
+Build and push backend image	Build Docker image	2026-05-21T03:38:25.7162043Z #7 8.109 Setting up libffi-dev:amd64 (3.4.4-1) ...
+Build and push backend image	Build Docker image	2026-05-21T03:38:25.7162605Z #7 8.112 Setting up libjansson4:amd64 (2.14-2) ...
+Build and push backend image	Build Docker image	2026-05-21T03:38:25.7163576Z #7 8.117 Setting up libpcre3:amd64 (2:8.39-15) ...
+Build and push backend image	Build Docker image	2026-05-21T03:38:25.7164260Z #7 8.120 Setting up perl-modules-5.36 (5.36.0-7+deb12u3) ...
+Build and push backend image	Build Docker image	2026-05-21T03:38:25.7164808Z #7 8.122 Setting up libtirpc-dev:amd64 (1.3.3+ds-1) ...
+Build and push backend image	Build Docker image	2026-05-21T03:38:25.7165369Z #7 8.124 Setting up rpcsvc-proto (1.4.3-1) ...
+Build and push backend image	Build Docker image	2026-05-21T03:38:25.7165877Z #7 8.127 Setting up make (4.3-4.1) ...
+Build and push backend image	Build Docker image	2026-05-21T03:38:25.7166627Z #7 8.129 Setting up libmpfr6:amd64 (4.2.0-1) ...
+Build and push backend image	Build Docker image	2026-05-21T03:38:25.7167116Z #7 8.131 Setting up xz-utils (5.4.1-1) ...
+Build and push backend image	Build Docker image	2026-05-21T03:38:25.7167896Z #7 8.136 update-alternatives: using /usr/bin/xz to provide /usr/bin/lzma (lzma) in auto mode
+Build and push backend image	Build Docker image	2026-05-21T03:38:25.7169214Z #7 8.136 update-alternatives: warning: skip creation of /usr/share/man/man1/lzma.1.gz because associated file /usr/share/man/man1/xz.1.gz (of link group lzma) doesn't exist
+Build and push backend image	Build Docker image	2026-05-21T03:38:25.7171007Z #7 8.136 update-alternatives: warning: skip creation of /usr/share/man/man1/unlzma.1.gz because associated file /usr/share/man/man1/unxz.1.gz (of link group lzma) doesn't exist
+Build and push backend image	Build Docker image	2026-05-21T03:38:25.7172757Z #7 8.136 update-alternatives: warning: skip creation of /usr/share/man/man1/lzcat.1.gz because associated file /usr/share/man/man1/xzcat.1.gz (of link group lzma) doesn't exist
+Build and push backend image	Build Docker image	2026-05-21T03:38:25.7174215Z #7 8.137 update-alternatives: warning: skip creation of /usr/share/man/man1/lzmore.1.gz because associated file /usr/share/man/man1/xzmore.1.gz (of link group lzma) doesn't exist
+Build and push backend image	Build Docker image	2026-05-21T03:38:25.7175610Z #7 8.137 update-alternatives: warning: skip creation of /usr/share/man/man1/lzless.1.gz because associated file /usr/share/man/man1/xzless.1.gz (of link group lzma) doesn't exist
+Build and push backend image	Build Docker image	2026-05-21T03:38:25.7177559Z #7 8.137 update-alternatives: warning: skip creation of /usr/share/man/man1/lzdiff.1.gz because associated file /usr/share/man/man1/xzdiff.1.gz (of link group lzma) doesn't exist
+Build and push backend image	Build Docker image	2026-05-21T03:38:25.7179306Z #7 8.137 update-alternatives: warning: skip creation of /usr/share/man/man1/lzcmp.1.gz because associated file /usr/share/man/man1/xzcmp.1.gz (of link group lzma) doesn't exist
+Build and push backend image	Build Docker image	2026-05-21T03:38:25.7181490Z #7 8.137 update-alternatives: warning: skip creation of /usr/share/man/man1/lzgrep.1.gz because associated file /usr/share/man/man1/xzgrep.1.gz (of link group lzma) doesn't exist
+Build and push backend image	Build Docker image	2026-05-21T03:38:25.7183648Z #7 8.138 update-alternatives: warning: skip creation of /usr/share/man/man1/lzegrep.1.gz because associated file /usr/share/man/man1/xzegrep.1.gz (of link group lzma) doesn't exist
+Build and push backend image	Build Docker image	2026-05-21T03:38:25.7185468Z #7 8.138 update-alternatives: warning: skip creation of /usr/share/man/man1/lzfgrep.1.gz because associated file /usr/share/man/man1/xzfgrep.1.gz (of link group lzma) doesn't exist
+Build and push backend image	Build Docker image	2026-05-21T03:38:25.7186718Z #7 8.141 Setting up libquadmath0:amd64 (12.2.0-14+deb12u1) ...
+Build and push backend image	Build Docker image	2026-05-21T03:38:25.7187240Z #7 8.143 Setting up libpcre32-3:amd64 (2:8.39-15) ...
+Build and push backend image	Build Docker image	2026-05-21T03:38:25.7187947Z #7 8.146 Setting up libmpc3:amd64 (1.3.1-1) ...
+Build and push backend image	Build Docker image	2026-05-21T03:38:25.7188611Z #7 8.148 Setting up libatomic1:amd64 (12.2.0-14+deb12u1) ...
+Build and push backend image	Build Docker image	2026-05-21T03:38:25.7189229Z #7 8.150 Setting up patch (2.7.6-7) ...
+Build and push backend image	Build Docker image	2026-05-21T03:38:25.7189803Z #7 8.153 Setting up libgdbm-compat4:amd64 (1.23-3) ...
+Build and push backend image	Build Docker image	2026-05-21T03:38:25.7190422Z #7 8.155 Setting up libubsan1:amd64 (12.2.0-14+deb12u1) ...
+Build and push backend image	Build Docker image	2026-05-21T03:38:25.7190896Z #7 8.157 Setting up libnsl-dev:amd64 (1.3.0-2) ...
+Build and push backend image	Build Docker image	2026-05-21T03:38:25.7191447Z #7 8.160 Setting up libcrypt-dev:amd64 (1:4.4.33-2) ...
+Build and push backend image	Build Docker image	2026-05-21T03:38:25.7191953Z #7 8.167 Setting up libasan8:amd64 (12.2.0-14+deb12u1) ...
+Build and push backend image	Build Docker image	2026-05-21T03:38:25.7192446Z #7 8.169 Setting up libtsan2:amd64 (12.2.0-14+deb12u1) ...
+Build and push backend image	Build Docker image	2026-05-21T03:38:25.7192916Z #7 8.172 Setting up libbinutils:amd64 (2.40-2) ...
+Build and push backend image	Build Docker image	2026-05-21T03:38:25.7193426Z #7 8.174 Setting up libisl23:amd64 (0.25-1.1) ...
+Build and push backend image	Build Docker image	2026-05-21T03:38:25.7194011Z #7 8.176 Setting up libc-dev-bin (2.36-9+deb12u14) ...
+Build and push backend image	Build Docker image	2026-05-21T03:38:25.7194545Z #7 8.179 Setting up libcc1-0:amd64 (12.2.0-14+deb12u1) ...
+Build and push backend image	Build Docker image	2026-05-21T03:38:25.7195050Z #7 8.181 Setting up libperl5.36:amd64 (5.36.0-7+deb12u3) ...
+Build and push backend image	Build Docker image	2026-05-21T03:38:25.7195772Z #7 8.184 Setting up liblsan0:amd64 (12.2.0-14+deb12u1) ...
+Build and push backend image	Build Docker image	2026-05-21T03:38:25.7196618Z #7 8.186 Setting up libitm1:amd64 (12.2.0-14+deb12u1) ...
+Build and push backend image	Build Docker image	2026-05-21T03:38:25.7197226Z #7 8.188 Setting up libctf0:amd64 (2.40-2) ...
+Build and push backend image	Build Docker image	2026-05-21T03:38:25.7197826Z #7 8.191 Setting up libpcrecpp0v5:amd64 (2:8.39-15) ...
+Build and push backend image	Build Docker image	2026-05-21T03:38:25.7198314Z #7 8.193 Setting up cpp-12 (12.2.0-14+deb12u1) ...
+Build and push backend image	Build Docker image	2026-05-21T03:38:25.9302414Z #7 8.196 Setting up perl (5.36.0-7+deb12u3) ...
+Build and push backend image	Build Docker image	2026-05-21T03:38:25.9303315Z #7 8.205 Setting up libgprofng0:amd64 (2.40-2) ...
+Build and push backend image	Build Docker image	2026-05-21T03:38:25.9303994Z #7 8.207 Setting up libgcc-12-dev:amd64 (12.2.0-14+deb12u1) ...
+Build and push backend image	Build Docker image	2026-05-21T03:38:25.9304645Z #7 8.210 Setting up libdpkg-perl (1.21.23) ...
+Build and push backend image	Build Docker image	2026-05-21T03:38:25.9305206Z #7 8.212 Setting up cpp (4:12.2.0-3) ...
+Build and push backend image	Build Docker image	2026-05-21T03:38:25.9305778Z #7 8.218 Setting up libc6-dev:amd64 (2.36-9+deb12u14) ...
+Build and push backend image	Build Docker image	2026-05-21T03:38:25.9306792Z #7 8.220 Setting up binutils-x86-64-linux-gnu (2.40-2) ...
+Build and push backend image	Build Docker image	2026-05-21T03:38:25.9307600Z #7 8.222 Setting up libstdc++-12-dev:amd64 (12.2.0-14+deb12u1) ...
+Build and push backend image	Build Docker image	2026-05-21T03:38:25.9308284Z #7 8.226 Setting up libpcre3-dev:amd64 (2:8.39-15) ...
+Build and push backend image	Build Docker image	2026-05-21T03:38:25.9308857Z #7 8.229 Setting up binutils (2.40-2) ...
+Build and push backend image	Build Docker image	2026-05-21T03:38:25.9309371Z #7 8.231 Setting up dpkg-dev (1.21.23) ...
+Build and push backend image	Build Docker image	2026-05-21T03:38:25.9309907Z #7 8.235 Setting up gcc-12 (12.2.0-14+deb12u1) ...
+Build and push backend image	Build Docker image	2026-05-21T03:38:25.9310470Z #7 8.237 Setting up g++-12 (12.2.0-14+deb12u1) ...
+Build and push backend image	Build Docker image	2026-05-21T03:38:25.9311014Z #7 8.240 Setting up gcc (4:12.2.0-3) ...
+Build and push backend image	Build Docker image	2026-05-21T03:38:25.9311513Z #7 8.248 Setting up g++ (4:12.2.0-3) ...
+Build and push backend image	Build Docker image	2026-05-21T03:38:25.9312260Z #7 8.251 update-alternatives: using /usr/bin/g++ to provide /usr/bin/c++ (c++) in auto mode
+Build and push backend image	Build Docker image	2026-05-21T03:38:25.9313391Z #7 8.253 Setting up build-essential (12.9) ...
+Build and push backend image	Build Docker image	2026-05-21T03:38:25.9314023Z #7 8.257 Processing triggers for libc-bin (2.36-9+deb12u14) ...
+Build and push backend image	Build Docker image	2026-05-21T03:38:27.2769871Z #7 9.754 Collecting pipenv
+Build and push backend image	Build Docker image	2026-05-21T03:38:27.4741451Z #7 9.824   Downloading pipenv-2026.6.1-py3-none-any.whl (2.3 MB)
+Build and push backend image	Build Docker image	2026-05-21T03:38:27.6722540Z #7 9.952      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.3/2.3 MB 18.6 MB/s eta 0:00:00
+Build and push backend image	Build Docker image	2026-05-21T03:38:27.6723208Z #7 10.01 Collecting packaging>=22
+Build and push backend image	Build Docker image	2026-05-21T03:38:27.6723709Z #7 10.02   Downloading packaging-26.2-py3-none-any.whl (100 kB)
+Build and push backend image	Build Docker image	2026-05-21T03:38:27.6724520Z #7 10.03      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100.2/100.2 kB 46.1 MB/s eta 0:00:00
+Build and push backend image	Build Docker image	2026-05-21T03:38:27.6725509Z #7 10.03 Requirement already satisfied: setuptools>=67 in /usr/local/lib/python3.10/site-packages (from pipenv) (79.0.1)
+Build and push backend image	Build Docker image	2026-05-21T03:38:27.6726676Z #7 10.15 Collecting virtualenv>=20.24.2
+Build and push backend image	Build Docker image	2026-05-21T03:38:27.8333240Z #7 10.16   Downloading virtualenv-21.3.3-py3-none-any.whl (7.6 MB)
+Build and push backend image	Build Docker image	2026-05-21T03:38:27.9518144Z #7 10.33      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 7.6/7.6 MB 46.6 MB/s eta 0:00:00
+Build and push backend image	Build Docker image	2026-05-21T03:38:27.9518922Z #7 10.37 Collecting certifi
+Build and push backend image	Build Docker image	2026-05-21T03:38:27.9519496Z #7 10.38   Downloading certifi-2026.5.20-py3-none-any.whl (134 kB)
+Build and push backend image	Build Docker image	2026-05-21T03:38:27.9520500Z #7 10.39      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 134.1/134.1 kB 59.1 MB/s eta 0:00:00
+Build and push backend image	Build Docker image	2026-05-21T03:38:27.9521188Z #7 10.42 Collecting python-discovery>=1.3.1
+Build and push backend image	Build Docker image	2026-05-21T03:38:27.9521874Z #7 10.43   Downloading python_discovery-1.3.1-py3-none-any.whl (33 kB)
+Build and push backend image	Build Docker image	2026-05-21T03:38:28.0583526Z #7 10.48 Collecting filelock<4,>=3.24.2
+Build and push backend image	Build Docker image	2026-05-21T03:38:28.0584485Z #7 10.49   Downloading filelock-3.29.0-py3-none-any.whl (39 kB)
+Build and push backend image	Build Docker image	2026-05-21T03:38:28.0585064Z #7 10.54 Collecting platformdirs<5,>=3.9.1
+Build and push backend image	Build Docker image	2026-05-21T03:38:28.1586119Z #7 10.55   Downloading platformdirs-4.9.6-py3-none-any.whl (21 kB)
+Build and push backend image	Build Docker image	2026-05-21T03:38:28.1587292Z #7 10.59 Collecting typing-extensions>=4.13.2
+Build and push backend image	Build Docker image	2026-05-21T03:38:28.1587932Z #7 10.60   Downloading typing_extensions-4.15.0-py3-none-any.whl (44 kB)
+Build and push backend image	Build Docker image	2026-05-21T03:38:28.1589023Z #7 10.60      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 44.6/44.6 kB 21.2 MB/s eta 0:00:00
+Build and push backend image	Build Docker image	2026-05-21T03:38:28.1589627Z #7 10.63 Collecting distlib<1,>=0.3.7
+Build and push backend image	Build Docker image	2026-05-21T03:38:28.1590274Z #7 10.64   Downloading distlib-0.4.0-py2.py3-none-any.whl (469 kB)
+Build and push backend image	Build Docker image	2026-05-21T03:38:28.2697107Z #7 10.64      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 469.0/469.0 kB 87.3 MB/s eta 0:00:00
+Build and push backend image	Build Docker image	2026-05-21T03:38:28.2698439Z #7 10.75 Installing collected packages: distlib, typing-extensions, platformdirs, packaging, filelock, certifi, python-discovery, virtualenv, pipenv
+Build and push backend image	Build Docker image	2026-05-21T03:38:29.5887558Z #7 12.07 Successfully installed certifi-2026.5.20 distlib-0.4.0 filelock-3.29.0 packaging-26.2 pipenv-2026.6.1 platformdirs-4.9.6 python-discovery-1.3.1 typing-extensions-4.15.0 virtualenv-21.3.3
+Build and push backend image	Build Docker image	2026-05-21T03:38:29.7170787Z #7 12.07 WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv
+Build and push backend image	Build Docker image	2026-05-21T03:38:29.7172703Z #7 12.19 
+Build and push backend image	Build Docker image	2026-05-21T03:38:29.7173421Z #7 12.19 [notice] A new release of pip is available: 23.0.1 -> 26.1.1
+Build and push backend image	Build Docker image	2026-05-21T03:38:29.7174062Z #7 12.19 [notice] To update, run: pip install --upgrade pip
+Build and push backend image	Build Docker image	2026-05-21T03:38:30.3979034Z #7 DONE 12.9s
+Build and push backend image	Build Docker image	2026-05-21T03:38:30.5169615Z 
+Build and push backend image	Build Docker image	2026-05-21T03:38:30.5170708Z #8 [4/8] RUN mkdir -p /var/www/app && mkdir /app
+Build and push backend image	Build Docker image	2026-05-21T03:38:30.5171591Z #8 DONE 0.1s
+Build and push backend image	Build Docker image	2026-05-21T03:38:30.6831678Z 
+Build and push backend image	Build Docker image	2026-05-21T03:38:30.6832391Z #9 [5/8] COPY Pipfile* /app
+Build and push backend image	Build Docker image	2026-05-21T03:38:30.6832802Z #9 DONE 0.0s
+Build and push backend image	Build Docker image	2026-05-21T03:38:30.6832968Z 
+Build and push backend image	Build Docker image	2026-05-21T03:38:30.6833192Z #10 [6/8] RUN cd /app && pipenv install --system --deploy
+Build and push backend image	Build Docker image	2026-05-21T03:38:31.0042779Z #10 0.472 Installing dependencies from Pipfile.lock (f8f835)...
+Build and push backend image	Build Docker image	2026-05-21T03:38:44.5272498Z #10 DONE 14.0s
+Build and push backend image	Build Docker image	2026-05-21T03:38:44.6981612Z 
+Build and push backend image	Build Docker image	2026-05-21T03:38:44.6982723Z #11 [7/8] COPY . /app
+Build and push backend image	Build Docker image	2026-05-21T03:38:44.6983444Z #11 DONE 0.0s
+Build and push backend image	Build Docker image	2026-05-21T03:38:44.6984174Z 
+Build and push backend image	Build Docker image	2026-05-21T03:38:44.6984360Z #12 exporting to image
+Build and push backend image	Build Docker image	2026-05-21T03:38:44.6984782Z #12 exporting layers
+Build and push backend image	Build Docker image	2026-05-21T03:38:46.6095796Z #12 exporting layers 2.1s done
+Build and push backend image	Build Docker image	2026-05-21T03:38:46.6302904Z #12 writing image sha256:625b50af9615509ade4af97767add7bc102d6042df38333ef5e9e571335b5e69 done
+Build and push backend image	Build Docker image	2026-05-21T03:38:46.6303972Z #12 naming to docker.io/library/mp-***:4fb21951e7aa35b33f4e32c2a1eee921ba76a29d done
+Build and push backend image	Build Docker image	2026-05-21T03:38:46.6304753Z #12 DONE 2.1s
+Build and push backend image	Build Docker image	2026-05-21T03:38:46.6305032Z 
+Build and push backend image	Build Docker image	2026-05-21T03:38:46.6305548Z  ^[[33m1 warning found (use docker --debug to expand):
+Build and push backend image	Build Docker image	2026-05-21T03:38:46.6306898Z ^[[0m - JSONArgsRecommended: JSON arguments recommended for CMD to prevent unintended behavior related to OS signals (line 25)
+Build and push backend image	Tag image for ECR	﻿2026-05-21T03:38:46.6382854Z ##[group]Run IMAGE_URI="963904228567.dkr.ecr.***.amazonaws.com/${BACKEND_ECR_REPOSITORY}:4fb21951e7aa35b33f4e32c2a1eee921ba76a29d"
+Build and push backend image	Tag image for ECR	2026-05-21T03:38:46.6383793Z ^[[36;1mIMAGE_URI="963904228567.dkr.ecr.***.amazonaws.com/${BACKEND_ECR_REPOSITORY}:4fb21951e7aa35b33f4e32c2a1eee921ba76a29d"^[[0m
+Build and push backend image	Tag image for ECR	2026-05-21T03:38:46.6384510Z ^[[36;1mdocker tag mp-***:4fb21951e7aa35b33f4e32c2a1eee921ba76a29d "$IMAGE_URI"^[[0m
+Build and push backend image	Tag image for ECR	2026-05-21T03:38:46.6418278Z shell: /usr/bin/bash -e {0}
+Build and push backend image	Tag image for ECR	2026-05-21T03:38:46.6418538Z env:
+Build and push backend image	Tag image for ECR	2026-05-21T03:38:46.6418790Z   AWS_REGION: ***
+Build and push backend image	Tag image for ECR	2026-05-21T03:38:46.6419014Z   EKS_CLUSTER_NAME: ***
+Build and push backend image	Tag image for ECR	2026-05-21T03:38:46.6419252Z   BACKEND_ECR_REPOSITORY: ***
+Build and push backend image	Tag image for ECR	2026-05-21T03:38:46.6419512Z   AWS_DEFAULT_REGION: ***
+Build and push backend image	Tag image for ECR	2026-05-21T03:38:46.6419760Z   AWS_ACCESS_KEY_ID: ***
+Build and push backend image	Tag image for ECR	2026-05-21T03:38:46.6420083Z   AWS_SECRET_ACCESS_KEY: ***
+Build and push backend image	Tag image for ECR	2026-05-21T03:38:46.6423809Z   AWS_SESSION_TOKEN: ***
+Build and push backend image	Tag image for ECR	2026-05-21T03:38:46.6424029Z ##[endgroup]
+Build and push backend image	Push image to ECR	﻿2026-05-21T03:38:46.6639623Z ##[group]Run IMAGE_URI="963904228567.dkr.ecr.***.amazonaws.com/${BACKEND_ECR_REPOSITORY}:4fb21951e7aa35b33f4e32c2a1eee921ba76a29d"
+Build and push backend image	Push image to ECR	2026-05-21T03:38:46.6640561Z ^[[36;1mIMAGE_URI="963904228567.dkr.ecr.***.amazonaws.com/${BACKEND_ECR_REPOSITORY}:4fb21951e7aa35b33f4e32c2a1eee921ba76a29d"^[[0m
+Build and push backend image	Push image to ECR	2026-05-21T03:38:46.6641106Z ^[[36;1mdocker push "$IMAGE_URI"^[[0m
+Build and push backend image	Push image to ECR	2026-05-21T03:38:46.6672575Z shell: /usr/bin/bash -e {0}
+Build and push backend image	Push image to ECR	2026-05-21T03:38:46.6672829Z env:
+Build and push backend image	Push image to ECR	2026-05-21T03:38:46.6673081Z   AWS_REGION: ***
+Build and push backend image	Push image to ECR	2026-05-21T03:38:46.6673310Z   EKS_CLUSTER_NAME: ***
+Build and push backend image	Push image to ECR	2026-05-21T03:38:46.6673547Z   BACKEND_ECR_REPOSITORY: ***
+Build and push backend image	Push image to ECR	2026-05-21T03:38:46.6673809Z   AWS_DEFAULT_REGION: ***
+Build and push backend image	Push image to ECR	2026-05-21T03:38:46.6674058Z   AWS_ACCESS_KEY_ID: ***
+Build and push backend image	Push image to ECR	2026-05-21T03:38:46.6674443Z   AWS_SECRET_ACCESS_KEY: ***
+Build and push backend image	Push image to ECR	2026-05-21T03:38:46.6678707Z   AWS_SESSION_TOKEN: ***
+Build and push backend image	Push image to ECR	2026-05-21T03:38:46.6678946Z ##[endgroup]
+Build and push backend image	Push image to ECR	2026-05-21T03:38:46.7160555Z The push refers to repository [963904228567.dkr.ecr.***.amazonaws.com/***]
+Build and push backend image	Push image to ECR	2026-05-21T03:38:46.9374363Z 945904609b90: Preparing
+Build and push backend image	Push image to ECR	2026-05-21T03:38:46.9375950Z b67deea88dff: Preparing
+Build and push backend image	Push image to ECR	2026-05-21T03:38:46.9376700Z 7ec5c5422bbc: Preparing
+Build and push backend image	Push image to ECR	2026-05-21T03:38:46.9377012Z 9fabc61daf5d: Preparing
+Build and push backend image	Push image to ECR	2026-05-21T03:38:46.9377404Z e2bf5d0cb118: Preparing
+Build and push backend image	Push image to ECR	2026-05-21T03:38:46.9377831Z 9d950cb93a12: Preparing
+Build and push backend image	Push image to ECR	2026-05-21T03:38:46.9378265Z 40e9369b9d6b: Preparing
+Build and push backend image	Push image to ECR	2026-05-21T03:38:46.9378727Z 1d0e13c9f7eb: Preparing
+Build and push backend image	Push image to ECR	2026-05-21T03:38:46.9379178Z 49e74fd3210a: Preparing
+Build and push backend image	Push image to ECR	2026-05-21T03:38:46.9379622Z b2008ac19409: Preparing
+Build and push backend image	Push image to ECR	2026-05-21T03:38:46.9380016Z 9d950cb93a12: Waiting
+Build and push backend image	Push image to ECR	2026-05-21T03:38:46.9380388Z 40e9369b9d6b: Waiting
+Build and push backend image	Push image to ECR	2026-05-21T03:38:46.9380809Z 1d0e13c9f7eb: Waiting
+Build and push backend image	Push image to ECR	2026-05-21T03:38:46.9381152Z 49e74fd3210a: Waiting
+Build and push backend image	Push image to ECR	2026-05-21T03:38:46.9381486Z b2008ac19409: Waiting
+Build and push backend image	Push image to ECR	2026-05-21T03:38:48.3676958Z 7ec5c5422bbc: Pushed
+Build and push backend image	Push image to ECR	2026-05-21T03:38:48.3843203Z 9fabc61daf5d: Pushed
+Build and push backend image	Push image to ECR	2026-05-21T03:38:48.4203442Z 945904609b90: Pushed
+Build and push backend image	Push image to ECR	2026-05-21T03:38:48.6546518Z 40e9369b9d6b: Layer already exists
+Build and push backend image	Push image to ECR	2026-05-21T03:38:48.7100629Z 1d0e13c9f7eb: Layer already exists
+Build and push backend image	Push image to ECR	2026-05-21T03:38:48.8955333Z 49e74fd3210a: Layer already exists
+Build and push backend image	Push image to ECR	2026-05-21T03:38:49.2444638Z b67deea88dff: Pushed
+Build and push backend image	Push image to ECR	2026-05-21T03:38:49.8020325Z 9d950cb93a12: Pushed
+Build and push backend image	Push image to ECR	2026-05-21T03:38:53.6544743Z b2008ac19409: Pushed
+Build and push backend image	Push image to ECR	2026-05-21T03:39:01.5187581Z e2bf5d0cb118: Pushed
+Build and push backend image	Push image to ECR	2026-05-21T03:39:03.6247468Z 4fb21951e7aa35b33f4e32c2a1eee921ba76a29d: digest: sha256:a7503a57d25e7d4b5339dcad4de4b8b4568765f63d11c7c9760cd06cbb89e524 size: 2414
+Build and push backend image	Post Login to Amazon ECR	﻿2026-05-21T03:39:03.6327046Z Post job cleanup.
+Build and push backend image	Post Login to Amazon ECR	2026-05-21T03:39:03.7005205Z Logging out of registry 963904228567.dkr.ecr.***.amazonaws.com
+Build and push backend image	Post Configure AWS credentials	﻿2026-05-21T03:39:03.7332126Z Post job cleanup.
+Build and push backend image	Post Checkout code	﻿2026-05-21T03:39:03.8712959Z Post job cleanup.
+Build and push backend image	Post Checkout code	2026-05-21T03:39:03.9712697Z [command]/usr/bin/git version
+Build and push backend image	Post Checkout code	2026-05-21T03:39:03.9758602Z git version 2.54.0
+Build and push backend image	Post Checkout code	2026-05-21T03:39:03.9823444Z Temporarily overriding HOME='/home/runner/work/_temp/1c9ddc3b-7cef-4a13-9b6a-a0653bda7ed6' before making global git config changes
+Build and push backend image	Post Checkout code	2026-05-21T03:39:03.9824734Z Adding repository directory to the temporary git global config as a safe directory
+Build and push backend image	Post Checkout code	2026-05-21T03:39:03.9832688Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/movie-picture-pipeline/movie-picture-pipeline
+Build and push backend image	Post Checkout code	2026-05-21T03:39:03.9877570Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+Build and push backend image	Post Checkout code	2026-05-21T03:39:03.9916922Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+Build and push backend image	Post Checkout code	2026-05-21T03:39:04.0149591Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+Build and push backend image	Post Checkout code	2026-05-21T03:39:04.0173995Z http.https://github.com/.extraheader
+Build and push backend image	Post Checkout code	2026-05-21T03:39:04.0187331Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+Build and push backend image	Post Checkout code	2026-05-21T03:39:04.0217895Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+Build and push backend image	Post Checkout code	2026-05-21T03:39:04.0435369Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+Build and push backend image	Post Checkout code	2026-05-21T03:39:04.0466646Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+Build and push backend image	Complete job	﻿2026-05-21T03:39:04.0790051Z Cleaning up orphan processes
+Build and push backend image	Complete job	2026-05-21T03:39:04.1180390Z ##[warning]Node.js 20 actions are deprecated. The following actions are running on Node.js 20 and may not work as expected: actions/checkout@v4, aws-actions/configure-aws-credentials@v4. Actions will be forced to run with Node.js 24 by default starting June 2nd, 2026. Node.js 20 will be removed from the runner on September 16th, 2026. Please check if updated versions of these actions are available that support Node.js 24. To opt into Node.js 24 now, set the FORCE_JAVASCRIPT_ACTIONS_TO_NODE24=true environment variable on the runner or in your workflow file. Once Node.js 24 becomes the default, you can temporarily opt out by setting ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION=true. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
+Deploy backend to EKS	Set up job	﻿2026-05-21T03:39:10.2949451Z Current runner version: '2.334.0'
+Deploy backend to EKS	Set up job	2026-05-21T03:39:10.2974008Z ##[group]Runner Image Provisioner
+Deploy backend to EKS	Set up job	2026-05-21T03:39:10.2974957Z Hosted Compute Agent
+Deploy backend to EKS	Set up job	2026-05-21T03:39:10.2975588Z Version: 20260213.493
+Deploy backend to EKS	Set up job	2026-05-21T03:39:10.2976207Z Commit: 5c115507f6dd24b8de37d8bbe0bb4509d0cc0fa3
+Deploy backend to EKS	Set up job	2026-05-21T03:39:10.2976996Z Build Date: 2026-02-13T00:28:41Z
+Deploy backend to EKS	Set up job	2026-05-21T03:39:10.2977682Z Worker ID: {c3c66f29-5494-49ea-ae62-55b8f11cebf0}
+Deploy backend to EKS	Set up job	2026-05-21T03:39:10.2978384Z Azure Region: westcentralus
+Deploy backend to EKS	Set up job	2026-05-21T03:39:10.2979052Z ##[endgroup]
+Deploy backend to EKS	Set up job	2026-05-21T03:39:10.2980495Z ##[group]Operating System
+Deploy backend to EKS	Set up job	2026-05-21T03:39:10.2981414Z Ubuntu
+Deploy backend to EKS	Set up job	2026-05-21T03:39:10.2981991Z 24.04.4
+Deploy backend to EKS	Set up job	2026-05-21T03:39:10.2982486Z LTS
+Deploy backend to EKS	Set up job	2026-05-21T03:39:10.2983049Z ##[endgroup]
+Deploy backend to EKS	Set up job	2026-05-21T03:39:10.2983598Z ##[group]Runner Image
+Deploy backend to EKS	Set up job	2026-05-21T03:39:10.2984180Z Image: ubuntu-24.04
+Deploy backend to EKS	Set up job	2026-05-21T03:39:10.2984845Z Version: 20260513.135.3
+Deploy backend to EKS	Set up job	2026-05-21T03:39:10.2985967Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20260513.135/images/ubuntu/Ubuntu2404-Readme.md
+Deploy backend to EKS	Set up job	2026-05-21T03:39:10.2987706Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20260513.135
+Deploy backend to EKS	Set up job	2026-05-21T03:39:10.2988674Z ##[endgroup]
+Deploy backend to EKS	Set up job	2026-05-21T03:39:10.2989928Z ##[group]GITHUB_TOKEN Permissions
+Deploy backend to EKS	Set up job	2026-05-21T03:39:10.2992250Z Contents: read
+Deploy backend to EKS	Set up job	2026-05-21T03:39:10.2992966Z Metadata: read
+Deploy backend to EKS	Set up job	2026-05-21T03:39:10.2993523Z Packages: read
+Deploy backend to EKS	Set up job	2026-05-21T03:39:10.2994086Z ##[endgroup]
+Deploy backend to EKS	Set up job	2026-05-21T03:39:10.2996327Z Secret source: Actions
+Deploy backend to EKS	Set up job	2026-05-21T03:39:10.2997085Z Prepare workflow directory
+Deploy backend to EKS	Set up job	2026-05-21T03:39:10.3595018Z Prepare all required actions
+Deploy backend to EKS	Set up job	2026-05-21T03:39:10.3631933Z Getting action download info
+Deploy backend to EKS	Set up job	2026-05-21T03:39:10.8056662Z Download action repository 'actions/checkout@v4' (SHA:34e114876b0b11c390a56381ad16ebd13914f8d5)
+Deploy backend to EKS	Set up job	2026-05-21T03:39:10.9384311Z Download action repository 'aws-actions/configure-aws-credentials@v4' (SHA:7474bc4690e29a8392af63c5b98e7449536d5c3a)
+Deploy backend to EKS	Set up job	2026-05-21T03:39:11.6318334Z Download action repository 'azure/setup-kubectl@v4' (SHA:776406bce94f63e41d621b960d78ee25c8b76ede)
+Deploy backend to EKS	Set up job	2026-05-21T03:39:11.9802720Z Download action repository 'imranismail/setup-kustomize@v2' (SHA:2ba527d4d055ab63514ba50a99456fc35684947f)
+Deploy backend to EKS	Set up job	2026-05-21T03:39:12.7914744Z Complete job name: Deploy *** to EKS
+Deploy backend to EKS	Checkout code	﻿2026-05-21T03:39:12.8736350Z ##[group]Run actions/checkout@v4
+Deploy backend to EKS	Checkout code	2026-05-21T03:39:12.8737700Z with:
+Deploy backend to EKS	Checkout code	2026-05-21T03:39:12.8738614Z   repository: LeoLin990405/movie-picture-pipeline
+Deploy backend to EKS	Checkout code	2026-05-21T03:39:12.8740057Z   token: ***
+Deploy backend to EKS	Checkout code	2026-05-21T03:39:12.8740845Z   ssh-strict: true
+Deploy backend to EKS	Checkout code	2026-05-21T03:39:12.8741955Z   ssh-user: git
+Deploy backend to EKS	Checkout code	2026-05-21T03:39:12.8742779Z   persist-credentials: true
+Deploy backend to EKS	Checkout code	2026-05-21T03:39:12.8743700Z   clean: true
+Deploy backend to EKS	Checkout code	2026-05-21T03:39:12.8744533Z   sparse-checkout-cone-mode: true
+Deploy backend to EKS	Checkout code	2026-05-21T03:39:12.8745524Z   fetch-depth: 1
+Deploy backend to EKS	Checkout code	2026-05-21T03:39:12.8746313Z   fetch-tags: false
+Deploy backend to EKS	Checkout code	2026-05-21T03:39:12.8747136Z   show-progress: true
+Deploy backend to EKS	Checkout code	2026-05-21T03:39:12.8747969Z   lfs: false
+Deploy backend to EKS	Checkout code	2026-05-21T03:39:12.8748721Z   submodules: false
+Deploy backend to EKS	Checkout code	2026-05-21T03:39:12.8749561Z   set-safe-directory: true
+Deploy backend to EKS	Checkout code	2026-05-21T03:39:12.8750778Z env:
+Deploy backend to EKS	Checkout code	2026-05-21T03:39:12.8751794Z   AWS_REGION: ***
+Deploy backend to EKS	Checkout code	2026-05-21T03:39:12.8752634Z   EKS_CLUSTER_NAME: ***
+Deploy backend to EKS	Checkout code	2026-05-21T03:39:12.8753546Z   BACKEND_ECR_REPOSITORY: ***
+Deploy backend to EKS	Checkout code	2026-05-21T03:39:12.8754471Z ##[endgroup]
+Deploy backend to EKS	Checkout code	2026-05-21T03:39:12.9920166Z Syncing repository: LeoLin990405/movie-picture-pipeline
+Deploy backend to EKS	Checkout code	2026-05-21T03:39:12.9923415Z ##[group]Getting Git version info
+Deploy backend to EKS	Checkout code	2026-05-21T03:39:12.9925116Z Working directory is '/home/runner/work/movie-picture-pipeline/movie-picture-pipeline'
+Deploy backend to EKS	Checkout code	2026-05-21T03:39:12.9927412Z [command]/usr/bin/git version
+Deploy backend to EKS	Checkout code	2026-05-21T03:39:12.9988464Z git version 2.54.0
+Deploy backend to EKS	Checkout code	2026-05-21T03:39:13.0016377Z ##[endgroup]
+Deploy backend to EKS	Checkout code	2026-05-21T03:39:13.0033278Z Temporarily overriding HOME='/home/runner/work/_temp/0f026039-5323-4e81-af8b-c4cef448c2d8' before making global git config changes
+Deploy backend to EKS	Checkout code	2026-05-21T03:39:13.0038141Z Adding repository directory to the temporary git global config as a safe directory
+Deploy backend to EKS	Checkout code	2026-05-21T03:39:13.0048472Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/movie-picture-pipeline/movie-picture-pipeline
+Deploy backend to EKS	Checkout code	2026-05-21T03:39:13.0096082Z Deleting the contents of '/home/runner/work/movie-picture-pipeline/movie-picture-pipeline'
+Deploy backend to EKS	Checkout code	2026-05-21T03:39:13.0100244Z ##[group]Initializing the repository
+Deploy backend to EKS	Checkout code	2026-05-21T03:39:13.0105353Z [command]/usr/bin/git init /home/runner/work/movie-picture-pipeline/movie-picture-pipeline
+Deploy backend to EKS	Checkout code	2026-05-21T03:39:13.0211727Z hint: Using 'master' as the name for the initial branch. This default branch name
+Deploy backend to EKS	Checkout code	2026-05-21T03:39:13.0214359Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+Deploy backend to EKS	Checkout code	2026-05-21T03:39:13.0217522Z hint: to use in all of your new repositories, which will suppress this warning,
+Deploy backend to EKS	Checkout code	2026-05-21T03:39:13.0219807Z hint: call:
+Deploy backend to EKS	Checkout code	2026-05-21T03:39:13.0220563Z hint:
+Deploy backend to EKS	Checkout code	2026-05-21T03:39:13.0221800Z hint: 	git config --global init.defaultBranch <name>
+Deploy backend to EKS	Checkout code	2026-05-21T03:39:13.0222983Z hint:
+Deploy backend to EKS	Checkout code	2026-05-21T03:39:13.0224507Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+Deploy backend to EKS	Checkout code	2026-05-21T03:39:13.0226322Z hint: 'development'. The just-created branch can be renamed via this command:
+Deploy backend to EKS	Checkout code	2026-05-21T03:39:13.0228007Z hint:
+Deploy backend to EKS	Checkout code	2026-05-21T03:39:13.0229198Z hint: 	git branch -m <name>
+Deploy backend to EKS	Checkout code	2026-05-21T03:39:13.0230651Z hint:
+Deploy backend to EKS	Checkout code	2026-05-21T03:39:13.0232840Z hint: Disable this message with "git config set advice.defaultBranchName false"
+Deploy backend to EKS	Checkout code	2026-05-21T03:39:13.0235435Z Initialized empty Git repository in /home/runner/work/movie-picture-pipeline/movie-picture-pipeline/.git/
+Deploy backend to EKS	Checkout code	2026-05-21T03:39:13.0239070Z [command]/usr/bin/git remote add origin https://github.com/LeoLin990405/movie-picture-pipeline
+Deploy backend to EKS	Checkout code	2026-05-21T03:39:13.0274299Z ##[endgroup]
+Deploy backend to EKS	Checkout code	2026-05-21T03:39:13.0275996Z ##[group]Disabling automatic garbage collection
+Deploy backend to EKS	Checkout code	2026-05-21T03:39:13.0278576Z [command]/usr/bin/git config --local gc.auto 0
+Deploy backend to EKS	Checkout code	2026-05-21T03:39:13.0308535Z ##[endgroup]
+Deploy backend to EKS	Checkout code	2026-05-21T03:39:13.0309877Z ##[group]Setting up auth
+Deploy backend to EKS	Checkout code	2026-05-21T03:39:13.0314991Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+Deploy backend to EKS	Checkout code	2026-05-21T03:39:13.0351454Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+Deploy backend to EKS	Checkout code	2026-05-21T03:39:13.0705000Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+Deploy backend to EKS	Checkout code	2026-05-21T03:39:13.0738351Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+Deploy backend to EKS	Checkout code	2026-05-21T03:39:13.0954289Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+Deploy backend to EKS	Checkout code	2026-05-21T03:39:13.0986036Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+Deploy backend to EKS	Checkout code	2026-05-21T03:39:13.1205637Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+Deploy backend to EKS	Checkout code	2026-05-21T03:39:13.1240861Z ##[endgroup]
+Deploy backend to EKS	Checkout code	2026-05-21T03:39:13.1244750Z ##[group]Fetching the repository
+Deploy backend to EKS	Checkout code	2026-05-21T03:39:13.1252874Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +4fb21951e7aa35b33f4e32c2a1eee921ba76a29d:refs/remotes/origin/main
+Deploy backend to EKS	Checkout code	2026-05-21T03:39:13.6228029Z From https://github.com/LeoLin990405/movie-picture-pipeline
+Deploy backend to EKS	Checkout code	2026-05-21T03:39:13.6229129Z  * [new ref]         4fb21951e7aa35b33f4e32c2a1eee921ba76a29d -> origin/main
+Deploy backend to EKS	Checkout code	2026-05-21T03:39:13.6268354Z ##[endgroup]
+Deploy backend to EKS	Checkout code	2026-05-21T03:39:13.6268944Z ##[group]Determining the checkout info
+Deploy backend to EKS	Checkout code	2026-05-21T03:39:13.6270665Z ##[endgroup]
+Deploy backend to EKS	Checkout code	2026-05-21T03:39:13.6276004Z [command]/usr/bin/git sparse-checkout disable
+Deploy backend to EKS	Checkout code	2026-05-21T03:39:13.6319265Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+Deploy backend to EKS	Checkout code	2026-05-21T03:39:13.6345905Z ##[group]Checking out the ref
+Deploy backend to EKS	Checkout code	2026-05-21T03:39:13.6349614Z [command]/usr/bin/git checkout --progress --force -B main refs/remotes/origin/main
+Deploy backend to EKS	Checkout code	2026-05-21T03:39:13.6457620Z Switched to a new branch 'main'
+Deploy backend to EKS	Checkout code	2026-05-21T03:39:13.6461321Z branch 'main' set up to track 'origin/main'.
+Deploy backend to EKS	Checkout code	2026-05-21T03:39:13.6466997Z ##[endgroup]
+Deploy backend to EKS	Checkout code	2026-05-21T03:39:13.6502962Z [command]/usr/bin/git log -1 --format=%H
+Deploy backend to EKS	Checkout code	2026-05-21T03:39:13.6524124Z 4fb21951e7aa35b33f4e32c2a1eee921ba76a29d
+Deploy backend to EKS	Configure AWS credentials	﻿2026-05-21T03:39:13.6816973Z ##[group]Run aws-actions/configure-aws-credentials@v4
+Deploy backend to EKS	Configure AWS credentials	2026-05-21T03:39:13.6817463Z with:
+Deploy backend to EKS	Configure AWS credentials	2026-05-21T03:39:13.6817890Z   aws-access-key-id: ***
+Deploy backend to EKS	Configure AWS credentials	2026-05-21T03:39:13.6818373Z   aws-secret-access-key: ***
+Deploy backend to EKS	Configure AWS credentials	2026-05-21T03:39:13.6822927Z   aws-session-token: ***
+Deploy backend to EKS	Configure AWS credentials	2026-05-21T03:39:13.6823302Z   aws-region: ***
+Deploy backend to EKS	Configure AWS credentials	2026-05-21T03:39:13.6823626Z   audience: sts.amazonaws.com
+Deploy backend to EKS	Configure AWS credentials	2026-05-21T03:39:13.6824000Z   output-env-credentials: true
+Deploy backend to EKS	Configure AWS credentials	2026-05-21T03:39:13.6824336Z env:
+Deploy backend to EKS	Configure AWS credentials	2026-05-21T03:39:13.6824635Z   AWS_REGION: ***
+Deploy backend to EKS	Configure AWS credentials	2026-05-21T03:39:13.6824963Z   EKS_CLUSTER_NAME: ***
+Deploy backend to EKS	Configure AWS credentials	2026-05-21T03:39:13.6825311Z   BACKEND_ECR_REPOSITORY: ***
+Deploy backend to EKS	Configure AWS credentials	2026-05-21T03:39:13.6825647Z ##[endgroup]
+Deploy backend to EKS	Configure AWS credentials	2026-05-21T03:39:14.0585058Z Proceeding with IAM user credentials
+Deploy backend to EKS	Setup kubectl	﻿2026-05-21T03:39:14.0679493Z ##[group]Run azure/setup-kubectl@v4
+Deploy backend to EKS	Setup kubectl	2026-05-21T03:39:14.0679810Z with:
+Deploy backend to EKS	Setup kubectl	2026-05-21T03:39:14.0679998Z   version: latest
+Deploy backend to EKS	Setup kubectl	2026-05-21T03:39:14.0680196Z env:
+Deploy backend to EKS	Setup kubectl	2026-05-21T03:39:14.0680485Z   AWS_REGION: ***
+Deploy backend to EKS	Setup kubectl	2026-05-21T03:39:14.0680704Z   EKS_CLUSTER_NAME: ***
+Deploy backend to EKS	Setup kubectl	2026-05-21T03:39:14.0681231Z   BACKEND_ECR_REPOSITORY: ***
+Deploy backend to EKS	Setup kubectl	2026-05-21T03:39:14.0681526Z   AWS_DEFAULT_REGION: ***
+Deploy backend to EKS	Setup kubectl	2026-05-21T03:39:14.0681789Z   AWS_ACCESS_KEY_ID: ***
+Deploy backend to EKS	Setup kubectl	2026-05-21T03:39:14.0682114Z   AWS_SECRET_ACCESS_KEY: ***
+Deploy backend to EKS	Setup kubectl	2026-05-21T03:39:14.0686043Z   AWS_SESSION_TOKEN: ***
+Deploy backend to EKS	Setup kubectl	2026-05-21T03:39:14.0686276Z ##[endgroup]
+Deploy backend to EKS	Setup kustomize	﻿2026-05-21T03:39:14.8025491Z ##[group]Run imranismail/setup-kustomize@v2
+Deploy backend to EKS	Setup kustomize	2026-05-21T03:39:14.8025839Z with:
+Deploy backend to EKS	Setup kustomize	2026-05-21T03:39:14.8026045Z   kustomize-version: *
+Deploy backend to EKS	Setup kustomize	2026-05-21T03:39:14.8026426Z   github-token: ***
+Deploy backend to EKS	Setup kustomize	2026-05-21T03:39:14.8026634Z   fail-fast: true
+Deploy backend to EKS	Setup kustomize	2026-05-21T03:39:14.8026824Z env:
+Deploy backend to EKS	Setup kustomize	2026-05-21T03:39:14.8027029Z   AWS_REGION: ***
+Deploy backend to EKS	Setup kustomize	2026-05-21T03:39:14.8027244Z   EKS_CLUSTER_NAME: ***
+Deploy backend to EKS	Setup kustomize	2026-05-21T03:39:14.8027481Z   BACKEND_ECR_REPOSITORY: ***
+Deploy backend to EKS	Setup kustomize	2026-05-21T03:39:14.8027735Z   AWS_DEFAULT_REGION: ***
+Deploy backend to EKS	Setup kustomize	2026-05-21T03:39:14.8027992Z   AWS_ACCESS_KEY_ID: ***
+Deploy backend to EKS	Setup kustomize	2026-05-21T03:39:14.8028330Z   AWS_SECRET_ACCESS_KEY: ***
+Deploy backend to EKS	Setup kustomize	2026-05-21T03:39:14.8032402Z   AWS_SESSION_TOKEN: ***
+Deploy backend to EKS	Setup kustomize	2026-05-21T03:39:14.8032649Z ##[endgroup]
+Deploy backend to EKS	Setup kustomize	2026-05-21T03:39:17.2606793Z [command]/usr/bin/tar xz --warning=no-unknown-keyword --overwrite -C /home/runner/work/_temp/82608f25-f9e9-4407-aeab-944c50a094db -f /home/runner/work/_temp/15bc4482-e53a-4383-a727-56e594715f60
+Deploy backend to EKS	Update kubeconfig	﻿2026-05-21T03:39:17.3706112Z ##[group]Run aws eks update-kubeconfig --name "$EKS_CLUSTER_NAME" --region "$AWS_REGION"
+Deploy backend to EKS	Update kubeconfig	2026-05-21T03:39:17.3706807Z ^[[36;1maws eks update-kubeconfig --name "$EKS_CLUSTER_NAME" --region "$AWS_REGION"^[[0m
+Deploy backend to EKS	Update kubeconfig	2026-05-21T03:39:17.3743162Z shell: /usr/bin/bash -e {0}
+Deploy backend to EKS	Update kubeconfig	2026-05-21T03:39:17.3743431Z env:
+Deploy backend to EKS	Update kubeconfig	2026-05-21T03:39:17.3743964Z   AWS_REGION: ***
+Deploy backend to EKS	Update kubeconfig	2026-05-21T03:39:17.3744242Z   EKS_CLUSTER_NAME: ***
+Deploy backend to EKS	Update kubeconfig	2026-05-21T03:39:17.3744494Z   BACKEND_ECR_REPOSITORY: ***
+Deploy backend to EKS	Update kubeconfig	2026-05-21T03:39:17.3744775Z   AWS_DEFAULT_REGION: ***
+Deploy backend to EKS	Update kubeconfig	2026-05-21T03:39:17.3745032Z   AWS_ACCESS_KEY_ID: ***
+Deploy backend to EKS	Update kubeconfig	2026-05-21T03:39:17.3745348Z   AWS_SECRET_ACCESS_KEY: ***
+Deploy backend to EKS	Update kubeconfig	2026-05-21T03:39:17.3749294Z   AWS_SESSION_TOKEN: ***
+Deploy backend to EKS	Update kubeconfig	2026-05-21T03:39:17.3749514Z ##[endgroup]
+Deploy backend to EKS	Update kubeconfig	2026-05-21T03:39:20.1722075Z Added new context arn:aws:eks:***:963904228567:***/*** to /home/runner/.kube/config
+Deploy backend to EKS	Deploy *** manifests	﻿2026-05-21T03:39:20.2707448Z ##[group]Run ACCOUNT_ID="$(aws sts get-caller-identity --query Account --output text)"
+Deploy backend to EKS	Deploy *** manifests	2026-05-21T03:39:20.2708116Z ^[[36;1mACCOUNT_ID="$(aws sts get-caller-identity --query Account --output text)"^[[0m
+Deploy backend to EKS	Deploy *** manifests	2026-05-21T03:39:20.2708774Z ^[[36;1mIMAGE_URI="${ACCOUNT_ID}.dkr.ecr.${AWS_REGION}.amazonaws.com/${BACKEND_ECR_REPOSITORY}:${GITHUB_SHA}"^[[0m
+Deploy backend to EKS	Deploy *** manifests	2026-05-21T03:39:20.2709384Z ^[[36;1mkustomize edit set image ***="$IMAGE_URI"^[[0m
+Deploy backend to EKS	Deploy *** manifests	2026-05-21T03:39:20.2709722Z ^[[36;1mkustomize build . | kubectl apply -f -^[[0m
+Deploy backend to EKS	Deploy *** manifests	2026-05-21T03:39:20.2742879Z shell: /usr/bin/bash -e {0}
+Deploy backend to EKS	Deploy *** manifests	2026-05-21T03:39:20.2743131Z env:
+Deploy backend to EKS	Deploy *** manifests	2026-05-21T03:39:20.2743361Z   AWS_REGION: ***
+Deploy backend to EKS	Deploy *** manifests	2026-05-21T03:39:20.2743583Z   EKS_CLUSTER_NAME: ***
+Deploy backend to EKS	Deploy *** manifests	2026-05-21T03:39:20.2743832Z   BACKEND_ECR_REPOSITORY: ***
+Deploy backend to EKS	Deploy *** manifests	2026-05-21T03:39:20.2744263Z   AWS_DEFAULT_REGION: ***
+Deploy backend to EKS	Deploy *** manifests	2026-05-21T03:39:20.2744512Z   AWS_ACCESS_KEY_ID: ***
+Deploy backend to EKS	Deploy *** manifests	2026-05-21T03:39:20.2744827Z   AWS_SECRET_ACCESS_KEY: ***
+Deploy backend to EKS	Deploy *** manifests	2026-05-21T03:39:20.2748732Z   AWS_SESSION_TOKEN: ***
+Deploy backend to EKS	Deploy *** manifests	2026-05-21T03:39:20.2748968Z ##[endgroup]
+Deploy backend to EKS	Deploy *** manifests	2026-05-21T03:39:23.5981214Z service/*** unchanged
+Deploy backend to EKS	Deploy *** manifests	2026-05-21T03:39:23.6779492Z deployment.apps/*** unchanged
+Deploy backend to EKS	Verify *** service URL	﻿2026-05-21T03:39:23.6825413Z ##[group]Run ACCOUNT_ID="$(aws sts get-caller-identity --query Account --output text)"
+Deploy backend to EKS	Verify *** service URL	2026-05-21T03:39:23.6826039Z ^[[36;1mACCOUNT_ID="$(aws sts get-caller-identity --query Account --output text)"^[[0m
+Deploy backend to EKS	Verify *** service URL	2026-05-21T03:39:23.6826680Z ^[[36;1mIMAGE_URI="${ACCOUNT_ID}.dkr.ecr.${AWS_REGION}.amazonaws.com/${BACKEND_ECR_REPOSITORY}:${GITHUB_SHA}"^[[0m
+Deploy backend to EKS	Verify *** service URL	2026-05-21T03:39:23.6827359Z ^[[36;1mif ! kubectl wait --for=condition=Available deployment/*** --timeout=300s; then^[[0m
+Deploy backend to EKS	Verify *** service URL	2026-05-21T03:39:23.6827823Z ^[[36;1m  kubectl get deployment *** -o wide^[[0m
+Deploy backend to EKS	Verify *** service URL	2026-05-21T03:39:23.6828132Z ^[[36;1m  kubectl describe deployment ***^[[0m
+Deploy backend to EKS	Verify *** service URL	2026-05-21T03:39:23.6828467Z ^[[36;1m  kubectl get pods -l app=*** -o wide^[[0m
+Deploy backend to EKS	Verify *** service URL	2026-05-21T03:39:23.6828801Z ^[[36;1m  kubectl describe pods -l app=***^[[0m
+Deploy backend to EKS	Verify *** service URL	2026-05-21T03:39:23.6829191Z ^[[36;1m  kubectl logs -l app=*** --all-containers --tail=100 || true^[[0m
+Deploy backend to EKS	Verify *** service URL	2026-05-21T03:39:23.6829529Z ^[[36;1m  exit 1^[[0m
+Deploy backend to EKS	Verify *** service URL	2026-05-21T03:39:23.6829720Z ^[[36;1mfi^[[0m
+Deploy backend to EKS	Verify *** service URL	2026-05-21T03:39:23.6829948Z ^[[36;1mkubectl get pods -l app=*** -o wide^[[0m
+Deploy backend to EKS	Verify *** service URL	2026-05-21T03:39:23.6830307Z ^[[36;1mkubectl get service *** -o wide^[[0m
+Deploy backend to EKS	Verify *** service URL	2026-05-21T03:39:23.6830550Z ^[[36;1m^[[0m
+Deploy backend to EKS	Verify *** service URL	2026-05-21T03:39:23.6830730Z ^[[36;1mBACKEND_HOST=""^[[0m
+Deploy backend to EKS	Verify *** service URL	2026-05-21T03:39:23.6831218Z ^[[36;1mfor i in {1..30}; do^[[0m
+Deploy backend to EKS	Verify *** service URL	2026-05-21T03:39:23.6831851Z ^[[36;1m  BACKEND_HOST="$(kubectl get service *** -o jsonpath='{.status.loadBalancer.ingress[0].hostname}' 2>/dev/null || true)"^[[0m
+Deploy backend to EKS	Verify *** service URL	2026-05-21T03:39:23.6832419Z ^[[36;1m  if [ -n "$BACKEND_HOST" ]; then^[[0m
+Deploy backend to EKS	Verify *** service URL	2026-05-21T03:39:23.6832667Z ^[[36;1m    break^[[0m
+Deploy backend to EKS	Verify *** service URL	2026-05-21T03:39:23.6832851Z ^[[36;1m  fi^[[0m
+Deploy backend to EKS	Verify *** service URL	2026-05-21T03:39:23.6833333Z ^[[36;1m  BACKEND_HOST="$(kubectl get service *** -o jsonpath='{.status.loadBalancer.ingress[0].ip}' 2>/dev/null || true)"^[[0m
+Deploy backend to EKS	Verify *** service URL	2026-05-21T03:39:23.6833849Z ^[[36;1m  if [ -n "$BACKEND_HOST" ]; then^[[0m
+Deploy backend to EKS	Verify *** service URL	2026-05-21T03:39:23.6834094Z ^[[36;1m    break^[[0m
+Deploy backend to EKS	Verify *** service URL	2026-05-21T03:39:23.6834271Z ^[[36;1m  fi^[[0m
+Deploy backend to EKS	Verify *** service URL	2026-05-21T03:39:23.6834549Z ^[[36;1m  echo "Waiting for *** LoadBalancer address ($i/30)..."^[[0m
+Deploy backend to EKS	Verify *** service URL	2026-05-21T03:39:23.6834864Z ^[[36;1m  sleep 10^[[0m
+Deploy backend to EKS	Verify *** service URL	2026-05-21T03:39:23.6835054Z ^[[36;1mdone^[[0m
+Deploy backend to EKS	Verify *** service URL	2026-05-21T03:39:23.6835225Z ^[[36;1m^[[0m
+Deploy backend to EKS	Verify *** service URL	2026-05-21T03:39:23.6835411Z ^[[36;1mif [ -z "$BACKEND_HOST" ]; then^[[0m
+Deploy backend to EKS	Verify *** service URL	2026-05-21T03:39:23.6835750Z ^[[36;1m  echo "Backend LoadBalancer address was not assigned in time."^[[0m
+Deploy backend to EKS	Verify *** service URL	2026-05-21T03:39:23.6836123Z ^[[36;1m  kubectl describe service ***^[[0m
+Deploy backend to EKS	Verify *** service URL	2026-05-21T03:39:23.6836370Z ^[[36;1m  exit 1^[[0m
+Deploy backend to EKS	Verify *** service URL	2026-05-21T03:39:23.6836550Z ^[[36;1mfi^[[0m
+Deploy backend to EKS	Verify *** service URL	2026-05-21T03:39:23.6836719Z ^[[36;1m^[[0m
+Deploy backend to EKS	Verify *** service URL	2026-05-21T03:39:23.6836953Z ^[[36;1mBACKEND_URL="http://${BACKEND_HOST}/movies"^[[0m
+Deploy backend to EKS	Verify *** service URL	2026-05-21T03:39:23.6837290Z ^[[36;1mecho "Backend service URL: ${BACKEND_URL}"^[[0m
+Deploy backend to EKS	Verify *** service URL	2026-05-21T03:39:23.6837570Z ^[[36;1m{^[[0m
+Deploy backend to EKS	Verify *** service URL	2026-05-21T03:39:23.6837800Z ^[[36;1m  echo "### Backend EKS Deployment Verification"^[[0m
+Deploy backend to EKS	Verify *** service URL	2026-05-21T03:39:23.6838095Z ^[[36;1m  echo ""^[[0m
+Deploy backend to EKS	Verify *** service URL	2026-05-21T03:39:23.6838325Z ^[[36;1m  echo "- Image deployed: \`${IMAGE_URI}\`"^[[0m
+Deploy backend to EKS	Verify *** service URL	2026-05-21T03:39:23.6838644Z ^[[36;1m  echo "- Backend service URL: ${BACKEND_URL}"^[[0m
+Deploy backend to EKS	Verify *** service URL	2026-05-21T03:39:23.6838927Z ^[[36;1m  echo ""^[[0m
+Deploy backend to EKS	Verify *** service URL	2026-05-21T03:39:23.6839114Z ^[[36;1m  echo '```'^[[0m
+Deploy backend to EKS	Verify *** service URL	2026-05-21T03:39:23.6839352Z ^[[36;1m  kubectl get service *** -o wide^[[0m
+Deploy backend to EKS	Verify *** service URL	2026-05-21T03:39:23.6839607Z ^[[36;1m  echo '```'^[[0m
+Deploy backend to EKS	Verify *** service URL	2026-05-21T03:39:23.6839816Z ^[[36;1m} >> "$GITHUB_STEP_SUMMARY"^[[0m
+Deploy backend to EKS	Verify *** service URL	2026-05-21T03:39:23.6873843Z shell: /usr/bin/bash -e {0}
+Deploy backend to EKS	Verify *** service URL	2026-05-21T03:39:23.6874079Z env:
+Deploy backend to EKS	Verify *** service URL	2026-05-21T03:39:23.6874305Z   AWS_REGION: ***
+Deploy backend to EKS	Verify *** service URL	2026-05-21T03:39:23.6874530Z   EKS_CLUSTER_NAME: ***
+Deploy backend to EKS	Verify *** service URL	2026-05-21T03:39:23.6874764Z   BACKEND_ECR_REPOSITORY: ***
+Deploy backend to EKS	Verify *** service URL	2026-05-21T03:39:23.6875018Z   AWS_DEFAULT_REGION: ***
+Deploy backend to EKS	Verify *** service URL	2026-05-21T03:39:23.6875274Z   AWS_ACCESS_KEY_ID: ***
+Deploy backend to EKS	Verify *** service URL	2026-05-21T03:39:23.6875744Z   AWS_SECRET_ACCESS_KEY: ***
+Deploy backend to EKS	Verify *** service URL	2026-05-21T03:39:23.6879538Z   AWS_SESSION_TOKEN: ***
+Deploy backend to EKS	Verify *** service URL	2026-05-21T03:39:23.6879759Z ##[endgroup]
+Deploy backend to EKS	Verify *** service URL	2026-05-21T03:39:25.5940430Z deployment.apps/*** condition met
+Deploy backend to EKS	Verify *** service URL	2026-05-21T03:39:26.4785340Z NAME                       READY   STATUS    RESTARTS   AGE   IP           NODE                        NOMINATED NODE   READINESS GATES
+Deploy backend to EKS	Verify *** service URL	2026-05-21T03:39:26.4787155Z ***-78bbf45df7-5fzb8   1/1     Running   0          14m   10.0.1.245   ip-10-0-1-82.ec2.internal   <none>           <none>
+Deploy backend to EKS	Verify *** service URL	2026-05-21T03:39:27.3734260Z NAME      TYPE           CLUSTER-IP      EXTERNAL-IP                                                               PORT(S)        AGE   SELECTOR
+Deploy backend to EKS	Verify *** service URL	2026-05-21T03:39:27.3736374Z ***   LoadBalancer   172.20.57.145   a6410d12d710d4b95bb16cad2f0f0a30-1351506007.***.elb.amazonaws.com   80:32749/TCP   8h    app=***
+Deploy backend to EKS	Verify *** service URL	2026-05-21T03:39:28.3089291Z Backend service URL: http://a6410d12d710d4b95bb16cad2f0f0a30-1351506007.***.elb.amazonaws.com/movies
+Deploy backend to EKS	Post Configure AWS credentials	﻿2026-05-21T03:39:29.2048604Z Post job cleanup.
+Deploy backend to EKS	Post Checkout code	﻿2026-05-21T03:39:29.3367869Z Post job cleanup.
+Deploy backend to EKS	Post Checkout code	2026-05-21T03:39:29.4425099Z [command]/usr/bin/git version
+Deploy backend to EKS	Post Checkout code	2026-05-21T03:39:29.4461588Z git version 2.54.0
+Deploy backend to EKS	Post Checkout code	2026-05-21T03:39:29.4506019Z Temporarily overriding HOME='/home/runner/work/_temp/83dfac58-aee0-43c3-95b4-aba0778cd991' before making global git config changes
+Deploy backend to EKS	Post Checkout code	2026-05-21T03:39:29.4507536Z Adding repository directory to the temporary git global config as a safe directory
+Deploy backend to EKS	Post Checkout code	2026-05-21T03:39:29.4512396Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/movie-picture-pipeline/movie-picture-pipeline
+Deploy backend to EKS	Post Checkout code	2026-05-21T03:39:29.4548301Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+Deploy backend to EKS	Post Checkout code	2026-05-21T03:39:29.4581237Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+Deploy backend to EKS	Post Checkout code	2026-05-21T03:39:29.4801954Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+Deploy backend to EKS	Post Checkout code	2026-05-21T03:39:29.4824548Z http.https://github.com/.extraheader
+Deploy backend to EKS	Post Checkout code	2026-05-21T03:39:29.4836559Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+Deploy backend to EKS	Post Checkout code	2026-05-21T03:39:29.4868632Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+Deploy backend to EKS	Post Checkout code	2026-05-21T03:39:29.5085264Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+Deploy backend to EKS	Post Checkout code	2026-05-21T03:39:29.5115480Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+Deploy backend to EKS	Complete job	﻿2026-05-21T03:39:29.5440804Z Cleaning up orphan processes
+Deploy backend to EKS	Complete job	2026-05-21T03:39:29.5722154Z ##[warning]Node.js 20 actions are deprecated. The following actions are running on Node.js 20 and may not work as expected: actions/checkout@v4, aws-actions/configure-aws-credentials@v4, azure/setup-kubectl@v4, imranismail/setup-kustomize@v2. Actions will be forced to run with Node.js 24 by default starting June 2nd, 2026. Node.js 20 will be removed from the runner on September 16th, 2026. Please check if updated versions of these actions are available that support Node.js 24. To opt into Node.js 24 now, set the FORCE_JAVASCRIPT_ACTIONS_TO_NODE24=true environment variable on the runner or in your workflow file. Once Node.js 24 becomes the default, you can temporarily opt out by setting ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION=true. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
